@@ -1,4 +1,4 @@
-package acme.validators;
+package acme.constraints;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.Pattern;
 
 @Documented
 @Constraint(validatedBy = {})
@@ -18,10 +18,10 @@ import javax.validation.constraints.Size;
 })
 @Retention(RetentionPolicy.RUNTIME)
 @NotBlank
-@Size(min = 1, max = 255)
-public @interface ValidText {
+@Pattern(regexp = "^[A-Z]{2}[0-9]{2}-\\w{5,10}$")
+public @interface ValidTicker {
 
-	String message() default "{acme.validation.validText.message}";
+	String message() default "{acme.validation.validTicker.message}";
 
 	Class<?>[] groups() default {};
 
