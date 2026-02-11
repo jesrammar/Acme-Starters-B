@@ -21,6 +21,7 @@ import acme.constraints.ValidAuditReport;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
+import acme.realms.Auditor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -73,6 +74,8 @@ public class AuditReport extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+	@Mandatory
+	@Valid
 	@Transient
 	private Double				monthsActive;
 
@@ -87,6 +90,7 @@ public class AuditReport extends AbstractEntity {
 	}
 
 
+	@Mandatory
 	@ValidNumber(min = 0)
 	@Transient
 	private Integer hours;
@@ -104,7 +108,7 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private acme.realms.Auditor			auditor;
+	private Auditor						auditor;
 
 	@Valid
 	@OneToMany(mappedBy = "auditReport")
