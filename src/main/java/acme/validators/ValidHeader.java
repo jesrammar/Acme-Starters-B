@@ -10,10 +10,10 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import jakarta.validation.Constraint;
-import jakarta.validation.Payload;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import javax.validation.Constraint;
+import javax.validation.Payload;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Documented
 @NotBlank
@@ -22,7 +22,7 @@ import jakarta.validation.constraints.Size;
 @Target({ FIELD, METHOD, PARAMETER, ANNOTATION_TYPE })
 @Retention(RUNTIME)
 public @interface ValidHeader {
-	String message() default "{acme.validation.ValidHeader.message}";
+	String message() default "{acme.validation.validHeader.message}";
 	Class<?>[] groups() default { };
 	Class<? extends Payload>[] payload() default { };
 }

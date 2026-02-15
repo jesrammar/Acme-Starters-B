@@ -1,6 +1,7 @@
 package acme.entities;
 
 import java.util.Collection;
+import java.util.concurrent.TimeUnit;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -61,7 +62,7 @@ public class Campaign extends AbstractEntity {
 	private Double monthsActive;
 
 	@Mandatory
-	@ValidNumber(min = 0.0)
+	@ValidNumber(min = 0.01)
 	@Transient
 	private Double effort;
 
@@ -75,4 +76,33 @@ public class Campaign extends AbstractEntity {
 
 	@OneToMany(mappedBy = "campaign")
 	private Collection<Milestone> milestones;
+
+	@Transient
+	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null) {
+			return 0.0;
+		}
+
+		long diffMillis = Math.abs(this.endMoment.getTime() - this.startMoment.getTime());
+		long diffDays = TimeUnit.MILLISECONDS.toDays(diffMillis);
+		double months = diffDays / 30.0;
+
+		return Math.round(months * 10.0) / 10.0;
+	}
+
+	@Transient
+	public Double getEffort() {
+		if (this.milestones == null || this.milestones.isEmpty()) {
+			return 0.0;
+		}
+
+		double total = 0.0;
+		for (Milestone milestone : this.milestones) {
+			if (milestone != null && milestone.getEffort() != null) {
+				total += milestone.getEffort();
+			}
+		}
+
+		return total;
+	}
 }

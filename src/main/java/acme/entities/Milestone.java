@@ -5,14 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidNumber;
 import acme.validators.ValidHeader;
 import acme.validators.ValidText;
-import antlr.collections.List;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -34,7 +32,7 @@ public class Milestone extends AbstractEntity{
 	private String achievements	;
 	
 	@Mandatory
-	@ValidNumber(min = 0.0)
+	@ValidNumber(min = 0.01)
 	@Column
 	private Double effort;
 
