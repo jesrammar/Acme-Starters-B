@@ -17,8 +17,8 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.validators.ValidHeader;
-import acme.validators.ValidText;
-import acme.validators.ValidTicker;
+import acme.constraints.ValidText;
+import acme.constraints.ValidTicker;
 import lombok.Getter;
 import lombok.Setter;
 

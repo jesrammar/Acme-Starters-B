@@ -10,7 +10,7 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidNumber;
 import acme.validators.ValidHeader;
-import acme.validators.ValidText;
+import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
