@@ -2,7 +2,6 @@
 package acme.entities.strategies;
 
 import java.time.temporal.ChronoUnit;
-import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -122,13 +121,15 @@ public class Strategy extends AbstractEntity {
 	@Mandatory
 	@Column
 	@Valid
-	Boolean						draftMode;
+	Boolean				draftMode;
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Fundraiser			fundraiser;
+	private Fundraiser	fundraiser;
 
-	@Valid
-	private Collection<Tactic>	tactics;
+	/*
+	 * @Valid
+	 * private List<Tactic> tactics;
+	 */
 }
