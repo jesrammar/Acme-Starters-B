@@ -6,8 +6,10 @@ import java.util.Date;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+import acme.client.components.validation.Validator;
 import acme.entities.strategies.Strategy;
 
+@Validator
 public class StrategyValidator implements ConstraintValidator<ValidStrategy, Strategy> {
 
 	@Override
