@@ -1,4 +1,4 @@
-package acme.entities;
+package acme.entities.campaigns;
 
 public enum MilestoneKind {
 	

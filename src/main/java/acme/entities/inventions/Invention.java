@@ -1,7 +1,6 @@
 
 package acme.entities.inventions;
 
-import java.beans.Transient;
 import java.util.Collection;
 import java.util.Date;
 
@@ -9,6 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -103,6 +103,6 @@ public class Invention extends AbstractEntity {
 	private Inventor			inventor;
 
 	@Mandatory
-	@OneToMany(mappedBy = "part")
+	@OneToMany(mappedBy = "invention")
 	private Collection<Part>	parts;
 }
