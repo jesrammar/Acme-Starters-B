@@ -1,29 +1,22 @@
+
 package acme.constraints;
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.ElementType.PARAMETER;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
-import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
-@Documented
-@NotBlank
-@Size(min = 1, max = 255)
-@Constraint(validatedBy = {})
-@Target({ FIELD, METHOD, PARAMETER })
-@Retention(RUNTIME)
+@Target({
+	ElementType.FIELD
+})
+@Retention(RetentionPolicy.RUNTIME)
+@Constraint(validatedBy = ValidTextValidator.class)
+
 public @interface ValidText {
 
-	String message() default "{acme.validation.text.message}";
+	String message() default "{acme.validation.valid-text}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
-
 }

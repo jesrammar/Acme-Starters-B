@@ -1,0 +1,33 @@
+key,name,notes,hours,kind,key:auditReport
+# base entity
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+# name - standard variations
+auditSection-00,L,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,Lo,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,لوريم إيبسوم,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,洛伦·伊普森,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-00,'' or 'A' = 'A,Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+# notes - standard variations
+auditSection-00,Lorem ipsum dolor sit amet,L,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,Lo,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,لوريم إيبسوم,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,洛伦·伊普森,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,50,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,'' or 'A' = 'A,50,PRELIMINARY,auditReport-00
+# hours - standard variations
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,0,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,1,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,100,PRELIMINARY,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,99,PRELIMINARY,auditReport-00
+# kind - standard variations
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50,EVALUATION,auditReport-00
+auditSection-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50,CONCLUSION,auditReport-00

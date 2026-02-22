@@ -1,28 +1,30 @@
 
 package acme.entities.strategies;
 
-import java.util.Collection;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
-import acme.client.components.validation.ValidScore;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
+import acme.features.strategies.StrategyRepository;
 import acme.realms.Fundraiser;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,8 +38,8 @@ public class Strategy extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	@Column(unique = true)
 	@ValidTicker
+	@Column(unique = true)
 	private String				ticker;
 
 	@Mandatory
@@ -65,31 +67,53 @@ public class Strategy extends AbstractEntity {
 	private String				moreInfo;
 
 	// Derivadas ------------------------------------------------------------
+
+
+	@Valid
 	@Transient
-	@Mandatory
-	private Double				monthsActive;
-
-
 	public Double getMonthsActive() {
-		if (this.startMoment != null && this.endMoment != null) {
-			long days = (this.endMoment.getTime() - this.startMoment.getTime()) / (1000 * 60 * 60 * 24);
-			double months = days / 30.0;
-			return Math.round(months * 10.0) / 10.0; // redondeo a un decimal
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.0;
+
+		Date current = this.startMoment;
+		double months = 0.0;
+
+		// Iteramos mes a mes hasta llegar a endMoment
+		while (MomentHelper.isBefore(current, this.endMoment)) {
+			// Avanzamos un mes
+			Date nextMonth = MomentHelper.deltaFromMoment(current, 1, ChronoUnit.MONTHS);
+
+			// Si nextMonth supera endMoment, usamos endMoment
+			Date monthEnd = MomentHelper.isBefore(nextMonth, this.endMoment) ? nextMonth : this.endMoment;
+
+			// Duración de este mes parcial
+			long daysInMonth = MomentHelper.computeDuration(current, nextMonth).toDays();
+			long daysInPeriod = MomentHelper.computeDuration(current, monthEnd).toDays();
+
+			months += (double) daysInPeriod / (double) daysInMonth;
+
+			// Avanzamos al siguiente mes
+			current = monthEnd;
 		}
-		return 0.0;
+
+		// Redondeamos a un decimal
+		return Math.round(months * 10.0) / 10.0;
 	}
 
 
 	@Transient
-	@Mandatory
-	@ValidScore
-	private Double expectedPercentage;
+	@Autowired
+	private StrategyRepository repository;
 
 
+	@Transient
+	//@ValidScore
 	public Double getExpectedPercentage() {
-		if (this.tactics != null)
-			return this.tactics.stream().mapToDouble(Tactic::getExpectedPercentage).sum();
-		return 0.0;
+		Double res;
+		Double repo = this.repository.getExpectedPercentage(this.getId());
+
+		res = repo == null ? 0 : repo.doubleValue();
+		return res;
 	}
 
 
@@ -97,14 +121,15 @@ public class Strategy extends AbstractEntity {
 	@Mandatory
 	@Column
 	@Valid
-	Boolean						draftMode;
+	Boolean				draftMode;
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Fundraiser			fundraiser;
+	private Fundraiser	fundraiser;
 
-	@Valid
-	@OneToMany(mappedBy = "strategy")
-	private Collection<Tactic>	tactics;
+	/*
+	 * @Valid
+	 * private List<Tactic> tactics;
+	 */
 }
