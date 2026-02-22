@@ -1,0 +1,5 @@
+key,key:userAccount,cv,achievements,licensed
+s2-err-spokesperson-01,s2-err-user-account-spokesperson-01,,"Has achievements",true
+s2-err-spokesperson-02,s2-err-user-account-spokesperson-02,"<script>alert('x')</script>","<b>bold</b>",true
+s2-err-spokesperson-03,s2-err-user-account-spokesperson-02,"Valid CV","Valid achievements",
+

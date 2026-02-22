@@ -1,0 +1,10 @@
+# validation-es.i18n
+
+acme.validation.campaign.must-have-milestone.message = La campaña debe tener al menos un hito para publicarse
+acme.validation.campaign.moments.invalid-interval.message = El momento de inicio debe ser anterior al de fin
+acme.validation.campaign.moments.must-be-future.message = El momento debe ser futuro para publicar la campaña
+acme.validation.safeText.message = No se permite HTML/script
+acme.validation.header.message = Debe tener entre 1 y 75 caracteres
+acme.validation.text.message = Debe tener entre 1 y 255 caracteres
+acme.validation.ticker.message = La referencia solo puede contener letras, digitos, subrayados y guiones
+

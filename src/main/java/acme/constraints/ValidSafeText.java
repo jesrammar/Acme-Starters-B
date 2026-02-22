@@ -1,5 +1,6 @@
 package acme.constraints;
 
+import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
@@ -11,18 +12,16 @@ import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 @Documented
-@NotBlank
-@Size(min = 1, max = 75)
-@Constraint(validatedBy = {})
-@Target({ FIELD, METHOD, PARAMETER })
+@Constraint(validatedBy = SafeTextValidator.class)
+@Target({
+	FIELD, METHOD, PARAMETER, ANNOTATION_TYPE
+})
 @Retention(RUNTIME)
-public @interface ValidHeader {
+public @interface ValidSafeText {
 
-	String message() default "{acme.validation.header.message}";
+	String message() default "{acme.validation.safeText.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 
