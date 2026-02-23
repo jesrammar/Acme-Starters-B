@@ -1,0 +1,17 @@
+# validation-en.i18n
+
+acme.validation.campaign.must-have-milestone.message = The campaign must have at least one milestone to be published
+acme.validation.campaign.moments.invalid-interval.message = The start moment must be before the end moment
+acme.validation.campaign.moments.must-be-future.message = The moment must be in the future to publish the campaign
+acme.validation.safeText.message = HTML/script is not allowed
+acme.validation.header.message = Must have from 1 to 75 characters
+acme.validation.text.message = Must have from 1 to 255 characters
+acme.validation.ticker.message = The ticker must have letters, digits, underscores, and hyphens only
+acme.validation.invention.duplicated-ticker.message = Already exists an invention with the same ticker
+acme.validation.invention.parts.message = Invention must have at least one part in order to be published
+acme.validation.invention.startMoment-NotFuture.message = The start moment must be in the future
+acme.validation.invention.endMoment-NotFuture.message = The end moment must be in the future
+acme.validation.invention.startMoment-PostEndMoment.message = The start moment must be before the end moment
+acme.validation.valid-text = Must have between 1 and 255 characters
+acme.validation.valid-header = Must have between 1 and 75 characters
+acme.validation.valid-ticker = Must follow the format: two uppercase letters, two digits, a hyphen, and 5 to 10 alphanumeric characters
