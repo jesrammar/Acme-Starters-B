@@ -13,6 +13,6 @@ public interface InventionRepository extends AbstractRepository {
 	@Query("select i from Invention i where i.id = :id")
 	Invention findInventionById(int id);
 
-	@Query("select sum(p.cost.amount) form Part p where p.invention.id = :id")
+	@Query("select sum(p.cost.amount) from Part p where p.invention.id = :id")
 	Double sumPartsCostByInventionId(int id);
 }
