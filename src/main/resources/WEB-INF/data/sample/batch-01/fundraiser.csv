@@ -1,0 +1,27 @@
+key,bank,statement,agent
+# base entity
+fundraiser-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,true
+# bank - standard variations
+fundraiser-01,L,Lorem ipsum dolor sit amet,true
+fundraiser-02,Lo,Lorem ipsum dolor sit amet,true
+fundraiser-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,true
+fundraiser-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,true
+fundraiser-05,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,true
+fundraiser-06,لوريم إيبسوم,Lorem ipsum dolor sit amet,true
+fundraiser-07,洛伦·伊普森,Lorem ipsum dolor sit amet,true
+fundraiser-08,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,true
+fundraiser-09,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,true
+fundraiser-10,' or 'A' = 'A,Lorem ipsum dolor sit amet,true
+# statement - standard variations
+fundraiser-11,Lorem ipsum dolor sit amet,L,true
+fundraiser-12,Lorem ipsum dolor sit amet,Lo,true
+fundraiser-13,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",true
+fundraiser-14,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",true
+fundraiser-15,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,true
+fundraiser-16,Lorem ipsum dolor sit amet,لوريم إيبسوم,true
+fundraiser-17,Lorem ipsum dolor sit amet,洛伦·伊普森,true
+fundraiser-18,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,true
+fundraiser-19,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,true
+fundraiser-20,Lorem ipsum dolor sit amet,' or 'A' = 'A,true
+# agent - standard variations
+fundraiser-21,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,false
