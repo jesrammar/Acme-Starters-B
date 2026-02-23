@@ -1,0 +1,37 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,key:sponsor,draftMode
+# base entity
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+# ticker - standard variations (formato único y patrones)
+sponsorship-01,XYZ-999,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-02,TST-000,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-03,QUA-510,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+# name - standard variations (longitudes y caracteres especiales)
+sponsorship-00,ABC-123,L,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lo,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,لوريم إيبسوم,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,洛伦·伊普森,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,'' or 'A' = 'A,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+# description - standard variations
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,L,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lo,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,洛伦·伊普森,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+# startMoment - standard variations (fechas futuras)
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,08/01/2026 0:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,31/12/2026 23:59,01/03/2027 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2100 0:00,01/01/2101 0:00,"http://lorem.com/ipsum",sponsor-00,true
+# endMoment - standard variations
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,02/01/2026 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,31/12/2030 23:59,"http://lorem.com/ipsum",sponsor-00,true
+# moreInfo - standard variations (URLs)
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://a.b",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"https://www.lorem-ipsum.org",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://example.org?a=1&b=2",sponsor-00,true
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"ftp://a",sponsor-00,true
+# draftMode - standard variations
+sponsorship-00,ABC-123,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2026 10:00,01/03/2026 10:00,"http://lorem.com/ipsum",sponsor-00,false
