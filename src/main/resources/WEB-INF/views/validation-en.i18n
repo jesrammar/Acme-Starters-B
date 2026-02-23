@@ -12,6 +12,3 @@ acme.validation.invention.parts.message = Invention must have at least one part 
 acme.validation.invention.startMoment-NotFuture.message = The start moment must be in the future
 acme.validation.invention.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.invention.startMoment-PostEndMoment.message = The start moment must be before the end moment
-acme.validation.valid-text = Must have between 1 and 255 characters
-acme.validation.valid-header = Must have between 1 and 75 characters
-acme.validation.valid-ticker = Must follow the format: two uppercase letters, two digits, a hyphen, and 5 to 10 alphanumeric characters

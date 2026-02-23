@@ -17,7 +17,7 @@ import javax.validation.Payload;
 
 public @interface ValidTicker {
 
-	String message() default "{acme.validation.valid-ticker}";
+	String message() default "{acme.validation.ticker.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 }

@@ -17,7 +17,7 @@ import javax.validation.Payload;
 
 public @interface ValidText {
 
-	String message() default "{acme.validation.valid-text}";
+	String message() default "{acme.validation.text.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 }
