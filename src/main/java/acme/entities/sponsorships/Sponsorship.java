@@ -1,29 +1,31 @@
 
 package acme.entities.sponsorships;
 
-import java.util.Collection;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
-import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
-import acme.constraints.ValidSponsorship;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
+import acme.features.sponsorships.SponsorshipRepository;
 import acme.realms.Sponsor;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,14 +33,18 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@ValidSponsorship
+// @ValidSponsorship
 public class Sponsorship extends AbstractEntity {
 
 	private static final long		serialVersionUID	= 1L;
 
+	@Transient
+	@Autowired
+	private SponsorshipRepository	repository;
+
 	@Mandatory
-	@Column(unique = true)
 	@ValidTicker
+	@Column(unique = true)
 	private String					ticker;
 
 	@Mandatory
@@ -61,13 +67,14 @@ public class Sponsorship extends AbstractEntity {
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date					endMoment;
 
+	@Optional
 	@ValidUrl
 	@Column
 	private String					moreInfo;
 
 	@Mandatory
-	@Column
 	@Valid
+	@Column
 	private Boolean					draftMode;
 
 	// Relaciones
@@ -76,40 +83,46 @@ public class Sponsorship extends AbstractEntity {
 	@ManyToOne(optional = false)
 	private Sponsor					sponsor;
 
-	@Valid
-	@OneToMany(mappedBy = "sponsorship")
-	private Collection<Donation>	donations;
 
 	// Derivadas --------------------------------------------------
+	@Valid
 	@Transient
-	@Mandatory
-	private Double					monthsActive;
-
-
 	public Double getMonthsActive() {
-		if (this.startMoment != null && this.endMoment != null) {
-			long diff = this.endMoment.getTime() - this.startMoment.getTime();
-			double months = diff / (1000.0 * 60 * 60 * 24 * 30);
-			return Math.round(months * 10.0) / 10.0;
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.0;
+
+		Date current = this.startMoment;
+		double months = 0.0;
+
+		// Iteramos mes a mes hasta llegar a endMoment
+		while (MomentHelper.isBefore(current, this.endMoment)) {
+			// Avanzamos un mes
+			Date nextMonth = MomentHelper.deltaFromMoment(current, 1, ChronoUnit.MONTHS);
+
+			// Si nextMonth supera endMoment, usamos endMoment
+			Date monthEnd = MomentHelper.isBefore(nextMonth, this.endMoment) ? nextMonth : this.endMoment;
+
+			// Duración de este mes parcial
+			long daysInMonth = MomentHelper.computeDuration(current, nextMonth).toDays();
+			long daysInPeriod = MomentHelper.computeDuration(current, monthEnd).toDays();
+
+			months += (double) daysInPeriod / (double) daysInMonth;
+
+			// Avanzamos al siguiente mes
+			current = monthEnd;
 		}
-		return 0.0;
+
+		// Redondeamos a un decimal
+		return Math.round(months * 10.0) / 10.0;
 	}
 
-
 	@Transient
-	@Mandatory
-	@ValidMoney(min = 0.0)
-	private Money totalMoney;
-
-
 	public Money getTotalMoney() {
-		Money result = new Money();
-		result.setCurrency("EUR");
-		double total = 0.0;
-		if (this.donations != null)
-			for (Donation d : this.donations)
-				total += d.getMoney().getAmount();
-		result.setAmount(total);
-		return result;
+		Double amount = this.repository.sumTotalMoneyBySponsorshipId(this.getId());
+
+		Money total = new Money();
+		total.setAmount(amount);
+		total.setCurrency("EUR");
+		return total;
 	}
 }
