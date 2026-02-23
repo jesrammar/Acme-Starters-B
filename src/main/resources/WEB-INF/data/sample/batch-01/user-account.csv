@@ -31,5 +31,5 @@ user-account-auditor-19,true,"UserIdentity{name: 'Auditor19', surname: 'Auditor'
 user-account-auditor-20,true,"UserIdentity{name: 'Auditor20', surname: 'Auditor', email: 'auditor20@acme.com'}",auditor20,auditor20
 user-account-auditor-21,true,"UserIdentity{name: 'Auditor21', surname: 'Auditor', email: 'auditor21@acme.com'}",auditor21,auditor21
 user-account-sponsor-00,true,"UserIdentity{name: 'Sponsor00', surname: 'Sponsor', email: 'sponsor00@acme.com'}",sponsor00,sponsor00
-user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor01', surname: 'SponsorTwo', email: 'sponsor01@acme.com'}",sponsor01,sponsor01
-user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor02', surname: 'SponsorThree', email: 'sponsor02@acme.com'}",sponsor02,sponsor02
+user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor01', surname: 'Sponsor', email: 'sponsor01@acme.com'}",sponsor01,sponsor01
+user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor02', surname: 'Sponsor', email: 'sponsor02@acme.com'}",sponsor02,sponsor02
