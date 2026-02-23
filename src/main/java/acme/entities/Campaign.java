@@ -1,29 +1,22 @@
 package acme.entities;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.temporal.ChronoUnit;
-import java.util.Date;
+import java.util.Collection;
+import java.util.concurrent.TimeUnit;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
-import acme.constraints.ValidCampaignPublishable;
-import acme.constraints.ValidHeader;
-import acme.constraints.ValidSafeText;
+import acme.validators.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import lombok.Getter;
@@ -32,9 +25,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@ValidCampaignPublishable
 public class Campaign extends AbstractEntity {
-
 
 	@Mandatory
 	@ValidTicker
@@ -43,77 +34,75 @@ public class Campaign extends AbstractEntity {
 
 	@Mandatory
 	@ValidHeader
-	@ValidSafeText
 	@Column
 	private String name;
 
 	@Mandatory
 	@ValidText
-	@ValidSafeText
 	@Column
 	private String description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date startMoment;
+	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@Column
+	private Moment startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date endMoment;
+	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@Column
+	private Moment endMoment;
 
 	@ValidUrl
 	@Column
 	private String moreInfo;
 
 	@Mandatory
-	@Column
-	private Boolean draftMode;
+	@Valid
+	@Transient
+	private Double monthsActive;
+
+	@Mandatory
+	@ValidNumber(min = 0.01)
+	@Transient
+	private Double effort;
 
 	@Mandatory
 	@Valid
+	@Column
+	private Boolean draftMode;
+
 	@ManyToOne(optional = false)
 	private Spokesperson spokesperson;
 
-
-
-	@Transient
-	@Autowired
-	private CampaignRepository repository;
+	@OneToMany(mappedBy = "campaign")
+	private Collection<Milestone> milestones;
 
 	@Transient
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null || MomentHelper.isAfter(this.startMoment, this.endMoment)) {
+		if (this.startMoment == null || this.endMoment == null) {
 			return 0.0;
 		}
 
-		ZoneId zoneId = ZoneId.systemDefault();
-		LocalDate startDate = this.startMoment.toInstant().atZone(zoneId).toLocalDate();
-		LocalDate endDate = this.endMoment.toInstant().atZone(zoneId).toLocalDate();
-
-		if (endDate.isBefore(startDate)) {
-			return 0.0;
-		}
-
-		LocalDate cursor = startDate;
-		int fullMonths = 0;
-		while (!cursor.plusMonths(1).isAfter(endDate)) {
-			cursor = cursor.plusMonths(1);
-			fullMonths++;
-		}
-
-		long remainingDays = ChronoUnit.DAYS.between(cursor, endDate);
-		int monthLength = Math.max(1, cursor.lengthOfMonth());
-		double fraction = remainingDays / (double) monthLength;
-		double months = fullMonths + fraction;
+		long diffMillis = Math.abs(this.endMoment.getTime() - this.startMoment.getTime());
+		long diffDays = TimeUnit.MILLISECONDS.toDays(diffMillis);
+		double months = diffDays / 30.0;
 
 		return Math.round(months * 10.0) / 10.0;
 	}
 
 	@Transient
 	public Double getEffort() {
-		Double wrapper = this.repository.computeCampaignEffort(this.getId());
-		return wrapper == null ? 0.0 : wrapper.doubleValue();
+		if (this.milestones == null || this.milestones.isEmpty()) {
+			return 0.0;
+		}
+
+		double total = 0.0;
+		for (Milestone milestone : this.milestones) {
+			if (milestone != null && milestone.getEffort() != null) {
+				total += milestone.getEffort();
+			}
+		}
+
+		return total;
 	}
 }

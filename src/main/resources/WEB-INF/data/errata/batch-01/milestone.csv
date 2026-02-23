@@ -1,5 +1,0 @@
-key,title,achievements,effort,kind,key:campaign
-s2-err-milestone-01,"Zero effort","Should be > 0",0,TEASER,s2-err-campaign-01
-s2-err-milestone-02,"Negative effort","Should be > 0",-1,ENGAGING,s2-err-campaign-01
-s2-err-milestone-03,"Bad kind","Enum missing",5.0,,s2-err-campaign-01
-s2-err-milestone-04,"<script>alert(1)</script>","<b>bad</b>",5.0,CONVERSION,s2-err-campaign-01

@@ -1,5 +1,7 @@
+
 package acme.constraints;
 
+import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
@@ -18,12 +20,13 @@ import javax.validation.constraints.Size;
 @NotBlank
 @Size(min = 1, max = 75)
 @Constraint(validatedBy = {})
-@Target({ FIELD, METHOD, PARAMETER })
+@Target({
+	FIELD, METHOD, PARAMETER, ANNOTATION_TYPE
+})
 @Retention(RUNTIME)
 public @interface ValidHeader {
 
-	String message() default "{acme.validation.header.message}";
+	String message() default "{acme.validation.ValidHeader.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
-
 }
