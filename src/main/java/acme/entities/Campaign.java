@@ -1,4 +1,4 @@
-package acme.entities.campaigns;
+package acme.entities;
 
 import java.time.LocalDate;
 import java.time.ZoneId;

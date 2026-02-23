@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.entities.campaigns;
+package acme.entities;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
