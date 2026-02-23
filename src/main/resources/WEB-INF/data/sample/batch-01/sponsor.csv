@@ -1,24 +1,6 @@
-key,address,im,gold
+key,key:userAccount,address,im,gold
 # base entity
-sponsor-00,123 Main Street,JohnDoeIM,true
-# address - standard variations (longitudes y caracteres especiales)
-sponsor-01,L,UserIM_1,false
-sponsor-02,Lo,UserIM_2,true
-sponsor-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",UserIM_3,false
-sponsor-04,โลเร็ม อิปซัม,ThaiUser,true
-sponsor-05,لوريم إيبسوم,ArabicUser,false
-sponsor-06,洛伦·伊普森,ChineseUser,true
-sponsor-07,<marquee>Hacked</marquee>,XSSUser,false
-sponsor-08,<script>alert(‘Hacked!’);</script>,JSUser,true
-sponsor-09,'' or 'A' = 'A,SQLUser,false
-# im (identificador/header) - standard variations
-sponsor-10,Calle Mayor 1,L,true
-sponsor-11,Calle Mayor 2,Lo,false
-sponsor-12,Calle Mayor 3,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",true
-sponsor-13,Calle Mayor 4,<marquee>Hacked</marquee>,false
-# gold - standard variations
-sponsor-14,Avenida de la Constitución 5,GoldenUser,true
-sponsor-15,Plaza de España 10,NormalUser,false
-# Más entidades para usar como FK en Sponsorship
-sponsor-16,Seville Office,SponsorA,true
-sponsor-17,Madrid Office,SponsorB,false
+sponsor-00,user-account-sponsor-00,123 Main Street,JohnDoeIM,true
+# address - standard variations
+sponsor-01,user-account-sponsor-01,L,UserIM_1,false
+sponsor-02,user-account-sponsor-02,Lo,UserIM_2,true

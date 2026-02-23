@@ -1,34 +1,16 @@
 key,name,notes,money,kind,key:sponsorship
 # --- ENTIDADES BASE PARA SUMAR (Acumulado) ---
-donation-00,Soporte Inicial,Donación de arranque,100.00 EUR,DIRECT,sponsorship-00
-donation-01,Cuota Mensual Enero,Pago recurrente,50.00 EUR,DIRECT,sponsorship-00
-donation-02,Bonus Especial,Regalo por éxito de campaña,250.00 EUR,DIRECT,sponsorship-00
-donation-03,Donación Anónima,Sin notas del donante,25.50 EUR,DIRECT,sponsorship-00
-donation-04,Soporte Premium,Donación de gran cuantía,1000.00 EUR,DIRECT,sponsorship-00
-donation-05,Cuota Mensual Febrero,Pago recurrente,50.00 EUR,DIRECT,sponsorship-00
-donation-06,Microdonación,Aportación pequeña,5.25 EUR,DIRECT,sponsorship-00
-donation-07,Donación Evento,Recaudación gala benéfica,150.75 EUR,DIRECT,sponsorship-00
-donation-08,Soporte Corporate,Donación de empresa,500.00 EUR,DIRECT,sponsorship-00
-donation-09,Cierre Campaña,Último aporte,100.00 EUR,DIRECT,sponsorship-00
+donation-00,Soporte Inicial,Donación de arranque,100.00 EUR,ALTRUIST,sponsorship-00
+donation-01,Cuota Mensual Enero,Pago recurrente,50.00 EUR,ALTRUIST,sponsorship-00
+donation-02,Bonus Especial,Regalo por éxito de campaña,250.00 EUR,ALTRUIST,sponsorship-00
+donation-03,Donación Anónima,Sin notas del donante,25.50 EUR,ALTRUIST,sponsorship-00
+donation-04,Soporte Premium,Donación de gran cuantía,1000.00 EUR,ALTRUIST,sponsorship-00
+donation-05,Cuota Mensual Febrero,Pago recurrente,50.00 EUR,ALTRUIST,sponsorship-00
+donation-06,Microdonación,Aportación pequeña,5.25 EUR,ALTRUIST,sponsorship-00
+donation-07,Donación Evento,Recaudación gala benéfica,150.75 EUR,ALTRUIST,sponsorship-00
+donation-08,Soporte Corporate,Donación de empresa,500.00 EUR,ALTRUIST,sponsorship-00
+donation-09,Cierre Campaña,Último aporte,100.00 EUR,ALTRUIST,sponsorship-00
 
 # --- ENTIDADES PARA OTROS PATROCINIOS (Para probar filtros) ---
-donation-10,Otro Sponsor,Esta no debe sumarse al 00,10.00 EUR,DIRECT,sponsorship-01
-donation-11,Sponsor Secundario,Prueba de segregación,20.00 EUR,DIRECT,sponsorship-02
-
-# --- VARIACIONES DE NOMBRE (Tests de validación) ---
-donation-00,L,Lorem ipsum dolor sit amet,100.00 EUR,DIRECT,sponsorship-00
-donation-00,Lo,Lorem ipsum dolor sit amet,100.00 EUR,DIRECT,sponsorship-00
-donation-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,100.00 EUR,DIRECT,sponsorship-00
-donation-00,โลเร็ม อิปซัม,Caracteres tailandeses,100.00 EUR,DIRECT,sponsorship-00
-donation-00,لوريم إيبسوم,Caracteres árabes,100.00 EUR,DIRECT,sponsorship-00
-donation-00,洛伦·伊普森,Caracteres chinos,100.00 EUR,DIRECT,sponsorship-00
-
-# --- VARIACIONES DE NOTAS (XSS e Inyección) ---
-donation-00,Donación Test,<marquee>Hacked</marquee>,100.00 EUR,DIRECT,sponsorship-00
-donation-00,Donación Test,<script>alert('Hacked!');</script>,100.00 EUR,DIRECT,sponsorship-00
-donation-00,Donación Test,'' or 'A' = 'A,100.00 EUR,DIRECT,sponsorship-00
-donation-00,Donación Test,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",100.00 EUR,DIRECT,sponsorship-00
-
-# --- VARIACIONES DE DINERO (Límites) ---
-donation-00,Donación Mínima,Probando el 0.01,0.01 EUR,DIRECT,sponsorship-00
-donation-00,Donación Grande,Probando límites de Double,999999.99 EUR,DIRECT,sponsorship-00
+donation-10,Otro Sponsor,Esta no debe sumarse al 00,10.00 EUR,ALTRUIST,sponsorship-01
+donation-11,Sponsor Secundario,Prueba de segregación,20.00 EUR,ALTRUIST,sponsorship-02
