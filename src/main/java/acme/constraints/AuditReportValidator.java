@@ -4,17 +4,10 @@ package acme.constraints;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import acme.client.helpers.MomentHelper;
+import acme.client.components.datatypes.Moment;
 import acme.entities.audit.AuditReport;
-import acme.features.auditreport.AuditReportRepository;
 
 public class AuditReportValidator implements ConstraintValidator<ValidAuditReport, AuditReport> {
-
-	@Autowired
-	private AuditReportRepository repository;
-
 
 	@Override
 	public boolean isValid(final AuditReport report, final ConstraintValidatorContext context) {
@@ -23,37 +16,32 @@ public class AuditReportValidator implements ConstraintValidator<ValidAuditRepor
 			return true;
 
 		boolean valid = true;
-		context.disableDefaultConstraintViolation();
 
-		// Solo validar si se publica
-		if (Boolean.FALSE.equals(report.getDraftMode())) {
+		// Comprobar que tenga al menos una sección
+		if (report.getSections() == null || report.getSections().isEmpty()) {
+			context.buildConstraintViolationWithTemplate("Audit report must have at least one section").addPropertyNode("sections").addConstraintViolation();
+			valid = false;
+		}
 
-			// 1️: Debe tener al menos una sección
-			if (report.getId() != 0) {
-				long count = this.repository.countSectionsByReportId(report.getId());
+		// Comprobar que startMoment < endMoment y ambos en el futuro
+		Moment now = new Moment(); // momento actual
+		Moment start = report.getStartMoment();
+		Moment end = report.getEndMoment();
 
-				if (count == 0) {
-					context.buildConstraintViolationWithTemplate("Audit report must have at least one section").addPropertyNode("draftMode").addConstraintViolation();
-					valid = false;
-				}
-			}
+		if (start != null && start.before(now)) {
+			context.buildConstraintViolationWithTemplate("startMoment must be in the future").addPropertyNode("startMoment").addConstraintViolation();
+			valid = false;
+		}
 
-			// 2️: Fechas futuras
-			if (!MomentHelper.isFuture(report.getStartMoment())) {
-				context.buildConstraintViolationWithTemplate("startMoment must be in the future").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
-			}
+		if (end != null && end.before(now)) {
+			context.buildConstraintViolationWithTemplate("endMoment must be in the future").addPropertyNode("endMoment").addConstraintViolation();
+			valid = false;
+		}
 
-			if (!MomentHelper.isFuture(report.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("endMoment must be in the future").addPropertyNode("endMoment").addConstraintViolation();
-				valid = false;
-			}
-
-			// 3️: start < end
-			if (!MomentHelper.isBefore(report.getStartMoment(), report.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("startMoment must be before endMoment").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
-			}
+		// start < end
+		if (start != null && end != null && start.after(end)) {
+			context.buildConstraintViolationWithTemplate("startMoment must be before endMoment").addPropertyNode("startMoment").addConstraintViolation();
+			valid = false;
 		}
 
 		return valid;

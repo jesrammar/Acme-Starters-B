@@ -1,30 +1,26 @@
 
 package acme.entities.audit;
 
-import java.time.temporal.ChronoUnit;
-import java.util.Date;
+import java.util.Collection;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidAuditReport;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
-import acme.features.auditreport.AuditReportRepository;
 import acme.realms.Auditor;
 import lombok.Getter;
 import lombok.Setter;
@@ -37,94 +33,73 @@ public class AuditReport extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 
-	private static final long		serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
 	@ValidTicker
 	@Column(unique = true)
-	private String					ticker;
+	private String				ticker;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String					name;
+	private String				name;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String					description;
+	private String				description;
 
 	@Mandatory
 	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
-	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date					startMoment;
+	@Column
+	private Moment				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
-	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date					endMoment;
+	@Column
+	private Moment				endMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String					moreInfo;
+	private String				moreInfo;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean					draftMode;
+	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
 
-	@Transient
-	@Autowired
-	private AuditReportRepository	repository;
-
-
-	// @Mandatory
+	@Mandatory
 	@Valid
 	@Transient
+	private Double				monthsActive;
+
+
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		Date current = this.startMoment;
-		double months = 0.0;
-
-		// Iteramos mes a mes hasta llegar a endMoment
-		while (MomentHelper.isBefore(current, this.endMoment)) {
-			// Avanzamos un mes
-			Date nextMonth = MomentHelper.deltaFromMoment(current, 1, ChronoUnit.MONTHS);
-
-			// Si nextMonth supera endMoment, usamos endMoment
-			Date monthEnd = MomentHelper.isBefore(nextMonth, this.endMoment) ? nextMonth : this.endMoment;
-
-			// Duración de este mes parcial
-			long daysInMonth = MomentHelper.computeDuration(current, nextMonth).toDays();
-			long daysInPeriod = MomentHelper.computeDuration(current, monthEnd).toDays();
-
-			months += (double) daysInPeriod / (double) daysInMonth;
-
-			// Avanzamos al siguiente mes
-			current = monthEnd;
+		if (this.startMoment != null && this.endMoment != null) {
+			long days = (this.endMoment.getTime() - this.startMoment.getTime()) / (1000 * 60 * 60 * 24);
+			double months = days / 30.0;
+			return Math.round(months * 10.0) / 10.0; // redondeo a un decimal
 		}
-
-		// Redondeamos a un decimal
-		return Math.round(months * 10.0) / 10.0;
+		return 0.0;
 	}
 
-	// @Mandatory
-	// @ValidNumber(min = 0)
+
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
+	private Integer hours;
+
+
 	public Integer getHours() {
-
-		Integer result;
-
-		result = this.repository.sumHoursByReportId(this.getId());
-
-		return result == null ? 0 : result;
+		if (this.sections != null)
+			return this.sections.stream().mapToInt(AuditSection::getHours).sum();
+		return 0;
 	}
 
 	// Relationships ----------------------------------------------------------
@@ -133,6 +108,10 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Auditor auditor;
+	private Auditor						auditor;
+
+	@Valid
+	@OneToMany(mappedBy = "auditReport")
+	private Collection<AuditSection>	sections;
 
 }
