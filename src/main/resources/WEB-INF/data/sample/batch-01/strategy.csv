@@ -1,69 +1,71 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,key:fundraiser,draftMode
 # base entity
-strategy-00,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
+strategy-00,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
 # ticker - standard variations
-strategy-01,SA60-\wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-02,WG84-\wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-03,XE95-\wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-04,GN87-\wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-05,OF16-\wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-06,CQ16-\wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-07,TF20-\wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-08,IE97-\wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-09,OL88-\wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
+strategy-01,SA60-wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-02,WG84-wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-03,XE95-wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-04,GN87-wwwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-05,OF16-wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-06,CQ16-wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-07,TF20-wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-08,IE97-wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-09,OL88-wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
 # name - standard variations
-strategy-10,UQ51-\wwwwwww,L,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-11,UQ51-\wwwwwww,Lo,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-12,UQ51-\wwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-13,UQ51-\wwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-14,UQ51-\wwwwwww,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-15,UQ51-\wwwwwww,لوريم إيبسوم,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-16,UQ51-\wwwwwww,洛伦·伊普森,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-17,UQ51-\wwwwwww,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-18,UQ51-\wwwwwww,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-19,UQ51-\wwwwwww,'' or 'A' = 'A,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
+strategy-10,UQ51-wwwwwww,L,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-11,UQ51-wwwwwww,Lo,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-12,UQ51-wwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-13,UQ51-wwwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-14,UQ51-wwwwwwww,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-15,UQ51-wwwwwwww,لوريم إيبسوم,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-16,UQ51-wwwwwwww,洛伦·伊普森,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-17,UQ51-wwwwwww,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-18,UQ51-wwwwwww,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-19,UQ51-wwwwwww,'' or 'A' = 'A,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
 # description - standard variations
-strategy-20,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,L,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-21,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lo,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-22,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-23,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-24,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-25,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,لوريم إيبسوم,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-26,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,洛伦·伊普森,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-27,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-28,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-29,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,'' or 'A' = 'A,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
+strategy-20,UQ51-wwwwwww,Lorem ipsum dolor sit amet,L,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-21,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lo,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-22,UQ51-wwwwwww,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-23,UQ51-wwwwwww,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-24,UQ51-wwwwwww,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-25,UQ51-wwwwwww,Lorem ipsum dolor sit amet,لوريم إيبسوم,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-26,UQ51-wwwwwww,Lorem ipsum dolor sit amet,洛伦·伊普森,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-27,UQ51-wwwwwww,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-28,UQ51-wwwwwww,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-29,UQ51-wwwwwww,Lorem ipsum dolor sit amet,'' or 'A' = 'A,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
 # startMoment - standard variations
-strategy-30,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,08/01/2025 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-31,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,08/01/2025 0:01,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-32,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,31/12/2200 23:59,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-33,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2201 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,true
+strategy-30,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 00:01,2025/01/01 00:02,http://lorem.com/ipsum,fundraiser-00,true
+strategy-31,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 00:02,2025/01/01 00:03,http://lorem.com/ipsum,fundraiser-00,true
+strategy-32,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:58,2200/12/31 23:59,http://lorem.com/ipsum,fundraiser-00,true
+strategy-33,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/08/01 12:00,2100/12/31 12:01,http://lorem.com/ipsum,fundraiser-00,true
 # endMoment - standard variations
-strategy-34,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,08/01/2025 0:00,"http://lorem.com/ipsum",strategy-00,true
-strategy-35,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,08/01/2025 0:01,"http://lorem.com/ipsum",strategy-00,true
-strategy-36,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,31/12/2200 23:59,"http://lorem.com/ipsum",strategy-00,true
-strategy-37,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,01/01/2201 0:00,"http://lorem.com/ipsum",strategy-00,true
+strategy-34,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2200/12/31 23:58,http://lorem.com/ipsum,fundraiser-00,true
+strategy-35,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,fundraiser-00,true
+strategy-36,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2100/12/31 12:00,http://lorem.com/ipsum,fundraiser-00,true
+strategy-37,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:05,2025/08/31 00:10,http://lorem.com/ipsum,fundraiser-00,true
 # moreInfo - standard variations
-strategy-38,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://a.b",strategy-00,true
-strategy-39,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",strategy-00,true
-strategy-40,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",strategy-00,true
-strategy-41,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org",strategy-00,true
-strategy-42,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"https://www.lorem-ipsum.org",strategy-00,true
-strategy-43,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit.html",strategy-00,true
-strategy-44,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit.html#dolor",strategy-00,true
-strategy-45,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?a=1&b=2",strategy-00,true
-strategy-46,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?",strategy-00,true
-strategy-47,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?a",strategy-00,true
-strategy-48,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?a&b",strategy-00,true
-strategy-49,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/",strategy-00,true
-strategy-50,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/a",strategy-00,true
-strategy-51,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/a/b",strategy-00,true
-strategy-52,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/a/b?",strategy-00,true
-strategy-53,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"hhttp://example.org/a/b?a&b",strategy-00,true
-strategy-54,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://",strategy-00,true
-strategy-55,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"ftp://",strategy-00,true
-strategy-56,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://a",strategy-00,true
-strategy-57,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"ftp://a",strategy-00,true
-strategy-58,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",strategy-00,true
+strategy-38,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://a.b,fundraiser-00,true
+strategy-39,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",fundraiser-00,true
+strategy-40,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",fundraiser-00,true
+strategy-41,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org,fundraiser-00,true
+strategy-42,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,https://www.lorem-ipsum.org,fundraiser-00,true
+strategy-43,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html,fundraiser-00,true
+strategy-44,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,fundraiser-00,true
+strategy-45,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org?a=1&b=2,fundraiser-00,true
+strategy-46,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org?,fundraiser-00,true
+strategy-47,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org?a,fundraiser-00,true
+strategy-48,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org?a&b,fundraiser-00,true
+strategy-49,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org/,fundraiser-00,true
+strategy-50,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org/a,fundraiser-00,true
+strategy-51,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org/a/b,fundraiser-00,true
+strategy-52,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://example.org/a/b?,fundraiser-00,true
+strategy-53,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,hhttp://example.org/a/b?a&b,fundraiser-00,true
+strategy-54,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://,fundraiser-00,true
+strategy-55,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,ftp://,fundraiser-00,true
+strategy-56,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://a,fundraiser-00,true
+strategy-57,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,ftp://a,fundraiser-00,true
+strategy-58,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",fundraiser-00,true
 # draftMode - standard variations
-strategy-59,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",strategy-00,false
+strategy-59,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,false
+# relations
+strategy-60,UQ51-wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
