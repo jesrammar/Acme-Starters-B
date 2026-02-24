@@ -9,12 +9,14 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
+import org.hibernate.validator.constraints.Length;
+
 @Target({
-	ElementType.FIELD
+	ElementType.FIELD, ElementType.METHOD
 })
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = ValidHeaderValidator.class)
-
+@Constraint(validatedBy = {})
+@Length(min = 1, max = 75)
 public @interface ValidHeader {
 
 	String message() default "{acme.validation.header.message}";

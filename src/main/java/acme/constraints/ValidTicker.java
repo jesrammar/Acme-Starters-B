@@ -8,13 +8,14 @@ import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
+import javax.validation.constraints.Pattern;
 
 @Target({
-	ElementType.FIELD
+	ElementType.FIELD, ElementType.METHOD
 })
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = ValidTickerValidator.class)
-
+@Constraint(validatedBy = {})
+@Pattern(regexp = "^[A-Z]{2}[0-9]{2}-\\w{5,10}$")
 public @interface ValidTicker {
 
 	String message() default "{acme.validation.ticker.message}";
