@@ -1,0 +1,6 @@
+key,key:userAccount,address,im,gold
+# base entity
+sponsor-00,user-account-sponsor-00,123 Main Street,JohnDoeIM,true
+# address - standard variations
+sponsor-01,user-account-sponsor-01,L,UserIM_1,false
+sponsor-02,user-account-sponsor-02,Lo,UserIM_2,true

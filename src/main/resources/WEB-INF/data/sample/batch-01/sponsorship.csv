@@ -1,0 +1,7 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,key:sponsor,draftMode
+# base entity
+sponsorship-00,SP00-aaaaaaa,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2026/01/01 10:00,2026/01/03 10:00,"http://lorem.com/ipsum",sponsor-00,true
+# ticker - standard variations (formato único y patrones)
+sponsorship-01,SP01-bbbbbbb,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2026/01/01 10:00,2026/01/03 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-02,SP02-ccccccc,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2026/01/01 10:00,2026/01/03 10:00,"http://lorem.com/ipsum",sponsor-00,true
+sponsorship-03,SP03-ddddddd,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2026/01/01 10:00,2026/01/03 10:00,"http://lorem.com/ipsum",sponsor-00,true

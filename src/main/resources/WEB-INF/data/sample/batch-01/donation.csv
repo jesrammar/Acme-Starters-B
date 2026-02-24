@@ -1,0 +1,16 @@
+key,name,notes,money,kind,key:sponsorship
+# --- ENTIDADES BASE PARA SUMAR (Acumulado) ---
+donation-00,Soporte Inicial,Donación de arranque,100.00 EUR,ALTRUIST,sponsorship-00
+donation-01,Cuota Mensual Enero,Pago recurrente,50.00 EUR,ALTRUIST,sponsorship-00
+donation-02,Bonus Especial,Regalo por éxito de campaña,250.00 EUR,ALTRUIST,sponsorship-00
+donation-03,Donación Anónima,Sin notas del donante,25.50 EUR,ALTRUIST,sponsorship-00
+donation-04,Soporte Premium,Donación de gran cuantía,1000.00 EUR,ALTRUIST,sponsorship-00
+donation-05,Cuota Mensual Febrero,Pago recurrente,50.00 EUR,ALTRUIST,sponsorship-00
+donation-06,Microdonación,Aportación pequeña,5.25 EUR,ALTRUIST,sponsorship-00
+donation-07,Donación Evento,Recaudación gala benéfica,150.75 EUR,ALTRUIST,sponsorship-00
+donation-08,Soporte Corporate,Donación de empresa,500.00 EUR,ALTRUIST,sponsorship-00
+donation-09,Cierre Campaña,Último aporte,100.00 EUR,ALTRUIST,sponsorship-00
+
+# --- ENTIDADES PARA OTROS PATROCINIOS (Para probar filtros) ---
+donation-10,Otro Sponsor,Esta no debe sumarse al 00,10.00 EUR,ALTRUIST,sponsorship-01
+donation-11,Sponsor Secundario,Prueba de segregación,20.00 EUR,ALTRUIST,sponsorship-02

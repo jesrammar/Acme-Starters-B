@@ -1,3 +1,4 @@
+
 package acme.constraints;
 
 import java.lang.annotation.ElementType;
@@ -16,8 +17,7 @@ import javax.validation.Payload;
 
 public @interface ValidHeader {
 
-	String message() default "{acme.validation.valid-header}";
+	String message() default "{acme.validation.header.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
-
 }
