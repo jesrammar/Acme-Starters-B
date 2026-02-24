@@ -12,3 +12,4 @@ acme.validation.invention.parts.message = El invento debe contener al menos una 
 acme.validation.invention.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.invention.endMoment-NotFuture.message = La fecha de final debe estar en futuro
 acme.validation.invention.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
+acme.validation.strategy.invalidStrategy.message = La estrategia no es válida
