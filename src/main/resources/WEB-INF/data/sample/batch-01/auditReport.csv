@@ -1,69 +1,64 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,key:auditor,draftMode
 # base entity
-auditReport-00,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
+auditReport-00,QG14-kJqDXb,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
 # ticker - standard variations
-auditReport-01,SA60-\wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-02,WG84-\wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-03,XE95-\wwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-04,GN87-\wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-05,OF16-\wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-06,CQ16-\wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-07,TF20-\wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-08,IE97-\wwwwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-09,OL88-\wwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
+auditReport-01,SF17-H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-02,SF17-H5T1Jn,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-03,SF17-H5T1J6yZ9g,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-04,SF17-H5T1J6yZ,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-05,SA29-fvLPaYMq04,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-06,RS47-HGA5bhN0Sz,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-07,RW91-kyCTx38D,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-08,IQ52-NHGYS,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-09,TE88-gXuA8,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
 # name - standard variations
-auditReport-10,UQ51-\wwwwwww,L,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-11,UQ51-\wwwwwww,Lo,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-12,UQ51-\wwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-13,UQ51-\wwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-14,UQ51-\wwwwwww,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-15,UQ51-\wwwwwww,لوريم إيبسوم,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-16,UQ51-\wwwwwww,洛伦·伊普森,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-17,UQ51-\wwwwwww,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-18,UQ51-\wwwwwww,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-19,UQ51-\wwwwwww,'' or 'A' = 'A,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
+auditReport-10,YR14-d1AoI,L,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-11,JP54-5RnfgC,Lo,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-12,NP61-zzyY1uF,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-13,NP62-zzyY1uF,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-14,NP63-zzyY1uF,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-15,NP64-zyY1uF,لوريم إيبسوم,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-16,NP65-zzY1uF,洛伦·伊普森,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-17,NP66-zyY1uF,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-18,NP67-zzy1uF,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-19,NP68-zzyY1F,'' or 'A' = 'A,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
 # description - standard variations
-auditReport-20,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,L,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-21,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lo,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-22,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-23,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-24,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-25,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,لوريم إيبسوم,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-26,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,洛伦·伊普森,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-27,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-28,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-29,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,'' or 'A' = 'A,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
+auditReport-20,VA27-FoA8ivt,Lorem ipsum dolor sit amet,L,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-21,VA28-BFoA8ivt,Lorem ipsum dolor sit amet,Lo,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-22,VA29-BFoA8ivtE,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-23,VA30-BFoA8it,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-24,VA31-BFA8ivt,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-25,VA32-BFoA8ivt,Lorem ipsum dolor sit amet,لوريم إيبسوم,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-26,VA33-BFoA8ivt,Lorem ipsum dolor sit amet,洛伦·伊普森,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-27,VA34-BFoA8ivtB,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-28,VA35-BoA8ivt,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-29,VA36-BF8ivt,Lorem ipsum dolor sit amet,'' or 'A' = 'A,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
 # startMoment - standard variations
-auditReport-30,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,08/01/2025 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-31,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,08/01/2025 0:01,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-32,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,31/12/2200 23:59,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-33,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,01/01/2201 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,true
+auditReport-30,SX45-MO3fjh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/08 0:00,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-31,SX46-MO3jh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/08 0:01,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-32,SX47-MO3fh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:59,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-33,SX48-MO3fj2H5,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 0:00,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-01,true
 # endMoment - standard variations
-auditReport-34,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,08/01/2025 0:00,"http://lorem.com/ipsum",auditor-00,true
-auditReport-35,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,08/01/2025 0:01,"http://lorem.com/ipsum",auditor-00,true
-auditReport-36,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,31/12/2200 23:59,"http://lorem.com/ipsum",auditor-00,true
-auditReport-37,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,01/01/2201 0:00,"http://lorem.com/ipsum",auditor-00,true
+auditReport-34,IT96-xEhc5RG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2025/01/08 0:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-35,IT97-xEh5cRG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2025/01/08 0:01,"http://lorem.com/ipsum",auditor-01,true
+auditReport-36,IT98-xEhRG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2200/12/31 23:59,"http://lorem.com/ipsum",auditor-02,true
+auditReport-37,IT99-xEhcG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2201/01/01 0:00,"http://lorem.com/ipsum",auditor-02,true
 # moreInfo - standard variations
-auditReport-38,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://a.b",auditor-00,true
-auditReport-39,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",auditor-00,true
-auditReport-40,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",auditor-00,true
-auditReport-41,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org",auditor-00,true
-auditReport-42,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"https://www.lorem-ipsum.org",auditor-00,true
-auditReport-43,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit.html",auditor-00,true
-auditReport-44,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit.html#dolor",auditor-00,true
-auditReport-45,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?a=1&b=2",auditor-00,true
-auditReport-46,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?",auditor-00,true
-auditReport-47,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?a",auditor-00,true
-auditReport-48,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org?a&b",auditor-00,true
-auditReport-49,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/",auditor-00,true
-auditReport-50,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/a",auditor-00,true
-auditReport-51,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/a/b",auditor-00,true
-auditReport-52,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://example.org/a/b?",auditor-00,true
-auditReport-53,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"hhttp://example.org/a/b?a&b",auditor-00,true
-auditReport-54,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://",auditor-00,true
-auditReport-55,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"ftp://",auditor-00,true
-auditReport-56,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://a",auditor-00,true
-auditReport-57,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"ftp://a",auditor-00,true
-auditReport-58,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",auditor-00,true
+auditReport-38,XA51-AP3mO2s2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://a.b",auditor-02,true
+auditReport-39,XA52-AP3m7fO2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",auditor-01,true
+auditReport-40,XA53-AP3m4dO2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",auditor-01,true
+auditReport-41,XA54-AP3mO25ds,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org",auditor-01,true
+auditReport-42,XA55-AP3mO2w5s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"https://www.lorem-ipsum.org",auditor-02,true
+auditReport-43,XA56-AP3mtgs,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org/dolor/sit.html",auditor-02,true
+auditReport-44,XA57-AP3e5gs,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org/dolor/sit.html#dolor",auditor-02,true
+auditReport-45,XA58-AP3mO2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org?a=1&b=2",auditor-01,true
+auditReport-46,XA59-AP3mOtews,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org?",auditor-01,true
+auditReport-47,XA60-AP3mwgO2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org?a",auditor-01,true
+auditReport-48,XA61-AP3ms,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org?a&b",auditor-01,true
+auditReport-49,XA62-AP3mOt2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/",auditor-01,true
+auditReport-50,XA63-AP3mOe2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a",auditor-01,true
+auditReport-51,XA64-AP3mOd2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a/b",auditor-02,true
+auditReport-52,XA65-AP3mOV2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a/b?",auditor-02,true
+auditReport-53,XA66-AP3m1O2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"hhttp://example.org/a/b?a&b",auditor-01,true
 # draftMode - standard variations
-auditReport-59,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,02/07/2012 0:00,02/07/2012 0:00,"http://lorem.com/ipsum",auditor-00,false
+auditReport-59,IT58-xEh7cR4G,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,false

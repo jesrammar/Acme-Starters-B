@@ -1,0 +1,11 @@
+key,name,notes,hours,kind,key:auditReport
+# name - standard variations
+auditSection-27,"",Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+auditSection-28,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet,50,PRELIMINARY,auditReport-00
+# notes - standard variations
+auditSection-29,Lorem ipsum dolor sit amet,"",50,PRELIMINARY,auditReport-00
+auditSection-30,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",50,PRELIMINARY,auditReport-00
+# hours - standard variations
+auditSection-31,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,,PRELIMINARY,auditReport-00
+auditSection-32,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,-1,PRELIMINARY,auditReport-00
+auditSection-33,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,101,PRELIMINARY,auditReport-00
