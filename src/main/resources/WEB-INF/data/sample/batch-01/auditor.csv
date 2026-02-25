@@ -1,27 +1,4 @@
 key,firm,highlights,solicitor,key:userAccount
-# base entity
-auditor-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,true,user-account-auditor-00
-# firm - standard variations
-auditor-01,L,Lorem ipsum dolor sit amet,true,user-account-auditor-01
-auditor-02,Lo,Lorem ipsum dolor sit amet,true,user-account-auditor-02
-auditor-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",Lorem ipsum dolor sit amet,true,user-account-auditor-03
-auditor-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",Lorem ipsum dolor sit amet,true,user-account-auditor-04
-auditor-05,โลเร็ม อิปซัม,Lorem ipsum dolor sit amet,true,user-account-auditor-05
-auditor-06,لوريم إيبسوم,Lorem ipsum dolor sit amet,true,user-account-auditor-06
-auditor-07,洛伦·伊普森,Lorem ipsum dolor sit amet,true,user-account-auditor-07
-auditor-08,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,true,user-account-auditor-08
-auditor-09,<script>alert(‘Hacked!’);</script>,Lorem ipsum dolor sit amet,true,user-account-auditor-09
-auditor-10,'' or 'A' = 'A,Lorem ipsum dolor sit amet,true,user-account-auditor-10
-# highlights - standard variations
-auditor-10,Lorem ipsum dolor sit amet,L,true,user-account-auditor-11
-auditor-11,Lorem ipsum dolor sit amet,Lo,true,user-account-auditor-12
-auditor-12,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te",true,user-account-auditor-13
-auditor-13,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",true,user-account-auditor-14
-auditor-14,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,true,user-account-auditor-15
-auditor-15,Lorem ipsum dolor sit amet,لوريم إيبسوم,true,user-account-auditor-16
-auditor-16,Lorem ipsum dolor sit amet,洛伦·伊普森,true,user-account-auditor-17
-auditor-17,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,true,user-account-auditor-18
-auditor-18,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,true,user-account-auditor-19
-auditor-19,Lorem ipsum dolor sit amet,'' or 'A' = 'A,true,user-account-auditor-20
-# solicitor - standard variations
-auditor-20,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,false,user-account-auditor-21
+auditor-01,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,true,user-account-auditor-01
+auditor-02,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,true,user-account-auditor-02
+auditor-03,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,true,user-account-auditor-03
