@@ -36,13 +36,13 @@ auditReport-29,VA36-BF8ivt,Lorem ipsum dolor sit amet,'' or 'A' = 'A,2100/07/15 
 # startMoment - standard variations
 auditReport-30,SX45-MO3fjh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/08 0:00,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-01,true
 auditReport-31,SX46-MO3jh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/08 0:01,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-02,true
-auditReport-32,SX47-MO3fh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:59,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-02,true
-auditReport-33,SX48-MO3fj2H5,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 0:00,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-32,SX47-MO3fh2H,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:58,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-33,SX48-MO3fj2H5,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:59,2100/07/15 00:00,"http://lorem.com/ipsum",auditor-01,true
 # endMoment - standard variations
 auditReport-34,IT96-xEhc5RG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2025/01/08 0:00,"http://lorem.com/ipsum",auditor-01,true
 auditReport-35,IT97-xEh5cRG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2025/01/08 0:01,"http://lorem.com/ipsum",auditor-01,true
-auditReport-36,IT98-xEhRG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2200/12/31 23:59,"http://lorem.com/ipsum",auditor-02,true
-auditReport-37,IT99-xEhcG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2201/01/01 0:00,"http://lorem.com/ipsum",auditor-02,true
+auditReport-36,IT98-xEhRG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2200/12/31 23:58,"http://lorem.com/ipsum",auditor-02,true
+auditReport-37,IT99-xEhcG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2200/12/31 23:59,"http://lorem.com/ipsum",auditor-02,true
 # moreInfo - standard variations
 auditReport-38,XA51-AP3mO2s2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://a.b",auditor-02,true
 auditReport-39,XA52-AP3m7fO2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",auditor-01,true
@@ -59,6 +59,5 @@ auditReport-49,XA62-AP3mOt2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit am
 auditReport-50,XA63-AP3mOe2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a",auditor-01,true
 auditReport-51,XA64-AP3mOd2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a/b",auditor-02,true
 auditReport-52,XA65-AP3mOV2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a/b?",auditor-02,true
-auditReport-53,XA66-AP3m1O2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"hhttp://example.org/a/b?a&b",auditor-01,true
+auditReport-53,XA66-AP3m1O2s,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://example.org/a/b?a&b",auditor-01,true
 # draftMode - standard variations
-auditReport-59,IT58-xEh7cR4G,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,false
