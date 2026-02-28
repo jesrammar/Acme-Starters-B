@@ -25,15 +25,12 @@ tactic-19,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,50.0
 tactic-20,Lorem ipsum dolor sit amet,'' or 'A' = 'A,50.0,SUBTLE,strategy-00
 # expectedPercentage - standard variations
 tactic-21,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
-tactic-22,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,,SUBTLE,strategy-00
-tactic-23,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,-0.01,SUBTLE,strategy-00
 tactic-24,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,0.0,SUBTLE,strategy-00
 tactic-25,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,0.01,SUBTLE,strategy-00
 tactic-26,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,99.99,SUBTLE,strategy-00
 tactic-27,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,100.0,SUBTLE,strategy-00
-tactic-28,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,100.01,SUBTLE,strategy-00
 # kind - standard variations
+tactic-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
 tactic-29,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,AGGRESSIVE,strategy-00
 tactic-30,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,TENDER,strategy-00
-#relations
-tactic-31,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-01
+
