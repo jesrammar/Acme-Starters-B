@@ -11,3 +11,6 @@ user-account-auditor-03,true,"UserIdentity{name: 'Manu', surname: 'Sabido', emai
 user-account-inventor-01,true,"UserIdentity{name: 'John', surname: 'Doe', email: 'johndoe@acme.com'}",inventor01,inventor01
 user-account-inventor-02,true,"UserIdentity{name: 'Jane', surname: 'Doe', email: 'janedoe@acme.com'}",inventor02,inventor02
 user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Diaz', email: 'juandiaz@acme.com'}",inventor03,inventor03
+user-account-fundraiser-01,true,"UserIdentity{name: 'Miguel', surname: 'Lopez', email: 'miglop@acme.com'}",fundraiser01,fundraiser01
+user-account-fundraiser-02,true,"UserIdentity{name: 'Mike', surname: 'Smith', email: 'mikesmith@acme.com'}",fundraiser02,fundraiser02
+user-account-fundraiser-03,true,"UserIdentity{name: 'Michael', surname: 'Irving', email: 'michaelirv@acme.com'}",fundraiser03,fundraiser03
