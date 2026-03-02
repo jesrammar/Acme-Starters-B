@@ -1,7 +1,6 @@
 
 package acme.entities.strategies;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -16,10 +15,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
 import acme.constraints.ValidText;
@@ -62,42 +61,18 @@ public class Strategy extends AbstractEntity {
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
+	@Optional
 	@ValidUrl
 	@Column
 	private String				moreInfo;
 
-	// Derivadas ------------------------------------------------------------
+	// Atributos derivados: ------------------------------------------------------------
 
 
-	@Valid
 	@Transient
+	@Valid
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		Date current = this.startMoment;
-		double months = 0.0;
-
-		// Iteramos mes a mes hasta llegar a endMoment
-		while (MomentHelper.isBefore(current, this.endMoment)) {
-			// Avanzamos un mes
-			Date nextMonth = MomentHelper.deltaFromMoment(current, 1, ChronoUnit.MONTHS);
-
-			// Si nextMonth supera endMoment, usamos endMoment
-			Date monthEnd = MomentHelper.isBefore(nextMonth, this.endMoment) ? nextMonth : this.endMoment;
-
-			// Duración de este mes parcial
-			long daysInMonth = MomentHelper.computeDuration(current, nextMonth).toDays();
-			long daysInPeriod = MomentHelper.computeDuration(current, monthEnd).toDays();
-
-			months += (double) daysInPeriod / (double) daysInMonth;
-
-			// Avanzamos al siguiente mes
-			current = monthEnd;
-		}
-
-		// Redondeamos a un decimal
-		return Math.round(months * 10.0) / 10.0;
+		return 0.0;
 	}
 
 
@@ -107,7 +82,6 @@ public class Strategy extends AbstractEntity {
 
 
 	@Transient
-	//@ValidScore
 	public Double getExpectedPercentage() {
 		Double res;
 		Double repo = this.repository.getExpectedPercentage(this.getId());
@@ -116,8 +90,9 @@ public class Strategy extends AbstractEntity {
 		return res;
 	}
 
+	// Relaciones: ---------------------------------------------------------------------
 
-	// ---------------------------------------------------------------------
+
 	@Mandatory
 	@Column
 	@Valid

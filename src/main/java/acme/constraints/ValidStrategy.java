@@ -14,7 +14,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = StrategyValidator.class)
 public @interface ValidStrategy {
 
-	String message() default "Invalid Strategy";
+	String message() default "acme.validation.strategy.invalidStrategy.message";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 }
