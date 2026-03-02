@@ -1,4 +1,0 @@
-key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
-s2-campaign-01,AA00-ABCDE,"Launch Teaser","Initial teaser campaign for product line",2026/04/01 10:00,2026/06/01 10:00,https://example.com/teaser,true,s2-spokesperson-01
-s2-campaign-02,BB11-ABCDEF,"Engagement Drive","Increase engagement across channels",2026/05/10 09:00,2026/08/10 18:00,https://example.com/engage,false,s2-spokesperson-02
-s2-campaign-03,CC22-ABCDEFG,"Summer Offers","Seasonal promotion campaign",2026/06/01 09:00,2026/09/01 09:00,,false,s2-spokesperson-03

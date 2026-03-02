@@ -1,0 +1,35 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,key:auditor,draftMode
+# ticker - standard variations
+auditReport-00,sf17-H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-01,S17-H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-02,SFF17-H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-03,SF1-H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-04,SFAB-H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-05,SF17H5T1J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-06,SF17-H5T1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-07,SF17-H5T1J6yZ912,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-08,SF17-H5T1J$,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-09,"SF17-H5T1 J",Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-10,SF17-H5T1-J,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+# name - standard variations
+auditReport-11,SF17-H5T1Jd1,"",Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-12,SF17-H5T1J1g,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+# description - standard variations
+auditReport-13,SF17-H5T1Jw,Lorem ipsum dolor sit amet,"",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-14,SF17-H5T1J,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-02,true
+# startMoment - standard variations
+auditReport-15,SF17-H5T1Jd1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/07 23:59,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-16,SF17-H5T1Jd1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 0:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-17,SF17-H5T1Jd1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 0:01,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,true
+# endMoment - standard variations
+auditReport-18,SF17-H5T1Jd1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2025/01/07 23:59,"http://lorem.com/ipsum",auditor-01,true
+auditReport-19,SF17-H5T1Jd1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2201/01/01 0:00,"http://lorem.com/ipsum",auditor-01,true
+auditReport-20,SF17-H5T1Jd1,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2201/01/01 0:01,"http://lorem.com/ipsum",auditor-01,true
+# moreInfo - standard variations
+auditReport-21,SF17-H5T1Jww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://",auditor-02,true
+auditReport-22,SF17-H5T1Jrww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"ftp://",auditor-01,true
+auditReport-23,SF17-H5T1Ja,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://a",auditor-01,true
+auditReport-24,SF17-H5T1r,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"ftp://a",auditor-01,true
+auditReport-25,SF17-H5T1Je,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",auditor-01,true
+# draft - standard variations
+auditReport-26,SF17-H5T1Je,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",auditor-01,false

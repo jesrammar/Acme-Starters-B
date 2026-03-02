@@ -1,0 +1,38 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,key:fundraiser,draftMode
+# ticker - errata variations
+strategy-00,,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-01,bO46-up1AO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-02,bb46-up1AO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-03,BOO46-up1AO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-04,BO4-up1AO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-05,BO466-up1AO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-06,BO46up1AO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-07,BO46-up1AOPIJK53E4WTGRFDG,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-08,BO46-up1AO$,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-09,BO46-up1AO XA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+strategy-10,BO46-up1AO-XA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-00,true
+# name - errata variations
+strategy-11,QA53-JawvlESI0V,,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+strategy-12,CN00-1EBmwqjCu,"",Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-02,true
+strategy-13,FS25-hz3Yt9,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+# description - errata variations,"","","","","","",""
+strategy-14,YN70-aQ_7O4ugF,Lorem ipsum dolor sit amet,,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+strategy-15,MF13-ckhaa,Lorem ipsum dolor sit amet,"",2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-02,true
+strategy-16,OI96-JqYbcZuC,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+# startMoment - errata variations
+strategy-17,NE74-j4I5g,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"",2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+strategy-18,FE94-Yj2sTzV_K,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2024/31/12 23:59,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-02,true
+strategy-19,FZ49-JhI3ufS,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 00:01,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+# endMoment - errata variations
+strategy-20,PK23-GOp8pF,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,"",http://lorem.com/ipsum,fundraiser-01,true
+strategy-21,RR52-V9Vtq,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2024/31/12 23:59,http://lorem.com/ipsum,fundraiser-02,true
+strategy-22,ZG03-8k_BV,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2201/01/01 00:01,http://lorem.com/ipsum,fundraiser-01,true
+# moreInfo - errata variations
+strategy-23,TT66-j7yQLLX,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://,fundraiser-01,true
+strategy-24,IP74-UuJUn,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,ftp://,fundraiser-02,true
+strategy-25,HL13-8UGoaTz9mD,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://a,fundraiser-01,true
+strategy-26,BK19-CV7lhzbFMw,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,ftp://a,fundraiser-02,true
+strategy-27,MT62-KzzkPvkCft,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",fundraiser-01,true
+# draftMode - errata variations
+strategy-28,PM73-nNimAH9gu,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-02,
+strategy-29,RG77-I_OGtb1p7,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,fundraiser-01,LADSLKJDASLJKADLJKASDLJK
