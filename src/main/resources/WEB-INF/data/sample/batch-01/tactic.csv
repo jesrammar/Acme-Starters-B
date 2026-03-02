@@ -1,6 +1,6 @@
 key,name,notes,expectedPercentage,kind,key:strategy
 # base entity
-tactic-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
+tactic-40,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
 # name - standard variations
 tactic-01,L,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
 tactic-02,Lo,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
@@ -30,7 +30,7 @@ tactic-25,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,0.01,SUBTLE,stra
 tactic-26,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,99.99,SUBTLE,strategy-00
 tactic-27,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,100.0,SUBTLE,strategy-00
 # kind - standard variations
-tactic-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-00
 tactic-29,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,AGGRESSIVE,strategy-00
 tactic-30,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,TENDER,strategy-00
-
+#relations
+tactic-31,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.0,SUBTLE,strategy-01
