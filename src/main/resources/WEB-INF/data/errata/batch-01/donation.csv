@@ -7,8 +7,11 @@ donation-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: ei
 donation-00,Lorem ipsum dolor sit amet,,EUR 50.0,ALTRUIST,sponsorship-00
 donation-00,Lorem ipsum dolor sit amet,"",EUR 50.0,ALTRUIST,sponsorship-00
 donation-00,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",EUR 50.0,ALTRUIST,sponsorship-00
-# expectedPercentage - errata variations
+# money - errata variations
 donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,,ALTRUIST,sponsorship-00
-donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,-0.01,ALTRUIST,sponsorship-00
-donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,100.01,ALTRUIST,sponsorship-00
-donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50.00004444,ALTRUIST,sponsorship-00
+donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,EUR -0.01,ALTRUIST,sponsorship-00
+donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,EUR 1000000.01,ALTRUIST,sponsorship-00
+donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,EUR 50.00004444,ALTRUIST,sponsorship-00
+# kind - errata variations
+donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,,,sponsorship-00
+donation-00,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,-0.01,Lorem ipsum dolor sit amet,sponsorship-00

@@ -11,6 +11,6 @@ user-account-auditor-03,true,"UserIdentity{name: 'Manu', surname: 'Sabido', emai
 user-account-inventor-01,true,"UserIdentity{name: 'John', surname: 'Doe', email: 'johndoe@acme.com'}",inventor01,inventor01
 user-account-inventor-02,true,"UserIdentity{name: 'Jane', surname: 'Doe', email: 'janedoe@acme.com'}",inventor02,inventor02
 user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Diaz', email: 'juandiaz@acme.com'}",inventor03,inventor03
-user-account-sponsor-00,true,"UserIdentity{name: 'Sponsor00', surname: 'Sponsor', email: 'sponsor00@acme.com'}",sponsor00,sponsor00
 user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor01', surname: 'Sponsor', email: 'sponsor01@acme.com'}",sponsor01,sponsor01
 user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor02', surname: 'Sponsor', email: 'sponsor02@acme.com'}",sponsor02,sponsor02
+user-account-sponsor-03,true,"UserIdentity{name: 'Sponsor03', surname: 'Sponsor', email: 'sponsor03@acme.com'}",sponsor03,sponsor03

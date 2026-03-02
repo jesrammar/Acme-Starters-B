@@ -2,54 +2,54 @@ key,ticker,name,description,startMoment,endMoment,moreInfo,key:sponsor,draftMode
 # base entity
 sponsorship-00,UQ51-\wwwwwww,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/02 00:00,2025/01/03 00:00,http://lorem.com/ipsum,sponsor-01,true
 # ticker - standard variations
-sponsorship-02,AA00-00000,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-03,AA00-aaaab,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
-sponsorship-04,ZZ99-zzzzzzzzzy,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-05,ZZ99-zzzzzzzzzz,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-01,AA00-00000,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-02,AA00-aaaab,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-03,ZZ99-zzzzzzzzzy,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-04,ZZ99-zzzzzzzzzz,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
 # name - standard variations
-sponsorship-06,LZ58-BJ99rmj,L,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-07,KA74-JmK1BI,Lo,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
-sponsorship-08,QE31-Pskwy,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-09,QV78-XUcSApH0A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
-sponsorship-10,MU37-8brZApKVGS,โลเร็ม อิปซัม,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-11,OD08-UlY_QUd,لوريم إيبسوم,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
-sponsorship-12,BA19-S0jl79gnz,洛伦·伊普森,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-13,MJ97-26I3nI,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
-sponsorship-14,JC56-o24wpgl5k5,<script>alert(‘Hacked!’);</script>,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
-sponsorship-15,JC02-MUpdBdM,' or 'A' = 'A,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-05,LZ58-BJ99rmj,L,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-06,KA74-JmK1BI,Lo,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-07,QE31-Pskwy,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-08,QV78-XUcSApH0A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-09,MU37-8brZApKVGS,โลเร็ม อิปซัม,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-10,OD08-UlY_QUd,لوريم إيبسوم,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-11,BA19-S0jl79gnz,洛伦·伊普森,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-12,MJ97-26I3nI,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
+sponsorship-13,JC56-o24wpgl5k5,<script>alert(‘Hacked!’);</script>,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-02,true
+sponsorship-14,JC02-MUpdBdM,' or 'A' = 'A,"Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",sponsor-01,true
 # description - standard variations
-sponsorship-20,UQ51-aaaaaam,Lorem ipsum dolor sit amet,L,2025/01/22 00:00,2025/01/23 00:00,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-21,UQ51-aaaaaan,Lorem ipsum dolor sit amet,Lo,2025/01/23 00:00,2025/01/24 00:00,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-22,UQ51-aaaaaao,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",2025/01/24 00:00,2025/01/25 00:00,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-23,UQ51-aaaaaap,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2025/01/25 00:00,2025/01/26 00:00,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-24,UQ51-aaaaaaq,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,2025/01/26 00:00,2025/01/27 00:00,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-25,UQ51-aaaaaar,Lorem ipsum dolor sit amet,لوريم إيبسوم,2025/01/27 00:00,2025/01/28 00:00,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-26,UQ51-aaaaaas,Lorem ipsum dolor sit amet,洛伦·伊普森,2025/01/28 00:00,2025/01/29 00:00,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-27,UQ51-aaaaaat,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,2025/01/29 00:00,2025/01/30 00:00,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-28,UQ51-aaaaaau,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,2025/01/30 00:00,2025/01/31 00:00,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-29,UQ51-aaaaaav,Lorem ipsum dolor sit amet,'' or 'A' = 'A,2025/01/31 00:00,2025/02/01 00:00,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-15,UQ51-aaaaaam,Lorem ipsum dolor sit amet,L,2025/01/22 00:00,2025/01/23 00:00,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-16,UQ51-aaaaaan,Lorem ipsum dolor sit amet,Lo,2025/01/23 00:00,2025/01/24 00:00,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-17,UQ51-aaaaaao,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ",2025/01/24 00:00,2025/01/25 00:00,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-18,UQ51-aaaaaap,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2025/01/25 00:00,2025/01/26 00:00,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-19,UQ51-aaaaaaq,Lorem ipsum dolor sit amet,โลเร็ม อิปซัม,2025/01/26 00:00,2025/01/27 00:00,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-20,UQ51-aaaaaar,Lorem ipsum dolor sit amet,لوريم إيبسوم,2025/01/27 00:00,2025/01/28 00:00,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-21,UQ51-aaaaaas,Lorem ipsum dolor sit amet,洛伦·伊普森,2025/01/28 00:00,2025/01/29 00:00,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-22,UQ51-aaaaaat,Lorem ipsum dolor sit amet,<marquee>Hacked</marquee>,2025/01/29 00:00,2025/01/30 00:00,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-23,UQ51-aaaaaau,Lorem ipsum dolor sit amet,<script>alert(‘Hacked!’);</script>,2025/01/30 00:00,2025/01/31 00:00,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-24,UQ51-aaaaaav,Lorem ipsum dolor sit amet,'' or 'A' = 'A,2025/01/31 00:00,2025/02/01 00:00,http://lorem.com/ipsum,sponsor-01,true
 # startMoment - standard variations
-sponsorship-30,EW80-GdSRP4BoO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 00:01,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-31,OW13-bDfBqJ0,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 00:02,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-32,FT69-H6vGex,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/09 12:33,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-33,OD27-MK0J9AN,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:59,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-34,AI60-hAFmeA501z,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-25,EW80-GdSRP4BoO,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 00:01,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-26,OW13-bDfBqJ0,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 00:02,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-27,FT69-H6vGex,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/08/09 12:33,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-28,OD27-MK0J9AN,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:59,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-29,AI60-hAFmeA501z,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2201/01/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
 # endMoment - standard variations
-sponsorship-35,AO30-zCX9LD,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/01/01 00:01,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-36,WT87-4R_th,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/01/01 00:02,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-37,JX90-B3VLJ6JHPj,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/09 12:33,http://lorem.com/ipsum,sponsor-01,true
-sponsorship-38,EN29-PtFMMJ,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-39,RH31-YKwPK,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2201/01/01 00:00,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-30,AO30-zCX9LD,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/01/01 00:01,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-31,WT87-4R_th,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/01/01 00:02,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-32,JX90-B3VLJ6JHPj,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/09 12:33,http://lorem.com/ipsum,sponsor-01,true
+sponsorship-33,EN29-PtFMMJ,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-34,RH31-YKwPK,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2201/01/01 00:00,http://lorem.com/ipsum,sponsor-01,true
 # moreInfo - standard variations
-sponsorship-40,PQ99-4TgBD,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
-sponsorship-41,NP60-J52SbrCkv,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://a.b,sponsor-01,true
-sponsorship-42,QV75-CugzPr2,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",sponsor-02,true
-sponsorship-43,DY91-Z1X3VAJhrM,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",sponsor-01,true
-sponsorship-44,DM21-NwTqe5b,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org,sponsor-02,true
-sponsorship-45,VF11-kF9DZB6F,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,https://www.lorem-ipsum.org,sponsor-01,true
-sponsorship-46,PQ70-sJKX_9P,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html,sponsor-02,true
-sponsorship-47,ZX56-uekgb06,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,sponsor-01,true
-sponsorship-48,OP84-koXma6,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org?a=1&b=2,sponsor-02,true
-sponsorship-49,XA91-vbfPOmt,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org?,sponsor-01,true
-sponsorship-50,MI65-KONhF1b,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org?a&b,sponsor-02,true
-sponsorship-51,RH57-F4eOvgrHr,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org/a/b?a&b,sponsor-01,true
+sponsorship-35,PQ99-4TgBD,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://lorem.com/ipsum,sponsor-02,true
+sponsorship-36,NP60-J52SbrCkv,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://a.b,sponsor-01,true
+sponsorship-37,QV75-CugzPr2,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",sponsor-02,true
+sponsorship-38,DY91-Z1X3VAJhrM,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",sponsor-01,true
+sponsorship-39,DM21-NwTqe5b,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org,sponsor-02,true
+sponsorship-40,VF11-kF9DZB6F,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,https://www.lorem-ipsum.org,sponsor-01,true
+sponsorship-41,PQ70-sJKX_9P,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html,sponsor-02,true
+sponsorship-42,ZX56-uekgb06,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,sponsor-01,true
+sponsorship-43,OP84-koXma6,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org?a=1&b=2,sponsor-02,true
+sponsorship-44,XA91-vbfPOmt,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org?,sponsor-01,true
+sponsorship-45,MI65-KONhF1b,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org?a&b,sponsor-02,true
+sponsorship-46,RH57-F4eOvgrHr,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/03/01 00:00,2025/08/01 00:01,http://example.org/a/b?a&b,sponsor-01,true
