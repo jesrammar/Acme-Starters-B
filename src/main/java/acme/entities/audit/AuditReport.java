@@ -1,7 +1,6 @@
 
 package acme.entities.audit;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,7 +18,6 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidAuditReport;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
@@ -57,12 +55,12 @@ public class AuditReport extends AbstractEntity {
 	private String					description;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date					startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date					endMoment;
 
@@ -87,32 +85,7 @@ public class AuditReport extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		Date current = this.startMoment;
-		double months = 0.0;
-
-		// Iteramos mes a mes hasta llegar a endMoment
-		while (MomentHelper.isBefore(current, this.endMoment)) {
-			// Avanzamos un mes
-			Date nextMonth = MomentHelper.deltaFromMoment(current, 1, ChronoUnit.MONTHS);
-
-			// Si nextMonth supera endMoment, usamos endMoment
-			Date monthEnd = MomentHelper.isBefore(nextMonth, this.endMoment) ? nextMonth : this.endMoment;
-
-			// Duración de este mes parcial
-			long daysInMonth = MomentHelper.computeDuration(current, nextMonth).toDays();
-			long daysInPeriod = MomentHelper.computeDuration(current, monthEnd).toDays();
-
-			months += (double) daysInPeriod / (double) daysInMonth;
-
-			// Avanzamos al siguiente mes
-			current = monthEnd;
-		}
-
-		// Redondeamos a un decimal
-		return Math.round(months * 10.0) / 10.0;
+		return 0.0;
 	}
 
 	// @Mandatory
