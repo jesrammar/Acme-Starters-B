@@ -3,14 +3,13 @@ package acme.entities.sponsorships;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.ValidMoney;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import lombok.Getter;
@@ -34,11 +33,12 @@ public class Donation extends AbstractEntity {
 	private String				notes;
 
 	@Mandatory
+	@ValidMoney
 	@Column
 	private Money				money;
 
 	@Mandatory
-	@Enumerated(EnumType.STRING)
+	@Valid
 	@Column
 	private DonationKind		kind;
 
