@@ -1,5 +1,5 @@
 
-package acme.features.auditreport;
+package acme.features.auditor.auditSection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -8,7 +8,7 @@ import acme.client.repositories.AbstractRepository;
 import acme.entities.audit.AuditReport;
 
 @Repository
-public interface AuditReportRepository extends AbstractRepository {
+public interface AuditSectionRepository extends AbstractRepository {
 
 	@Query("select ar from AuditReport ar where ar.id = :id")
 	AuditReport findAuditReportById(int id);

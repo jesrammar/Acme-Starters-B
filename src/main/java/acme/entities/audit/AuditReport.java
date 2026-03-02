@@ -22,7 +22,7 @@ import acme.constraints.ValidAuditReport;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
-import acme.features.auditreport.AuditReportRepository;
+import acme.features.auditor.auditReport.AuditReportRepository;
 import acme.realms.Auditor;
 import lombok.Getter;
 import lombok.Setter;
