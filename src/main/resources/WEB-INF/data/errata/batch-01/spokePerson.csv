@@ -1,0 +1,21 @@
+# key,key:userAccount,cv,achievements,licensed
+key,key:userAccount,cv,achievements,licensed
+
+# standard variations
+spokesperson-err-01,user-account-consumer-01,"Lorem ipsum","Lorem ipsum",true
+
+# cv - errata variations
+spokesperson-err-02,user-account-consumer-01,,"Lorem ipsum",true
+spokesperson-err-03,user-account-consumer-01," ","Lorem ipsum",true
+spokesperson-err-04,user-account-consumer-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX","Lorem ipsum",true
+
+# achievements - errata variations
+spokesperson-err-05,user-account-consumer-01,"Lorem ipsum",,true
+spokesperson-err-06,user-account-consumer-01,"Lorem ipsum"," ",true
+spokesperson-err-07,user-account-consumer-01,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX",true
+
+# licensed - errata variations
+spokesperson-err-08,user-account-consumer-01,"Lorem ipsum","Lorem ipsum",
+
+# key:userAccount - errata variations
+spokesperson-err-09,user-account-not-found,"Lorem ipsum","Lorem ipsum",true
