@@ -1,0 +1,7 @@
+key,bank,statement,agent,key:userAccount
+# bank - errata variations
+fundraiser-00,"",Lorem ipsum dolor sit amet,true,user-account-fundraiser-01
+fundraiser-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet,true,user-account-fundraiser-01
+# statement- errata variations
+fundraiser-02,Lorem ipsum dolor sit amet,"",true,user-account-fundraiser-02
+fundraiser-03,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor imm",true,user-account-fundraiser-02
