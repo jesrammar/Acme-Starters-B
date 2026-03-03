@@ -5,22 +5,14 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.client.repositories.AbstractRepository;
-import acme.entities.audit.AuditReport;
+import acme.entities.audit.AuditSection;
 
 @Repository
 public interface AuditSectionRepository extends AbstractRepository {
 
-	@Query("select ar from AuditReport ar where ar.id = :id")
-	AuditReport findAuditReportById(int id);
+	@Query("select s from AuditSection s where s.id = :id")
+	AuditSection findAuditSectionById(int id);
 
-	@Query("select ar from AuditReport ar where ar.auditor.userAccount.id = :userAccountId")
-	Iterable<AuditReport> findAuditReportsByAuditorId(int userAccountId);
-
-	// Contar secciones de un report
-	@Query("select count(s) from AuditSection s where s.auditReport.id = :reportId")
-	long countSectionsByReportId(int reportId);
-
-	// Sumar horas de todas las secciones
-	@Query("select sum(s.hours) from AuditSection s where s.auditReport.id = :reportId")
-	Integer sumHoursByReportId(int reportId);
+	@Query("select s from AuditSection s where s.auditReport.id = :reportId")
+	Iterable<AuditSection> findSectionsByReportId(int reportId);
 }

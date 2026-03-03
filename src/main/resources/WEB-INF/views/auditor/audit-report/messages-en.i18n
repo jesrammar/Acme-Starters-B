@@ -10,7 +10,7 @@ auditor.audit-report.form.label.description = Description:
 auditor.audit-report.form.label.startMoment = Start Date:
 auditor.audit-report.form.label.endMoment = End Date:
 auditor.audit-report.form.label.moreInfo = More info:
-auditor.audit-report.form.label.draftMode = Draft Mode:
+auditor.audit-report.form.label.draftMode = Draft Mode
 
 # Form buttons
 auditor.audit-report.form.button.sections = Sections

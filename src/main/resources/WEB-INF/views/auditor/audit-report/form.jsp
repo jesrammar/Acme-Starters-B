@@ -13,6 +13,6 @@
     <acme:form-url code="auditor.audit-report.form.label.moreInfo" path="moreInfo"/>
     <acme:form-checkbox code="auditor.audit-report.form.label.draftMode" path="draftMode"/>
     <acme:button code="auditor.audit-report.form.button.sections"
-                 action="/auditor/audit-section/list?audit-reportId=${id}"/>
+                 action="/auditor/audit-section/list?auditReportId=${id}"/>
 
 </acme:form>

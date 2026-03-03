@@ -11,7 +11,7 @@ auditor.audit-report.form.label.description = Descripción:
 auditor.audit-report.form.label.startMoment = Fecha de inicio:
 auditor.audit-report.form.label.endMoment = Fecha de fin:
 auditor.audit-report.form.label.moreInfo = Más información:
-auditor.audit-report.form.label.draftMode = Modo borrador:
+auditor.audit-report.form.label.draftMode = Modo borrador
 
 # Botones del formulario
 auditor.audit-report.form.button.sections = Secciones
