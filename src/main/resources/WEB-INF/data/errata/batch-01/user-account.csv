@@ -14,3 +14,6 @@ user-account-sponsor-03,true,"UserIdentity{name: '', surname: 'Sponsor', email: 
 user-account-fundraiser-01,true,"UserIdentity{name: '', surname: 'Lopez', email: 'miglop@acme.com'}",fundraiser01,fundraiser01
 user-account-fundraiser-02,true,"UserIdentity{name: '', surname: 'Smith', email: 'mikesmith@acme.com'}",fundraiser02,fundraiser02
 user-account-fundraiser-03,true,"UserIdentity{name: '', surname: 'Irving', email: 'michaelirv@acme.com'}",fundraiser03,fundraiser03
+user-account-inventor-01,false,"UserIdentity{name: '', surname: '', email: ''}","inventor01","inventor01"
+user-account-inventor-02,false,"UserIdentity{name: '', surname: ''}","inventor02","inventor02"
+user-account-inventor-03,false,"UserIdentity{name: '', surname: '', email: '', phone: null}","inventor03","inventor03"
