@@ -4,7 +4,7 @@ invention-01,GL00-y8QljBIi,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit a
 # Ticker - Standard @Column(unique = true) variations
 # Note: 0 < 1 < ... < 9 < A < B < ... < Z < _ < a < b < ... < z
 invention-02,AA00-00000,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",inventor-02,true
-invention-03,AA00-aaaab,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",inventor-01,true
+invention-03,AA00-00001,"LLorem ipsum dolor sit amet","LLorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",inventor-01,true
 invention-04,ZZ99-zzzzzzzzzy,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",inventor-02,true
 invention-05,ZZ99-zzzzzzzzzz,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",2100/07/15 00:00,2100/07/16 00:00,"http://lorem.com/ipsum",inventor-01,true
 # Name - Standard @ValidHeader variations
