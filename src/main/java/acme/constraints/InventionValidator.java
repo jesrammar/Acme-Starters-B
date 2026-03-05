@@ -49,7 +49,7 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 
 				hasInventionAtLeastOnePart = this.repository.countPartsByInventionId(invention.getId()) >= 1;
 
-				super.state(context, hasInventionAtLeastOnePart, "*", "acme.validation.invention.parts.message");
+				super.state(context, hasInventionAtLeastOnePart, "invention", "acme.validation.invention.parts.message");
 			}
 			// Check dates are future
 			{
