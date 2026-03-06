@@ -27,7 +27,7 @@ auditSection-20,Lorem ipsum dolor sit amet,'' or 'A' = 'A,50,PRELIMINARY,auditRe
 auditSection-21,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,0,PRELIMINARY,auditReport-01
 auditSection-22,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,1,PRELIMINARY,auditReport-00
 auditSection-23,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,100,PRELIMINARY,auditReport-01
-auditSection-24,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,99,PRELIMINARY,auditReport-00
+auditSection-24,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,99,PRELIMINARY,auditReport-64
 # kind - standard variations
 auditSection-25,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50,EVALUATION,auditReport-01
 auditSection-26,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,50,CONCLUSION,auditReport-00

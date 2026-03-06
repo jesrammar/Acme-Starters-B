@@ -1,0 +1,27 @@
+# messages-en.i18n
+# Titles
+auditor.audit-report.form.title = Audit Report Form
+auditor.audit-report.list.title = Listing of Audit Reports
+
+# Form labels
+auditor.audit-report.form.label.ticker = Ticker:
+auditor.audit-report.form.label.name = Name:
+auditor.audit-report.form.label.description = Description:
+auditor.audit-report.form.label.startMoment = Start Date:
+auditor.audit-report.form.label.endMoment = End Date:
+auditor.audit-report.form.label.moreInfo = More info:
+auditor.audit-report.form.label.draftMode = Draft Mode
+
+# Form buttons
+auditor.audit-report.form.button.sections = Sections
+
+# List labels
+auditor.audit-report.list.label.ticker = Ticker
+auditor.audit-report.list.label.name = Name
+auditor.audit-report.list.label.draftMode = Draft
+auditor.audit-report.list.label.startMoment = Start Date
+auditor.audit-report.list.label.endMoment = End Date
+auditor.audit-report.list.label.sectionCount = Sections
+auditor.audit-report.list.label.hours = Hours
+auditor.audit-report.list.label.description = Description
+auditor.audit-report.list.label.moreInfo = More info

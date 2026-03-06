@@ -8,5 +8,6 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+- 26.3.0	05/03/2026: Updated to the new version of Acme Framework.
 - 26.2.0	12/02/2026: Updated to the new version of Acme Framework.
 - 26.1.0	03/12/2026: Repository initialised to the new version of the Acme Framework.  
