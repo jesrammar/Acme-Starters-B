@@ -1,5 +1,5 @@
 
-package acme.features.strategies;
+package acme.features.fundraiser.strategy;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
