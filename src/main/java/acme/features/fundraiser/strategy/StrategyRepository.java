@@ -11,7 +11,7 @@ import acme.entities.strategies.Strategy;
 public interface StrategyRepository extends AbstractRepository {
 
 	//Calculo del expectedPercentage
-	@Query("select sum(T.expectedPercentage) from Tactic T where T.strategy.id = strategyId ")
+	@Query("select sum(T.expectedPercentage) from Tactic T where T.strategy.id = ?1 ")
 	Double getExpectedPercentage(int strategyId);
 
 	//Obtener una strategy mediante su ID
@@ -23,6 +23,6 @@ public interface StrategyRepository extends AbstractRepository {
 	Iterable<Strategy> findStrategyByFundraiserId(int userAccountId);
 
 	// Contar tactics de una strategy
-	@Query("select count(s) from Tactic t where t.strategy.id = :strategyId")
+	@Query("select count(t) from Tactic t where t.strategy.id = ?1")
 	long countTacticsByStrategyId(int strategyId);
 }

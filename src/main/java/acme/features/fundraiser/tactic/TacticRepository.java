@@ -13,7 +13,7 @@ public interface TacticRepository extends AbstractRepository {
 	@Query("select t from Tactic t where t.id = :tacticId")
 	Tactic findTacticById(int tacticId);
 
-	@Query("select t from Tactic t where t.strategy.id = :strategyId")
+	@Query("select t from Tactic t where t.strategy.id = ?1")
 	Iterable<Tactic> findTacticsByStrategyId(int strategyId);
 
 }
