@@ -32,7 +32,7 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 			return true;
 
 		// Validate if it's going to be published
-		else if (Boolean.FALSE.equals(invention.getDraftMode())) {
+		if (Boolean.FALSE.equals(invention.getDraftMode())) {
 			// Check duplicated invention with equal ticker
 			{
 				boolean uniqueInvention;

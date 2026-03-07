@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.helpers.MomentHelper;
 import acme.entities.audit.AuditReport;
-import acme.features.auditreport.AuditReportRepository;
+import acme.features.auditor.auditReport.AuditReportRepository;
 
 public class AuditReportValidator implements ConstraintValidator<ValidAuditReport, AuditReport> {
 
