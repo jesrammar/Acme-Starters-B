@@ -1,6 +1,8 @@
 key,title,achievements,effort,kind,key:campaign
 milestone-published-01,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
 milestone-published-02,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-02
+milestone-published-03,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",25.00,ENGAGING,campaign-published-03
+milestone-published-04,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",35.00,CONVERSION,campaign-published-04
 milestone-title-base,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
 milestone-title-case-01,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
 milestone-title-case-02,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01

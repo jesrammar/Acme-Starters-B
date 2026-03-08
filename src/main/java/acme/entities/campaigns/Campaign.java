@@ -20,6 +20,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidCampaignPublishable;
@@ -52,12 +53,12 @@ public class Campaign extends AbstractEntity {
 	private String description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date endMoment;
 
@@ -83,39 +84,25 @@ public class Campaign extends AbstractEntity {
 	private CampaignRepository repository;
 
 	
-	// Mandatory
-	// ValidNumber(min = 0.0)
+	@Mandatory
+	@ValidNumber(min = 0.0)
 	@Transient
 	public Double getMonthsActive() {
-//		if (this.startMoment == null || this.endMoment == null || MomentHelper.isAfter(this.startMoment, this.endMoment)) {
-//			return 0.0;
-//		}
-//
-//		ZoneId zoneId = ZoneId.systemDefault();
-//		LocalDate startDate = this.startMoment.toInstant().atZone(zoneId).toLocalDate();
-//		LocalDate endDate = this.endMoment.toInstant().atZone(zoneId).toLocalDate();
-//
-//		if (endDate.isBefore(startDate)) {
-//			return 0.0;
-//		}
-//
-//		LocalDate cursor = startDate;
-//		int fullMonths = 0;
-//		while (!cursor.plusMonths(1).isAfter(endDate)) {
-//			cursor = cursor.plusMonths(1);
-//			fullMonths++;
-//		}
-//
-//		long remainingDays = ChronoUnit.DAYS.between(cursor, endDate);
-//		int monthLength = Math.max(1, cursor.lengthOfMonth());
-//		double fraction = remainingDays / (double) monthLength;
-//		double months = fullMonths + fraction;
+		if (this.startMoment == null || this.endMoment == null || !MomentHelper.isAfter(this.endMoment, this.startMoment))
+			return 0.0;
 
-		return 0.0;
-	}
 	
-	// Mandatory
-	// ValidNumber(min = 0.0)
+		double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+	
+		double rounded = Math.round(months * 10.0) / 10.0;
+
+		return Math.max(0.0, rounded);
+	}
+
+	
+	@Mandatory
+	@ValidNumber(min = 0.0)
 	@Transient
 	private Double getEffort() {
 		Double wrapper = this.repository.computeCampaignEffort(this.getId());

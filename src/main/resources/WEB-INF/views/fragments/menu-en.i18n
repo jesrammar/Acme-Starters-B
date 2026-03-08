@@ -10,6 +10,11 @@
 
 # master.menu.anonymous #######################################################
 
+master.menu.any = Any
+master.menu.any.campaign-list = Published campaigns
+
+# master.menu.anonymous #######################################################
+
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 
