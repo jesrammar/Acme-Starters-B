@@ -14,7 +14,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = AuditReportValidator.class)
 public @interface ValidAuditReport {
 
-	String message() default "Invalid AuditReport";
+	String message() default "{acme.validation.auditReport.invalidAuditReport.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 }

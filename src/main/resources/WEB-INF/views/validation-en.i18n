@@ -14,3 +14,4 @@ acme.validation.invention.endMoment-NotFuture.message = The end moment must be i
 acme.validation.invention.startMoment-PostEndMoment.message = The start moment must be before the end moment
 acme.validation.strategy.invalidStrategy.message = The strategy isn't a valid strategy
 acme.validation.sponsorship.invalidSponsorship.message = The sponsorship isn't a valid sponsorship
+acme.validation.auditReport.invalidAuditReport.message = The audit report isn't a valid audit report
