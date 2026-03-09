@@ -25,33 +25,40 @@ public class AuditReportValidator implements ConstraintValidator<ValidAuditRepor
 		boolean valid = true;
 		context.disableDefaultConstraintViolation();
 
-		// Solo validar si se publica
+		// Ticker único (SIEMPRE)
+		if (this.repository.existsAuditReportWithTicker(report.getTicker(), report.getId())) {
+			context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.duplicatedTicker.message}").addPropertyNode("ticker").addConstraintViolation();
+			valid = false;
+		}
+
+		// Validaciones al publicar
 		if (Boolean.FALSE.equals(report.getDraftMode())) {
 
-			// 1️: Debe tener al menos una sección
+			// Debe tener al menos una sección
 			if (report.getId() != 0) {
 				long count = this.repository.countSectionsByReportId(report.getId());
 
 				if (count == 0) {
-					context.buildConstraintViolationWithTemplate("Audit report must have at least one section").addPropertyNode("draftMode").addConstraintViolation();
+					context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.must-have-section.message}").addPropertyNode("draftMode").addConstraintViolation();
 					valid = false;
 				}
 			}
 
-			// 2️: Fechas futuras
+			// startMoment debe ser futuro
 			if (!MomentHelper.isFuture(report.getStartMoment())) {
-				context.buildConstraintViolationWithTemplate("startMoment must be in the future").addPropertyNode("startMoment").addConstraintViolation();
+				context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.startMoment-NotFuture.message}").addPropertyNode("startMoment").addConstraintViolation();
 				valid = false;
 			}
 
+			// endMoment debe ser futuro
 			if (!MomentHelper.isFuture(report.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("endMoment must be in the future").addPropertyNode("endMoment").addConstraintViolation();
+				context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.endMoment-NotFuture.message}").addPropertyNode("endMoment").addConstraintViolation();
 				valid = false;
 			}
 
-			// 3️: start < end
+			// Intervalo válido
 			if (!MomentHelper.isBefore(report.getStartMoment(), report.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("startMoment must be before endMoment").addPropertyNode("startMoment").addConstraintViolation();
+				context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.startMoment-PostEndMoment.message}").addPropertyNode("startMoment").addConstraintViolation();
 				valid = false;
 			}
 		}

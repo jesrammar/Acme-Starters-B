@@ -23,4 +23,8 @@ public interface AuditReportRepository extends AbstractRepository {
 	// Sumar horas de todas las secciones
 	@Query("select sum(s.hours) from AuditSection s where s.auditReport.id = :reportId")
 	Integer sumHoursByReportId(int reportId);
+
+	// Para comprobar que existe un auditReport con ese ticker
+	@Query("select count(ar) > 0 from AuditReport ar where ar.ticker = :ticker and ar.id != :id")
+	boolean existsAuditReportWithTicker(String ticker, int id);
 }
