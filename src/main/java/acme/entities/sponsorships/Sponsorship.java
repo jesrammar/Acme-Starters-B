@@ -18,6 +18,7 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
@@ -117,7 +118,7 @@ public class Sponsorship extends AbstractEntity {
 	}
 
 	@Mandatory
-	// @ValidMoney o @ValidMoney(max = 1000000000.0)
+	@ValidMoney
 	@Transient
 	public Money getTotalMoney() {
 		Double wrapper = this.repository.sumTotalMoneyBySponsorshipId(this.getId());

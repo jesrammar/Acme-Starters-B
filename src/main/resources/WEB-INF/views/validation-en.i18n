@@ -13,5 +13,13 @@ acme.validation.invention.startMoment-NotFuture.message = The start moment must 
 acme.validation.invention.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.invention.startMoment-PostEndMoment.message = The start moment must be before the end moment
 acme.validation.strategy.invalidStrategy.message = The strategy isn't a valid strategy
+
+# Sponsorship messages
+
 acme.validation.sponsorship.invalidSponsorship.message = The sponsorship isn't a valid sponsorship
+acme.validation.sponsorship.duplicated-ticker.message = Already exists an sponsorship with the same ticker
+acme.validation.sponsorship.donations.message = Sponsorship must have at least one donation in order to be published
+acme.validation.sponsorship.startMoment-NotFuture.message = The start moment must be in the future
+acme.validation.sponsorship.endMoment-NotFuture.message = The end moment must be in the future
+acme.validation.sponsorship.startMoment-PostEndMoment.message = The start moment must be before the end moment
 acme.validation.auditReport.invalidAuditReport.message = The audit report isn't a valid audit report

@@ -13,4 +13,13 @@ acme.validation.invention.startMoment-NotFuture.message = La fecha de inicio deb
 acme.validation.invention.endMoment-NotFuture.message = La fecha de final debe estar en futuro
 acme.validation.invention.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
 acme.validation.strategy.invalidStrategy.message = La estrategia no es válida
+
+# Mensajes de Sponsorship
+
+acme.validation.sponsorship.invalidSponsorship.message = El patrocinio no es válido
+acme.validation.sponsorship.duplicated-ticker.message = Ya existe un patrocinio con el mismo ticker
+acme.validation.sponsorship.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
+acme.validation.sponsorship.endMoment-NotFuture.message = La fecha de final debe estar en futuro
+acme.validation.sponsorship.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
+acme.validation.sponsorship.donations.message = El patrocinio debe contener al menos una donación para poder ser publicado
 acme.validation.auditReport.invalidAuditReport.message = El audit report no es válido
