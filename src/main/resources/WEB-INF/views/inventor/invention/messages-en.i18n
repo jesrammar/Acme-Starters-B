@@ -1,0 +1,15 @@
+# Titles
+inventor.invention.list.title = Listing of Inventions
+
+# List labels
+inventor.invention.list.label.ticker = Ticker
+inventor.invention.list.label.name = Name
+inventor.invention.list.label.description = Description
+inventor.invention.list.label.startMoment = Start Moment
+inventor.invention.list.label.endMoment = End Moment
+inventor.invention.list.label.moreInfo = More Info
+inventor.invention.list.label.draftMode = Draft Mode
+inventor.invention.list.label.monthsActive = Months Active
+inventor.invention.list.label.cost = Cost
+ 
+
