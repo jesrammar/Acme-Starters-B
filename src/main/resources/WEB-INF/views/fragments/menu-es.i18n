@@ -45,7 +45,7 @@ master.menu.user-account.provider-profile = Perfil de proveedor
 master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.consumer-profile = Perfil de consumidor
 
-# master.menu.any #############################################################
-master.menu.any = General
-master.menu.any.campaign-list = Campanas publicadas
+# master.menu.spokesperson ####################################################
+master.menu.spokesperson = Portavoz
+master.menu.spokesperson.campaign-list = Campanas
 
