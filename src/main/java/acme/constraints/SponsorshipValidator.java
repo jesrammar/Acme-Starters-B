@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.helpers.MomentHelper;
 import acme.entities.sponsorships.Sponsorship;
-import acme.features.sponsorships.SponsorshipRepository;
+import acme.features.sponsorships.sponsorship.SponsorshipRepository;
 
 public class SponsorshipValidator implements ConstraintValidator<ValidSponsorship, Sponsorship> {
 
@@ -45,7 +45,6 @@ public class SponsorshipValidator implements ConstraintValidator<ValidSponsorshi
 				valid = false;
 			}
 
-			// 3️: start < end
 			if (!MomentHelper.isBefore(sponsorship.getStartMoment(), sponsorship.getEndMoment())) {
 				context.buildConstraintViolationWithTemplate("startMoment must be before endMoment").addPropertyNode("startMoment").addConstraintViolation();
 				valid = false;
