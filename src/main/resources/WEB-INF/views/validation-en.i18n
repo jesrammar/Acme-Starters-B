@@ -22,4 +22,10 @@ acme.validation.sponsorship.donations.message = Sponsorship must have at least o
 acme.validation.sponsorship.startMoment-NotFuture.message = The start moment must be in the future
 acme.validation.sponsorship.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.sponsorship.startMoment-PostEndMoment.message = The start moment must be before the end moment
+
 acme.validation.auditReport.invalidAuditReport.message = The audit report isn't a valid audit report
+acme.validation.auditReport.duplicatedTicker.message = An audit report with the same ticker already exists
+acme.validation.auditReport.must-have-section.message = The audit report must have at least one section before being published
+acme.validation.auditReport.startMoment-NotFuture.message = The start moment must be in the future
+acme.validation.auditReport.endMoment-NotFuture.message = The end moment must be in the future
+acme.validation.auditReport.startMoment-PostEndMoment.message = The start moment must be earlier than the end moment
