@@ -19,5 +19,5 @@ campaign-err-17,IJ17-X0217,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur 
 campaign-err-18,IK18-X0218,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,htp://example.org,true,spokesperson-err-01
 campaign-err-19,IL19-X0219,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://exa mple.org,true,spokesperson-err-01
 campaign-err-20,IM20-X0220,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,,spokesperson-err-01
-campaign-err-21,IN21-X0221,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-not-found
+campaign-err-21,IN21-X0221,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,
 campaign-err-22,IO22-X0222,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/02/08 00:00,http://lorem.com/ipsum,false,spokesperson-err-01
