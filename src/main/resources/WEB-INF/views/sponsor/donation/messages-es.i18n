@@ -10,6 +10,12 @@ sponsor.donation.form.label.notes = Notas:
 sponsor.donation.form.label.money = Dinero:
 sponsor.donation.form.label.kind = Tipo de Donación:
 
+# Botones del formulario
+
+sponsor.donation.form.button.create = Crear	
+sponsor.donation.form.button.update = Actualizar
+sponsor.donation.form.button.delete = Borrar
+
 # Etiquetas de la lista
 sponsor.donation.list.label.title = Nombre
 sponsor.donation.list.label.notes = Notas

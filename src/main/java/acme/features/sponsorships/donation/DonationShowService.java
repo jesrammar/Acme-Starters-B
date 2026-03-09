@@ -5,8 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
+import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Donation;
+import acme.entities.sponsorships.DonationKind;
 import acme.realms.Sponsor;
 
 @Service
@@ -32,7 +34,11 @@ public class DonationShowService extends AbstractService<Sponsor, Donation> {
 
 	@Override
 	public void unbind() {
+		SelectChoices choices;
+		choices = SelectChoices.from(DonationKind.class, this.donation.getKind());
 		Tuple tuple = super.unbindObject(this.donation, "name", "notes", "money", "kind");
 		tuple.put("sponsorshipId", this.donation.getSponsorship().getId());
+		tuple.put("draftMode", this.donation.getSponsorship().getDraftMode());
+		tuple.put("kinds", choices);
 	}
 }
