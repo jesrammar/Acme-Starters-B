@@ -25,4 +25,7 @@ public interface StrategyRepository extends AbstractRepository {
 	// Contar tactics de una strategy
 	@Query("select count(t) from Tactic t where t.strategy.id = ?1")
 	long countTacticsByStrategyId(int strategyId);
+
+	@Query("select count(str) > 0 from Strategy ar where str.ticker = :ticker and str.id != :id")
+	boolean existsStrategyWithTicker(String ticker, int id);
 }
