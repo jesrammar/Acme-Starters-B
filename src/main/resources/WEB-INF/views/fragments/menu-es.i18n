@@ -13,6 +13,10 @@
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
+# master.menu.any #######################################################
+
+master.menu.any = Cualquiera
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -30,6 +34,11 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+
+
+# master.menu.any.auditor ##########################################################
+
+master.menu.any.audit-report-list = Informes de Auditoría
 
 # master.menu.auditor ##########################################################
 
