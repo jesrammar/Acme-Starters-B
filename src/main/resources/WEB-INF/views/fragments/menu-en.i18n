@@ -13,6 +13,11 @@
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 
+# master.menu.spokesperson #######################################################
+
+master.menu.any = Spokesperson
+master.menu.any.campaign-list = Published campaigns
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
@@ -40,6 +45,16 @@ master.menu.auditor.audit-report-list = Audit Reports
 
 master.menu.spokesperson = Spokesperson
 master.menu.spokesperson.campaign-list = Campaigns
+
+# master.menu.sponsor ##########################################################
+
+master.menu.sponsor = Sponsor
+master.menu.sponsor.sponsorship-list = Sponsorships
+
+# master.menu.fundraiser ##########################################################
+
+master.menu.fundraiser = Fundraiser
+master.menu.fundraiser.strategies-list = Strategies
 
 # master.menu.user-account ####################################################
 

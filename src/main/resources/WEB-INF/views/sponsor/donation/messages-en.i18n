@@ -1,0 +1,17 @@
+# messages-en.i18n
+
+# Titles
+sponsor.donation.form.title = Donation Form
+sponsor.donation.list.title = Listing of Donations
+
+# Form labels
+sponsor.donation.form.label.title = Name:
+sponsor.donation.form.label.notes = Notes:
+sponsor.donation.form.label.money = Money:
+sponsor.donation.form.label.kind = Donation Kind:
+
+# List labels
+sponsor.donation.list.label.title = Name
+sponsor.donation.list.label.notes = Notes
+sponsor.donation.list.label.money = Money
+sponsor.donation.list.label.kind = Donation Kind
