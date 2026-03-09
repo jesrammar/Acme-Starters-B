@@ -25,4 +25,9 @@ public interface StrategyRepository extends AbstractRepository {
 	// Contar tactics de una strategy
 	@Query("select count(t) from Tactic t where t.strategy.id = ?1")
 	long countTacticsByStrategyId(int strategyId);
+
+	//Obtener las strategies con draftMode = false (para el menú any)
+
+	@Query("select str from Strategy str where str.draftMode = false")
+	Iterable<Strategy> findPublishedStrategies();
 }
