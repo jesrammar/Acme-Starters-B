@@ -36,6 +36,11 @@ master.menu.consumer.favourite-link = Favourite link
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report-list = Audit Reports
 
+# master.menu.sponsor ##########################################################
+
+master.menu.sponsor = Sponsor
+master.menu.sponsor.sponsorship-list = Sponsorships
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account

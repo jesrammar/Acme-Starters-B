@@ -14,7 +14,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = SponsorshipValidator.class)
 public @interface ValidSponsorship {
 
-	String message() default "Invalid Sponsorship";
+	String message() default "{acme.validation.sponsorship.invalidSponsorship.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 
