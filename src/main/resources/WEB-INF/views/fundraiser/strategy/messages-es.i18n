@@ -1,0 +1,28 @@
+# messages-en.i18n
+# Titles
+
+fundraiser.strategy.form.title = Formulario de estrategias
+fundraiser.strategy.list.title = Listado de estrategias
+
+# Form labels
+fundraiser.strategy.form.label.ticker = Código:
+fundraiser.strategy.form.label.name = Nombre:
+fundraiser.strategy.form.label.description = Descripción:
+fundraiser.strategy.form.label.startMoment = Fecha de inicio:
+fundraiser.strategy.form.label.endMoment = Fecha de fin:
+fundraiser.strategy.form.label.moreInfo = Más información:
+fundraiser.strategy.form.label.draftMode = Borrador:
+
+# Form buttons
+fundraiser.strategy.fom.label.tactics = Tácticas
+
+# List labels
+fundraiser.strategy.list.label.ticker = Código
+fundraiser.strategy.list.label.name = Nombre
+fundraiser.strategy.list.label.draftMode = Borrador
+fundraiser.strategy.list.label.startMoment = Fecha de inicio
+fundraiser.strategy.list.label.endMoment = Fecha de fin
+fundraiser.strategy.list.label.tacticCount= Tácticas
+fundraiser.strategy.list.label.expectedPercentage = Porcentaje esperado
+fundraiser.strategy.list.label.description = Descripción
+fundraiser.strategy.list.label.moreInfo = Más información

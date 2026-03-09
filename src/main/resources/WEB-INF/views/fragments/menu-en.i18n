@@ -46,6 +46,12 @@ master.menu.auditor.audit-report-list = Audit Reports
 master.menu.sponsor = Sponsor
 master.menu.sponsor.sponsorship-list = Sponsorships
 
+
+# master.menu.fundraiser ##########################################################
+
+master.menu.fundraiser = Fundraiser
+master.menu.fundraiser.strategies-list = Strategies
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
