@@ -13,6 +13,10 @@
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
+# master.menu.any #######################################################
+
+master.menu.any = Cualquiera
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -31,10 +35,20 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
+
+# master.menu.any.auditor ##########################################################
+
+master.menu.any.audit-report-list = Informes de Auditoría
+
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report-list = Informes de Auditoría
+
+# master.menu.fundraiser ##########################################################
+
+master.menu.fundraiser = Recaudador de fondos
+master.menu.fundraiser.strategies-list = Estrategias
 
 # master.menu.sponsor ##########################################################
 
@@ -49,3 +63,10 @@ master.menu.user-account.become-provider = Hacerse proveedor
 master.menu.user-account.provider-profile = Perfil de proveedor
 master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.consumer-profile = Perfil de consumidor
+
+master.menu.user-account.become-auditor = Adquirir rol Auditor
+master.menu.user-account.auditor-profile = Perfil de Auditor
+
+# master.menu.spokesperson ####################################################
+master.menu.spokesperson = Portavoz
+master.menu.spokesperson.campaign-list = Campañas

@@ -1,0 +1,17 @@
+# messages-en.i18n
+# Titles
+
+fundraiser.tactic.form.title = Tatic form
+fundraiser.tactic.list.title = Listing of tactics
+
+# Form labels
+fundraiser.tactic.form.label.name = Name:
+fundraiser.tactic.form.label.notes = Notes:
+fundraiser.tactic.form.label.expectedPercentage = Expected percentage:
+fundraiser.tactic.form.label.kind= Tactic type:
+
+# List labels
+fundraiser.tactic.list.label.name = Name
+fundraiser.tactic.list.label.notes = Notes
+fundraiser.tactic.list.label.expectedPercentage = Expected percentage
+fundraiser.tactic.list.label.kind = Tactic type

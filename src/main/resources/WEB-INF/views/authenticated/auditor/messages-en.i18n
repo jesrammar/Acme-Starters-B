@@ -1,0 +1,11 @@
+# Page titles
+authenticated.auditor.form.title= Auditor Form
+
+# Labels form
+authenticated.auditor.form.label.firm=Firm
+authenticated.auditor.form.label.highlights=Highlights
+authenticated.auditor.form.label.solicitor=Solicitor
+
+# Buttons form
+authenticated.auditor.form.button.create=Create Auditor
+authenticated.auditor.form.button.update=Update Auditor

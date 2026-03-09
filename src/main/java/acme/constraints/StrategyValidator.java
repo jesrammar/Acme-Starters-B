@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.helpers.MomentHelper;
 import acme.entities.strategies.Strategy;
-import acme.features.strategies.StrategyRepository;
+import acme.features.fundraiser.strategy.StrategyRepository;
 
 public class StrategyValidator implements ConstraintValidator<ValidStrategy, Strategy> {
 

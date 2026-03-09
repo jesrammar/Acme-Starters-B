@@ -1,6 +1,8 @@
 
 package acme.features.sponsorships.donation;
 
+import java.util.Collection;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -14,9 +16,9 @@ public interface DonationRepository extends AbstractRepository {
 	@Query("select i from Donation i where i.id = :id")
 	Donation findDonationById(int id);
 
+	@Query("select i from Donation i where i.sponsorship.id = :sponsorshipId")
+	Collection<Donation> findDonationsBySponsorshipId(int sponsorshipId);
+
 	@Query("select i from Sponsorship i where i.id = :id")
 	Sponsorship findSponsorshipById(int id);
-
-	@Query("select i from Donation i where i.sponsorship.id = :sponsorshipId")
-	Iterable<Donation> findDonationsBySponsorshipId(int sponsorshipId);
 }

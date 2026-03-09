@@ -2,8 +2,6 @@ package acme.entities.campaigns;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
@@ -19,6 +17,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Milestone extends AbstractEntity {
+	
+	private static final long		serialVersionUID	= 1L;
 
 
 	@Mandatory
