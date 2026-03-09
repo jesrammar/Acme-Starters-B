@@ -42,7 +42,6 @@
 		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
 			<acme:menu-suboption code="master.menu.spokesperson.campaign-list" action="/any/campaign/list"/>
 		</acme:menu-option>
-	</acme:menu-left>
 
 		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
 		    <acme:menu-suboption code="master.menu.auditor.audit-report-list" action="/auditor/audit-report/list"/>
