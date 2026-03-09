@@ -20,7 +20,6 @@ public class InventionController extends AbstractController<Inventor, Invention>
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("list", InventionListService.class);
-		//		super.addBasicCommand("show", AuthenticatedInventionShowService.class);
 	}
 
 }

@@ -12,6 +12,4 @@
 	<acme:list-column code="inventor.invention.list.label.endMoment" path="endMoment"/>
 	<acme:list-column code="inventor.invention.list.label.moreInfo" path="moreInfo"/>
 	<acme:list-column code="inventor.invention.list.label.draftMode" path="draftMode"/>	
-	<acme:list-column code="inventor.invention.list.label.monthsActive" path="monthsActive"/>
-	<acme:list-column code="inventor.invention.list.label.cost	" path="cost"/>
 </acme:list>
