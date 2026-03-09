@@ -1,9 +1,9 @@
-key,firm,highlights,solicitor,key:userAccount
-# firm - standard variations
-sponsor-01,Lorem ipsum dolor sit amet,,true,user-account-sponsor-01
-sponsor-02,Lorem ipsum dolor sit amet,"",true,user-account-sponsor-02
+key,address,im,gold,key:userAccount
+# address - standard variations
+sponsor-01,,Lorem ipsum dolor sit amet,true,user-account-sponsor-01
+sponsor-02,"",Lorem ipsum dolor sit amet,true,user-account-sponsor-02
 sponsor-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet,true,user-account-sponsor-01
-# highlights - standard variations
-sponsor-01,Lorem ipsum dolor sit amet,,true,user-account-sponsor-02
-sponsor-02,Lorem ipsum dolor sit amet,"",true,user-account-sponsor-01
-sponsor-03,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",true,user-account-sponsor-02
+# im - standard variations
+sponsor-04,Lorem ipsum dolor sit amet,,true,user-account-sponsor-02
+sponsor-05,Lorem ipsum dolor sit amet,"",true,user-account-sponsor-01
+sponsor-06,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",true,user-account-sponsor-02

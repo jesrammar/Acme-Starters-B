@@ -1,5 +1,5 @@
 key,key:userAccount,address,im,gold
 # base entity
-sponsor-01,user-account-sponsor-00,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",true
-sponsor-02,user-account-sponsor-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",true
-sponsor-03,user-account-sponsor-02,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",true
+sponsor-01,user-account-sponsor-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",true
+sponsor-02,user-account-sponsor-02,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",true
+sponsor-03,user-account-sponsor-03,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",true

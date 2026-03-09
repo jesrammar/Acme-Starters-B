@@ -18,6 +18,10 @@
 
 <acme:menu-bar>
 	<acme:menu-left>
+		<acme:menu-option code="master.menu.any">
+			<acme:menu-suboption code="master.menu.any.campaign-list" action="/any/campaign/list"/>
+		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
@@ -43,8 +47,12 @@
 		    <acme:menu-suboption code="master.menu.auditor.audit-report-list" action="/auditor/audit-report/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
+    <acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
 		    <acme:menu-suboption code="master.menu.fundraiser.strategies-list" action="/fundraiser/strategy/list"/>
+		</acme:menu-option>
+    
+		<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
+		    <acme:menu-suboption code="master.menu.sponsor.sponsorship-list" action="/sponsor/sponsorship/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
