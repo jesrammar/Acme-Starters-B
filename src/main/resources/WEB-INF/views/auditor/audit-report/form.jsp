@@ -16,7 +16,8 @@
     
     <jstl:if test="${draftMode}">
     	<acme:submit code="auditor.audit-report.form.button.update" action="/auditor/audit-report/update"/>
+    	<acme:submit code="auditor.audit-report.form.button.delete" action="/auditor/audit-report/delete"/>
+    	
 	</jstl:if>
-
 	
 </acme:form>

@@ -24,14 +24,13 @@ public class AuditReportUpdateService extends AbstractService<Auditor, AuditRepo
 	@Override
 	public void load() {
 		int id = super.getRequest().getData("id", int.class);
-		this.auditReport = this.repository.findAuditReportById(id);
+		int auditorId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.auditReport = this.repository.findOneByIdAndAuditorId(id, auditorId);
 	}
 
 	@Override
 	public void authorise() {
-		boolean status;
-		int principalId = super.getRequest().getPrincipal().getAccountId();
-		status = this.auditReport != null && this.auditReport.getAuditor().getUserAccount().getId() == principalId;
+		boolean status = this.auditReport != null && this.auditReport.getDraftMode();
 		super.setAuthorised(status);
 	}
 

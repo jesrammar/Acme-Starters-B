@@ -15,6 +15,7 @@ auditor.audit-report.form.label.draftMode = Draft Mode
 # Form buttons
 auditor.audit-report.form.button.sections = Sections
 auditor.audit-report.form.button.update = Update audit report
+auditor.audit-report.form.button.delete=Delete
 
 # List labels
 auditor.audit-report.list.label.ticker = Ticker
