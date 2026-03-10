@@ -15,6 +15,7 @@ any.audit-report.form.label.draftMode = Modo borrador
 
 # Botones del formulario
 any.audit-report.form.button.sections = Secciones
+any.audit-report.form.button.auditor-profile=Ver perfil del auditor
 
 # Etiquetas de la lista
 any.audit-report.list.label.ticker = Código
