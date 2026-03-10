@@ -13,6 +13,9 @@ public interface SponsorshipRepository extends AbstractRepository {
 	@Query("select i from Sponsorship i where i.id = :id")
 	Sponsorship findSponsorshipById(int id);
 
+	@Query("select i from Sponsorship i where i.ticker = :ticker")
+	Sponsorship findSponsorshipByTicker(String ticker);
+
 	@Query("select i from Sponsorship i where i.sponsor.userAccount.id = :userAccountId")
 	Iterable<Sponsorship> findSponsorshipsBySponsorId(int userAccountId);
 

@@ -1,16 +1,46 @@
 # validation-es.i18n
 
-acme.validation.campaign.must-have-milestone.message = La campaña debe tener al menos un hito para publicarse
-acme.validation.campaign.moments.invalid-interval.message = El momento de inicio debe ser anterior al de fin
-acme.validation.campaign.moments.must-be-future.message = El momento debe ser futuro para publicar la campaña
 acme.validation.safeText.message = No se permite HTML/script
 acme.validation.header.message = Debe tener entre 1 y 75 caracteres
 acme.validation.text.message = Debe tener entre 1 y 255 caracteres
 acme.validation.ticker.message = La referencia solo puede contener letras, digitos, subrayados y guiones
+
+# Mensajes de Invention
+
 acme.validation.invention.duplicated-ticker.message = Ya existe un invento con el mismo ticker
 acme.validation.invention.parts.message = El invento debe contener al menos una parte para poder ser publicado
 acme.validation.invention.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.invention.endMoment-NotFuture.message = La fecha de final debe estar en futuro
 acme.validation.invention.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
-acme.validation.strategy.invalidStrategy.message = La estrategia no es válida
+
+# Mensajes de Sponsorship
+
+acme.validation.sponsorship.invalidSponsorship.message = El patrocinio no es válido
+acme.validation.sponsorship.duplicated-ticker.message = Ya existe un patrocinio con el mismo ticker
+acme.validation.sponsorship.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
+acme.validation.sponsorship.endMoment-NotFuture.message = La fecha de final debe estar en futuro
+acme.validation.sponsorship.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
+acme.validation.sponsorship.donations.message = El patrocinio debe contener al menos una donación para poder ser publicado
+
+# Mensajes de AuditReport
+
 acme.validation.auditReport.invalidAuditReport.message = El audit report no es válido
+acme.validation.auditReport.duplicatedTicker.message = Ya existe un audit report con el mismo ticker
+acme.validation.auditReport.must-have-section.message = El audit report debe tener al menos una sección para poder publicarse
+acme.validation.auditReport.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
+acme.validation.auditReport.endMoment-NotFuture.message = La fecha de final debe estar en futuro
+acme.validation.auditReport.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
+
+# Mensajes de Strategy
+
+acme.validation.strategy.invalidStrategy.message = La estrategia no es válida
+acme.validation.strategy.duplicatedTicker.message= Ya existe una estrategia con el mismo código
+acme.validation.strategy.must-have-tactic.message= Las estrategias deben de tener al menos una táctica
+acme.validation.strategy.startMoment-PostEndMoment.message = La fecha de inicio no puede ser posterior a la de fin
+
+# Mensajes de Campaign
+
+acme.validation.campaign.must-have-milestone.message = La campaña debe tener al menos un hito para publicarse
+acme.validation.campaign.moments.invalid-interval.message = El momento de inicio debe ser anterior al de fin
+acme.validation.campaign.moments.must-be-future.message = El momento debe ser futuro para publicar la campaña
+

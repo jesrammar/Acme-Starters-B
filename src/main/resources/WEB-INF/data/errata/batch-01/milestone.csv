@@ -1,4 +1,3 @@
-# key,title,achievements,effort,kind,key:campaign
 key,title,achievements,effort,kind,key:campaign
 
 # standard variations
@@ -17,11 +16,11 @@ milestone-err-06,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipisci
 milestone-err-07,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",0.00,TEASER,campaign-err-01
 milestone-err-08,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",-0.01,TEASER,campaign-err-01
 milestone-err-09,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",0.009,TEASER,campaign-err-01
-milestone-err-10,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",abc,TEASER,campaign-err-01
+milestone-err-10,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",1.234,TEASER,campaign-err-01
 
 # kind - errata variations
 milestone-err-11,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,,campaign-err-01
-milestone-err-12,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,INVALID,campaign-err-01
+milestone-err-12,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,
 
 # key:campaign - errata variations
-milestone-err-13,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-not-found
+milestone-err-13,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,

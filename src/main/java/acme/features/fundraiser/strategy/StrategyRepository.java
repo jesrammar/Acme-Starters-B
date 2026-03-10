@@ -27,7 +27,10 @@ public interface StrategyRepository extends AbstractRepository {
 	long countTacticsByStrategyId(int strategyId);
 
 	//Obtener las strategies con draftMode = false (para el menú any)
-
 	@Query("select str from Strategy str where str.draftMode = false")
 	Iterable<Strategy> findPublishedStrategies();
+
+	//Comprobación de si existe estrategia con ese ticker 
+	@Query("select count(str) > 0 from Strategy ar where str.ticker = :ticker and str.id != :id")
+	boolean existsStrategyWithTicker(String ticker, int id);
 }
