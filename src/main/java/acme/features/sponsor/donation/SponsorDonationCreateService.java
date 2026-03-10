@@ -1,5 +1,5 @@
 
-package acme.features.sponsorships.donation;
+package acme.features.sponsor.donation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,10 +14,10 @@ import acme.entities.sponsorships.Sponsorship;
 import acme.realms.Sponsor;
 
 @Service
-public class DonationCreateService extends AbstractService<Sponsor, Donation> {
+public class SponsorDonationCreateService extends AbstractService<Sponsor, Donation> {
 
 	@Autowired
-	private DonationRepository	repository;
+	private SponsorDonationRepository	repository;
 
 	private Donation			donation;
 

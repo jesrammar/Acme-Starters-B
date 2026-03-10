@@ -26,7 +26,7 @@ import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
-import acme.features.sponsorships.sponsorship.SponsorshipRepository;
+import acme.features.sponsor.sponsorship.SponsorSponsorshipRepository;
 import acme.realms.Sponsor;
 import lombok.Getter;
 import lombok.Setter;
@@ -41,7 +41,7 @@ public class Sponsorship extends AbstractEntity {
 
 	@Transient
 	@Autowired
-	private SponsorshipRepository	repository;
+	private SponsorSponsorshipRepository	repository;
 
 	@Mandatory
 	@ValidTicker

@@ -1,5 +1,5 @@
 
-package acme.features.sponsorships.donation;
+package acme.features.sponsor.donation;
 
 import java.util.Collection;
 
@@ -12,10 +12,10 @@ import acme.entities.sponsorships.Sponsorship;
 import acme.realms.Sponsor;
 
 @Service
-public class DonationListService extends AbstractService<Sponsor, Donation> {
+public class SponsorDonationListService extends AbstractService<Sponsor, Donation> {
 
 	@Autowired
-	private DonationRepository		repository;
+	private SponsorDonationRepository		repository;
 
 	private Collection<Donation>	donations;
 	private Sponsorship				sponsorship;

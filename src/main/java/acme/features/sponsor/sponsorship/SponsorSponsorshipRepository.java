@@ -1,5 +1,5 @@
 
-package acme.features.sponsorships.sponsorship;
+package acme.features.sponsor.sponsorship;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -8,7 +8,7 @@ import acme.client.repositories.AbstractRepository;
 import acme.entities.sponsorships.Sponsorship;
 
 @Repository
-public interface SponsorshipRepository extends AbstractRepository {
+public interface SponsorSponsorshipRepository extends AbstractRepository {
 
 	@Query("select i from Sponsorship i where i.id = :id")
 	Sponsorship findSponsorshipById(int id);
