@@ -3,7 +3,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
-<acme:form readonly="true">
+<acme:form>
 
     <acme:form-textbox code="auditor.audit-report.form.label.ticker" path="ticker"/>
     <acme:form-textbox code="auditor.audit-report.form.label.name" path="name"/>
@@ -12,7 +12,11 @@
     <acme:form-moment code="auditor.audit-report.form.label.endMoment" path="endMoment"/>
     <acme:form-url code="auditor.audit-report.form.label.moreInfo" path="moreInfo"/>
     <acme:form-checkbox code="auditor.audit-report.form.label.draftMode" path="draftMode"/>
-    <acme:button code="auditor.audit-report.form.button.sections"
-                 action="/auditor/audit-section/list?auditReportId=${id}"/>
+    <acme:button code="auditor.audit-report.form.button.sections" action="/auditor/audit-section/list?auditReportId=${id}"/>
+    
+    <jstl:if test="${draftMode}">
+    	<acme:submit code="auditor.audit-report.form.button.update" action="/auditor/audit-report/update"/>
+	</jstl:if>
 
+	
 </acme:form>
