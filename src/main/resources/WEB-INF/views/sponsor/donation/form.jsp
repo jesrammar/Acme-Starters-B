@@ -8,7 +8,7 @@
     <acme:form-textbox code="sponsor.donation.form.label.title" path="name"/>
     <acme:form-textarea code="sponsor.donation.form.label.notes" path="notes"/>
     <acme:form-double code="sponsor.donation.form.label.money" path="money"/>
-    <acme:form-select code="sponsor.donation.form.label.kind" path="kind" choices="${kinds}"/> // Cambiar, esto solo para update o create
+    <acme:form-select code="sponsor.donation.form.label.kind" path="kind" choices="${kinds}"/>
 
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete') && draftMode == true}">
@@ -16,7 +16,7 @@
 			<acme:submit code="sponsor.donation.form.button.delete" action="/sponsor/donation/delete?id=${id}"/>
 		</jstl:when>
 		<jstl:when test="${_command == 'create'}">
-			<acme:submit code="sponsor.donation.form.button.create" action="/sponsor/donation/create?id=${id}"/>
+			<acme:submit code="sponsor.donation.form.button.create" action="/sponsor/donation/create?sponsorshipId=${sponsorshipId}"/>
 		</jstl:when>		
 	</jstl:choose>
 </acme:form>

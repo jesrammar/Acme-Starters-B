@@ -23,3 +23,7 @@ sponsor.donation.list.label.title = Name
 sponsor.donation.list.label.notes = Notes
 sponsor.donation.list.label.money = Money
 sponsor.donation.list.label.kind = Donation Kind
+
+# List buttons
+
+sponsor.donation.list.button.create = Create

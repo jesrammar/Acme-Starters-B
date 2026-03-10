@@ -22,9 +22,11 @@ public class DonationShowService extends AbstractService<Sponsor, Donation> {
 
 	@Override
 	public void load() {
-		int id;
-		id = super.getRequest().getData("id", int.class);
-		this.donation = this.repository.findDonationById(id);
+		if (super.getRequest().hasData("id", int.class)) {
+			int id = super.getRequest().getData("id", int.class);
+			this.donation = this.repository.findDonationById(id);
+		} else
+			this.donation = null;
 	}
 
 	@Override

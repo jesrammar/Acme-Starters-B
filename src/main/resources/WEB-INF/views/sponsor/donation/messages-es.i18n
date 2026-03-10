@@ -17,7 +17,12 @@ sponsor.donation.form.button.update = Actualizar
 sponsor.donation.form.button.delete = Borrar
 
 # Etiquetas de la lista
+
 sponsor.donation.list.label.title = Nombre
 sponsor.donation.list.label.notes = Notas
 sponsor.donation.list.label.money = Dinero
 sponsor.donation.list.label.kind = Tipo de Donación
+
+# Botones de la lista
+
+sponsor.donation.list.button.create = Crear
