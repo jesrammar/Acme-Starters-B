@@ -9,6 +9,6 @@
     <acme:list-column code="auditor.audit-section.list.label.notes" path="notes" width="45%"/>
     <acme:list-column code="auditor.audit-section.list.label.hours" path="hours" width="10%"/>
     <acme:list-column code="auditor.audit-section.list.label.kind" path="kind" width="10%"/>
-    <acme:list-hidden path="auditReportId"/>s
+    <acme:list-hidden path="auditReportId"/>
 
 </acme:list>
