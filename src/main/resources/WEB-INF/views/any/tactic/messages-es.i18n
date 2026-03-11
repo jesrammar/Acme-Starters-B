@@ -1,0 +1,17 @@
+# messages-en.i18n
+# Titles
+
+any.tactic.form.title = Formulario de tácticas
+any.tactic.list.title = Listado de tácticas
+
+# Form labels
+any.tactic.form.label.name = Nombre:
+any.tactic.form.label.notes = Notas:
+any.tactic.form.label.expectedPercentage = Porcentaje esperado:
+any.tactic.form.label.kind= Tipo de táctica:
+
+# List labels
+any.tactic.list.label.name = Nombre
+any.tactic.list.label.notes = Notas
+any.tactic.list.label.expectedPercentage = Porcentaje esperado
+any.tactic.list.label.kind = Tipo de táctica

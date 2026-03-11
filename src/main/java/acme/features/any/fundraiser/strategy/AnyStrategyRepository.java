@@ -5,9 +5,10 @@ import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 
+import acme.client.repositories.AbstractRepository;
 import acme.entities.strategies.Strategy;
 
-public interface AnyStrategyRepository {
+public interface AnyStrategyRepository extends AbstractRepository {
 
 	//Obtener las strategies con draftMode = false
 	@Query("select str from Strategy str where str.draftMode = false")

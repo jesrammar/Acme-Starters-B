@@ -32,7 +32,7 @@ public class AnyTacticShowService extends AbstractService<Any, Tactic> {
 
 	@Override
 	public void unbind() {
-		Tuple tuple = super.unbindObject(this.tactic, "name", "notes", "hours", "kind");
+		Tuple tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "kind");
 		tuple.put("strategyId", this.tactic.getStrategy().getId());
 	}
 }
