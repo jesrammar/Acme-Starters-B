@@ -4,28 +4,19 @@
 auditor.audit-report.form.title = Formulario de Informe de Auditoría
 auditor.audit-report.list.title = Listado de Informes de Auditoría
 
-# Etiquetas del formulario
-auditor.audit-report.form.label.ticker = Código:
-auditor.audit-report.form.label.name = Nombre:
-auditor.audit-report.form.label.description = Descripción:
-auditor.audit-report.form.label.startMoment = Fecha de inicio:
-auditor.audit-report.form.label.endMoment = Fecha de fin:
-auditor.audit-report.form.label.moreInfo = Más información:
-auditor.audit-report.form.label.draftMode = Modo borrador
+# Etiquetas 
+auditor.audit-report.label.ticker = Código
+auditor.audit-report.label.name = Nombre
+auditor.audit-report.label.description = Descripción
+auditor.audit-report.label.startMoment = Fecha de inicio
+auditor.audit-report.label.endMoment = Fecha de fin
+auditor.audit-report.label.moreInfo = Más información
+auditor.audit-report.label.draftMode = Modo borrador
+auditor.audit-report.label.sectionCount = Secciones
+auditor.audit-report.label.hours = Horas
 
-# Botones del formulario
-auditor.audit-report.form.button.sections = Secciones
-auditor.audit-report.form.button.update = Actualizar informe de auditoría
-auditor.audit-report.form.button.delete=Borrar
-
-
-# Etiquetas de la lista
-auditor.audit-report.list.label.ticker = Código
-auditor.audit-report.list.label.name = Nombre
-auditor.audit-report.list.label.draftMode = Borrador
-auditor.audit-report.list.label.startMoment = Fecha inicio
-auditor.audit-report.list.label.endMoment = Fecha fin
-auditor.audit-report.list.label.sectionCount = Secciones
-auditor.audit-report.list.label.hours = Horas
-auditor.audit-report.list.label.description = Descripción
-auditor.audit-report.list.label.moreInfo = Más información
+# Botones
+auditor.audit-report.button.sections = Secciones
+auditor.audit-report.button.update = Actualizar informe de auditoría
+auditor.audit-report.button.delete=Borrar informe de auditoría
+auditor.audit-report.button.create = Crear informe de auditoría
