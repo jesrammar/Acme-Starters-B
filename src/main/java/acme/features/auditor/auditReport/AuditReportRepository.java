@@ -27,4 +27,8 @@ public interface AuditReportRepository extends AbstractRepository {
 	// Para comprobar que existe un auditReport con ese ticker
 	@Query("select count(ar) > 0 from AuditReport ar where ar.ticker = :ticker and ar.id != :id")
 	boolean existsAuditReportWithTicker(String ticker, int id);
+
+	@Query("select ar from AuditReport ar where ar.id = :id and ar.auditor.id = :auditorId")
+	AuditReport findOneByIdAndAuditorId(int id, int auditorId);
+
 }
