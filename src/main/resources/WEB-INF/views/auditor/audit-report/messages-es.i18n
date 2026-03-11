@@ -20,3 +20,5 @@ auditor.audit-report.button.sections = Secciones
 auditor.audit-report.button.update = Actualizar informe de auditoría
 auditor.audit-report.button.delete=Borrar informe de auditoría
 auditor.audit-report.button.create = Crear informe de auditoría
+auditor.audit-report.button.auditor-profile=Ver perfil del auditor
+
