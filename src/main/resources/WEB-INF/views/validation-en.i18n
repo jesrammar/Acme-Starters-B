@@ -1,16 +1,51 @@
 # validation-en.i18n
 
-acme.validation.campaign.must-have-milestone.message = The campaign must have at least one milestone to be published
-acme.validation.campaign.moments.invalid-interval.message = The start moment must be before the end moment
-acme.validation.campaign.moments.must-be-future.message = The moment must be in the future to publish the campaign
 acme.validation.safeText.message = HTML/script is not allowed
 acme.validation.header.message = Must have from 1 to 75 characters
 acme.validation.text.message = Must have from 1 to 255 characters
 acme.validation.ticker.message = The ticker must have letters, digits, underscores, and hyphens only
+
+
+# Invention messages
+
 acme.validation.invention.invalidInvention.message = Invalid invention
 acme.validation.invention.duplicated-ticker.message = Already exists an invention with the same ticker
 acme.validation.invention.parts.message = Invention must have at least one part in order to be published
 acme.validation.invention.startMoment-NotFuture.message = The start moment must be in the future
 acme.validation.invention.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.invention.startMoment-PostEndMoment.message = The start moment must be before the end moment
+
+
+# Sponsorship messages
+
+acme.validation.sponsorship.invalidSponsorship.message = The sponsorship isn't a valid sponsorship
+acme.validation.sponsorship.duplicated-ticker.message = Already exists an sponsorship with the same ticker
+acme.validation.sponsorship.donations.message = Sponsorship must have at least one donation in order to be published
+acme.validation.sponsorship.startMoment-NotFuture.message = The start moment must be in the future
+acme.validation.sponsorship.endMoment-NotFuture.message = The end moment must be in the future
+acme.validation.sponsorship.startMoment-PostEndMoment.message = The start moment must be before the end moment
+
+
+# AuditReport messages
+
+acme.validation.auditReport.invalidAuditReport.message = The audit report isn't a valid audit report
+acme.validation.auditReport.duplicatedTicker.message = An audit report with the same ticker already exists
+acme.validation.auditReport.must-have-section.message = The audit report must have at least one section before being published
+acme.validation.auditReport.startMoment-NotFuture.message = The start moment must be in the future
+acme.validation.auditReport.endMoment-NotFuture.message = The end moment must be in the future
+acme.validation.auditReport.startMoment-PostEndMoment.message = The start moment must be earlier than the end moment
+
+
+# Mensajes de Strategy
+
 acme.validation.strategy.invalidStrategy.message = The strategy isn't a valid strategy
+acme.validation.strategy.duplicatedTicker.message= Already exists a strategy with the same ticker
+acme.validation.strategy.must-have-tactic.message= The strategy must have at least one tactic before being published
+acme.validation.strategy.startMoment-PostEndMoment.message = The start moment must be before the end moment
+
+
+# Campaign messages
+
+acme.validation.campaign.must-have-milestone.message = The campaign must have at least one milestone to be published
+acme.validation.campaign.moments.invalid-interval.message = The start moment must be before the end moment
+acme.validation.campaign.moments.must-be-future.message = The moment must be in the future to publish the campaign

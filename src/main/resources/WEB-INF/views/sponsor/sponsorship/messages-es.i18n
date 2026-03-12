@@ -1,0 +1,28 @@
+# messages-es.i18n
+
+# Títulos
+sponsor.sponsorship.form.title = Formulario de Patrocinio
+sponsor.sponsorship.list.title = Listado de Patrocinios
+
+# Etiquetas del formulario
+sponsor.sponsorship.form.label.ticker = Código:
+sponsor.sponsorship.form.label.name = Nombre:
+sponsor.sponsorship.form.label.description = Descripción:
+sponsor.sponsorship.form.label.startMoment = Fecha de inicio:
+sponsor.sponsorship.form.label.endMoment = Fecha de fin:
+sponsor.sponsorship.form.label.moreInfo = Más información:
+sponsor.sponsorship.form.label.draftMode = Modo borrador
+
+# Botones del formulario
+sponsor.sponsorship.form.button.donations = Donaciones
+
+# Etiquetas de la lista
+sponsor.sponsorship.list.label.ticker = Código
+sponsor.sponsorship.list.label.name = Nombre
+sponsor.sponsorship.list.label.draftMode = Borrador
+sponsor.sponsorship.list.label.startMoment = Fecha inicio
+sponsor.sponsorship.list.label.endMoment = Fecha fin
+sponsor.sponsorship.list.label.donationCount = Donaciones
+sponsor.sponsorship.list.label.money = Dinero
+sponsor.sponsorship.list.label.description = Descripción
+sponsor.sponsorship.list.label.moreInfo = Más información

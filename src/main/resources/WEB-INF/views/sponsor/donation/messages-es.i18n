@@ -1,0 +1,28 @@
+# messages-es.i18n
+
+# Titles
+sponsor.donation.form.title = Formulario de Donación
+sponsor.donation.list.title = Listado de Donaciones
+
+# Etiquetas del formulario
+sponsor.donation.form.label.title = Nombre:
+sponsor.donation.form.label.notes = Notas:
+sponsor.donation.form.label.money = Dinero:
+sponsor.donation.form.label.kind = Tipo de Donación:
+
+# Botones del formulario
+
+sponsor.donation.form.button.create = Crear	
+sponsor.donation.form.button.update = Actualizar
+sponsor.donation.form.button.delete = Borrar
+
+# Etiquetas de la lista
+
+sponsor.donation.list.label.title = Nombre
+sponsor.donation.list.label.notes = Notas
+sponsor.donation.list.label.money = Dinero
+sponsor.donation.list.label.kind = Tipo de Donación
+
+# Botones de la lista
+
+sponsor.donation.list.button.create = Crear

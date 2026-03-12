@@ -34,7 +34,7 @@ public class AnyCampaignListService extends AbstractService<Any, Campaign> {
 		for (Campaign campaign : this.campaigns) {
 			Tuple tuple;
 
-			tuple = super.unbindObject(campaign, "ticker", "name", "startMoment", "endMoment", "moreInfo");
+			tuple = super.unbindObject(campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 			tuple.put("monthsActive", campaign.getMonthsActive());
 			Double effort = this.repository.computeCampaignEffort(campaign.getId());
 			tuple.put("effort", effort == null ? 0.0 : effort);

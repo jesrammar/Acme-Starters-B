@@ -10,13 +10,16 @@
 
 # master.menu.anonymous #######################################################
 
-master.menu.any = Any
-master.menu.any.campaign-list = Published campaigns
-
-# master.menu.anonymous #######################################################
-
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
+
+# master.menu.any #######################################################
+
+master.menu.any = Any
+
+# master.menu.spokesperson #######################################################
+
+master.menu.any.campaign-list = Published campaigns
 
 # master.menu.administrator ###################################################
 
@@ -41,6 +44,26 @@ master.menu.consumer.favourite-link = Favourite link
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report-list = Audit Reports
 
+# master.menu.any.auditor ##########################################################
+
+master.menu.any.audit-report-list = Audit Reports
+
+
+# master.menu.spokesperson ####################################################
+
+master.menu.spokesperson = Spokesperson
+master.menu.spokesperson.campaign-list = Campaigns
+
+# master.menu.sponsor ##########################################################
+
+master.menu.sponsor = Sponsor
+master.menu.sponsor.sponsorship-list = Sponsorships
+
+# master.menu.fundraiser ##########################################################
+
+master.menu.fundraiser = Fundraiser
+master.menu.fundraiser.strategies-list = Strategies
+
 # master.menu.inventor ##########################################################
 
 master.menu.inventor = Inventor
@@ -54,3 +77,6 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.provider-profile = Provider profile
 master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.consumer-profile = Consumer profile
+
+master.menu.user-account.become-auditor = Acquire Auditor Role
+master.menu.user-account.auditor-profile = Auditor Profile

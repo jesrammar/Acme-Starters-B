@@ -1,0 +1,11 @@
+# Títulos de las páginas
+authenticated.auditor.form.title=Detalles de Auditor
+
+# Labels del formulario
+authenticated.auditor.form.label.firm=Firma
+authenticated.auditor.form.label.highlights=Puntos destacados
+authenticated.auditor.form.label.solicitor=Solicitador
+
+# Botones del formulario
+authenticated.auditor.form.button.create=Crear Auditor
+authenticated.auditor.form.button.update=Actualizar Auditor

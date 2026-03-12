@@ -1,56 +1,84 @@
 
 package acme.constraints;
 
-import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import acme.client.components.validation.AbstractValidator;
+import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.sponsorships.Sponsorship;
-import acme.features.sponsorships.SponsorshipRepository;
+import acme.features.sponsorships.sponsorship.SponsorshipRepository;
 
-public class SponsorshipValidator implements ConstraintValidator<ValidSponsorship, Sponsorship> {
+@Validator
+public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sponsorship> {
 
 	@Autowired
 	private SponsorshipRepository repository;
 
 
 	@Override
+	protected void initialise(final ValidSponsorship annotation) {
+		assert annotation != null;
+	}
+
+	@Override
 	public boolean isValid(final Sponsorship sponsorship, final ConstraintValidatorContext context) {
+
+		assert context != null;
+		boolean isValid = true;
 
 		if (sponsorship == null)
 			return true;
 
-		boolean valid = true;
-		context.disableDefaultConstraintViolation();
-
+		// Validate if it is going to be published
 		if (Boolean.FALSE.equals(sponsorship.getDraftMode())) {
-			if (sponsorship.getId() != 0) {
-				long count = this.repository.countDonationsBySponsorshipId(sponsorship.getId());
+			// Check duplicated sponsorship with equal ticker
+			{
+				boolean uniqueSponsorship;
+				Sponsorship existingSponsorship;
 
-				if (count == 0) {
-					context.buildConstraintViolationWithTemplate("Sponsorship must have at least one donation").addPropertyNode("draftMode").addConstraintViolation();
-					valid = false;
-				}
-			}
+				existingSponsorship = this.repository.findSponsorshipByTicker(sponsorship.getTicker());
+				uniqueSponsorship = existingSponsorship == null || existingSponsorship.equals(sponsorship);
 
-			if (!MomentHelper.isFuture(sponsorship.getStartMoment())) {
-				context.buildConstraintViolationWithTemplate("startMoment must be in the future").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
+				super.state(context, uniqueSponsorship, "ticker", "acme.validation.sponsorship.duplicated-ticker.message");
 			}
+			// Check sponsorship has at least one donation
+			{
+				boolean hasSponsorshipAtLeastOneDonation;
 
-			if (!MomentHelper.isFuture(sponsorship.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("endMoment must be in the future").addPropertyNode("endMoment").addConstraintViolation();
-				valid = false;
-			}
+				hasSponsorshipAtLeastOneDonation = this.repository.countDonationsBySponsorshipId(sponsorship.getId()) >= 1;
 
-			// 3️: start < end
-			if (!MomentHelper.isBefore(sponsorship.getStartMoment(), sponsorship.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("startMoment must be before endMoment").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
+				super.state(context, hasSponsorshipAtLeastOneDonation, "*", "acme.validation.sponsorship.donations.message");
 			}
+			// Check dates are future
+			{
+				boolean startMomentIsFuture;
+
+				startMomentIsFuture = MomentHelper.isFuture(sponsorship.getStartMoment());
+
+				super.state(context, startMomentIsFuture, "startMoment", "acme.validation.sponsorship.startMoment-NotFuture.message");
+			}
+			{
+				boolean endMomentIsFuture;
+
+				endMomentIsFuture = MomentHelper.isFuture(sponsorship.getEndMoment());
+
+				super.state(context, endMomentIsFuture, "endMoment", "acme.validation.sponsorship.endMoment-NotFuture.message");
+			}
+			// Check startMoment is before endMoment
+			{
+				boolean startMomentIsPreviousToEndMoment;
+
+				startMomentIsPreviousToEndMoment = MomentHelper.isBefore(sponsorship.getStartMoment(), sponsorship.getEndMoment());
+
+				super.state(context, startMomentIsPreviousToEndMoment, "startMoment", "acme.validation.sponsorship.startMoment-PostEndMoment.message");
+			}
+			isValid = !super.hasErrors(context);
 		}
-		return valid;
+
+		return isValid;
 	}
+
 }
