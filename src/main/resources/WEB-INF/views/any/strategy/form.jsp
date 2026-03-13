@@ -11,7 +11,7 @@
     <acme:form-moment code="any.strategy.form.label.startMoment" path="startMoment"/>
     <acme:form-moment code="any.strategy.form.label.endMoment" path="endMoment"/>
     <acme:form-url code="any.strategy.form.label.moreInfo" path="moreInfo"/>
-    <acme:button code="any.strategy.form.label.tactics"
-                 action="/any/tactic/list?strategyId=${id}"/>
+    <acme:button code="any.strategy.form.button.tactics" action="/any/tactic/list?strategyId=${id}"/>
+    <acme:button code="any.strategy.form.button.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
 
 </acme:form>

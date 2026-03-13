@@ -13,7 +13,8 @@ any.strategy.form.label.endMoment = Fecha de fin:
 any.strategy.form.label.moreInfo = Más información:
 
 # Form buttons
-any.strategy.form.label.tactics = Tácticas
+any.strategy.form.button.tactics = Tácticas
+any.strategy.form.button.fundraiser = Perfil del recaudador
 
 # List labels
 any.strategy.list.label.ticker = Código

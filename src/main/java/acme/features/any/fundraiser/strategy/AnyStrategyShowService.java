@@ -46,6 +46,8 @@ public class AnyStrategyShowService extends AbstractService<Any, Strategy> {
 		long tacticCount = this.repository.countTacticsByStrategyId(this.strategy.getId());
 
 		tuple.put("tacticCount", tacticCount);
+
+		tuple.put("fundraiserId", this.strategy.getFundraiser().getId());
 	}
 
 }
