@@ -1,5 +1,6 @@
-# Título
+# Títulos
 inventor.invention.list.title = Listado de Inventos
+inventor.invention.form.title = Mostrar Invention
 
 # Etiquetas de listado
 inventor.invention.list.label.ticker = Ticker
@@ -12,4 +13,13 @@ inventor.invention.list.label.draftMode = Borrador
 inventor.invention.list.label.monthsActive = Meses activo
 inventor.invention.list.label.cost = Coste
  
+# Etiquetas de formulario
+inventor.invention.form.label.ticker = Ticker
+inventor.invention.form.label.name = Nombre
+inventor.invention.form.label.description = Descripción
+inventor.invention.form.label.startMoment = Momento Inicial
+inventor.invention.form.label.endMoment = Momento Final
+inventor.invention.form.label.moreInfo = Más info.
 
+# Etiquetas de botones
+inventor.invention.form.button.parts = Parts
