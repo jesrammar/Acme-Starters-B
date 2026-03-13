@@ -14,7 +14,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = InventionValidator.class)
 public @interface ValidInvention {
 
-	String message() default "Invalid Invention";
+	String message() default "{acme.validation.invention.invalidInvention.message}";
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
 
