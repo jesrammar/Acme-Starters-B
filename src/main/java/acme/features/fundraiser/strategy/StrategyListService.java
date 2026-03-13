@@ -50,29 +50,5 @@ public class StrategyListService extends AbstractService<Fundraiser, Strategy> {
 
 		}
 	}
-	/*
-	 * Para internacionalizar el true/false del draftMode
-	 * 
-	 * @Override
-	 * public void unbind() {
-	 * 
-	 * String language = LocaleContextHolder.getLocale().getLanguage();
-	 * 
-	 * for (Strategy strategy : this.strategies) {
-	 * Tuple tuple;
-	 * 
-	 * tuple = super.unbindObject(strategy, "ticker", "name", "startMoment", "endMoment");
-	 * tuple.put("expectedPercentage", strategy.getExpectedPercentage());
-	 * tuple.put("tacticCount", this.repository.countTacticsByStrategyId(strategy.getId()));
-	 * 
-	 * boolean isDraft = strategy.getDraftMode();
-	 * 
-	 * if ("es".equals(language))
-	 * tuple.put("draftMode", isDraft ? "Sí" : "No");
-	 * else
-	 * tuple.put("draftMode", isDraft ? "Yes" : "No");
-	 * }
-	 * }
-	 */
 
 }
