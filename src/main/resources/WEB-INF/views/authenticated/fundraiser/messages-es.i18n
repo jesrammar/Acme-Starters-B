@@ -1,0 +1,11 @@
+# Page titles
+authenticated.fundraiser.form.title= Detalles del recaudador de fondos
+
+# Labels form
+authenticated.fundraiser.form.label.bank=Banco
+authenticated.fundraiser.form.label.statement=Declaracion
+authenticated.fundraiser.form.label.agent=Agente
+
+# Buttons form
+authenticated.fundraiser.form.button.create=Crear recaudador de fondos
+authenticated.fundraiser.form.button.update=Actualizar recaudador de fondos
