@@ -1,0 +1,27 @@
+# messages-en.i18n
+# Titles
+
+any.strategy.form.title = Strategy form
+any.strategy.list.title = Listing of Strategies
+
+# Form labels
+any.strategy.form.label.ticker = Ticker:
+any.strategy.form.label.name = Name:
+any.strategy.form.label.description = Description:
+any.strategy.form.label.startMoment = Start date:
+any.strategy.form.label.endMoment = End date:
+any.strategy.form.label.moreInfo = More Info:
+any.strategy.form.label.draftMode = Draft:
+
+# Form buttons
+any.strategy.form.label.tactics = Tactics
+
+# List labels
+any.strategy.list.label.ticker = Ticker
+any.strategy.list.label.name = Name
+any.strategy.list.label.startMoment = Start Date
+any.strategy.list.label.endMoment = End Date
+any.strategy.list.label.tacticCount= Tactics
+any.strategy.list.label.expectedPercentage = Expected percentage
+any.strategy.list.label.description = Description
+any.strategy.list.label.moreInfo = More info
