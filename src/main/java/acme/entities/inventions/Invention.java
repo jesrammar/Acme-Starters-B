@@ -1,6 +1,7 @@
 
 package acme.entities.inventions;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,6 +20,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidInvention;
 import acme.constraints.ValidText;
@@ -84,36 +86,8 @@ public class Invention extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		// ! For the moment, return 0.0
-
-		//		if (this.startMoment == null || this.endMoment == null)
-		//			return 0.0;
-		//
-		//		Date current = this.startMoment;
-		//		double months = 0.0;
-		//
-		//		// Iteramos mes a mes hasta llegar a endMoment
-		//		while (MomentHelper.isBefore(current, this.endMoment)) {
-		//			// Avanzamos un mes
-		//			Date nextMonth = MomentHelper.deltaFromMoment(current, 1, ChronoUnit.MONTHS);
-		//
-		//			// Si nextMonth supera endMoment, usamos endMoment
-		//			Date monthEnd = MomentHelper.isBefore(nextMonth, this.endMoment) ? nextMonth : this.endMoment;
-		//
-		//			// Duración de este mes parcial
-		//			long daysInMonth = MomentHelper.computeDuration(current, nextMonth).toDays();
-		//			long daysInPeriod = MomentHelper.computeDuration(current, monthEnd).toDays();
-		//
-		//			months += (double) daysInPeriod / (double) daysInMonth;
-		//
-		//			// Avanzamos al siguiente mes
-		//			current = monthEnd;
-		//		}
-		//
-		//		// Redondeamos a un decimal
-		//		return Math.round(months * 10.0) / 10.0;
-
-		return 0.0;
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return months;
 	}
 
 	//	@Mandatory

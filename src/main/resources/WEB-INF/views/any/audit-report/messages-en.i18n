@@ -14,6 +14,7 @@ any.audit-report.form.label.draftMode = Draft Mode
 
 # Form buttons
 any.audit-report.form.button.sections = Sections
+any.audit-report.form.button.auditor-profile=View auditor profile
 
 # List labels
 any.audit-report.list.label.ticker = Ticker

@@ -32,7 +32,8 @@ public class SponsorshipShowService extends AbstractService<Sponsor, Sponsorship
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && this.sponsorship.getSponsor().isPrincipal();
+		status = this.sponsorship != null && // 
+			(this.sponsorship.getSponsor().isPrincipal() || !this.sponsorship.getDraftMode());
 
 		super.setAuthorised(status);
 	}

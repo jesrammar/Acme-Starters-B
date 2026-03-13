@@ -8,6 +8,7 @@ acme.validation.ticker.message = The ticker must have letters, digits, underscor
 
 # Invention messages
 
+acme.validation.invention.invalidInvention.message = Invalid invention
 acme.validation.invention.duplicated-ticker.message = Already exists an invention with the same ticker
 acme.validation.invention.parts.message = Invention must have at least one part in order to be published
 acme.validation.invention.startMoment-NotFuture.message = The start moment must be in the future

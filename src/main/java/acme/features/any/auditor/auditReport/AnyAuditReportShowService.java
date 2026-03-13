@@ -44,9 +44,8 @@ public class AnyAuditReportShowService extends AbstractService<Any, AuditReport>
 		tuple = super.unbindObject(this.auditReport, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
 		tuple.put("hours", this.auditReport.getHours());
-
 		long sectionCount = this.repository.countSectionsByReportId(this.auditReport.getId());
-
 		tuple.put("sectionCount", sectionCount);
+		tuple.put("auditorId", this.auditReport.getAuditor().getId());
 	}
 }

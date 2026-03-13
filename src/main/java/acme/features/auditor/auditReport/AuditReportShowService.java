@@ -24,10 +24,9 @@ public class AuditReportShowService extends AbstractService<Auditor, AuditReport
 
 	@Override
 	public void load() {
-		int id;
-
-		id = super.getRequest().getData("id", int.class);
-		this.auditReport = this.repository.findAuditReportById(id);
+		int id = super.getRequest().getData("id", int.class);
+		int auditorId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.auditReport = this.repository.findOneByIdAndAuditorId(id, auditorId);
 	}
 
 	@Override

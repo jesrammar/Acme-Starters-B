@@ -25,9 +25,7 @@
 		<acme:menu-option code="master.menu.any">
 	        <acme:menu-suboption code="master.menu.any.audit-report-list" action="/any/audit-report/list"/>
 			<acme:menu-suboption code="master.menu.fundraiser.strategies-list" action="/any/strategy/list"/>	        
-    	</acme:menu-option>
-    	
-
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.list-user-accounts" action="/administrator/user-account/list"/>
@@ -61,6 +59,10 @@
 		<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
 		    <acme:menu-suboption code="master.menu.sponsor.sponsorship-list" action="/sponsor/sponsorship/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">
+		    <acme:menu-suboption code="master.menu.inventor.invention-list" action="/inventor/invention/list"/>
+		</acme:menu-option>
 	</acme:menu-left>
 
 	<acme:menu-right>		
@@ -77,4 +79,3 @@
 		</acme:menu-option>
 	</acme:menu-right>
 </acme:menu-bar>
-

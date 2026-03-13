@@ -6,7 +6,6 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.models.Tuple;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Donation;
 import acme.entities.sponsorships.Sponsorship;
@@ -24,10 +23,13 @@ public class DonationListService extends AbstractService<Sponsor, Donation> {
 
 	@Override
 	public void load() {
-		int sponsorshipId;
-		sponsorshipId = super.getRequest().getData("sponsorshipId", int.class);
-		this.donations = this.repository.findDonationsBySponsorshipId(sponsorshipId);
-		this.sponsorship = this.repository.findSponsorshipById(sponsorshipId);
+		if (super.getRequest().hasData("sponsorshipId", int.class)) {
+			int sponsorshipId = super.getRequest().getData("sponsorshipId", int.class);
+			this.donations = this.repository.findDonationsBySponsorshipId(sponsorshipId);
+			this.sponsorship = this.repository.findSponsorshipById(sponsorshipId);
+		} else
+			this.sponsorship = null;
+
 	}
 
 	@Override
@@ -40,10 +42,11 @@ public class DonationListService extends AbstractService<Sponsor, Donation> {
 
 	@Override
 	public void unbind() {
-		Tuple tuple;
-		for (Donation donation : this.donations) {
-			tuple = super.unbindObject(donation, "name", "notes", "money", "kind");
-			tuple.put("sponsorshipId", donation.getSponsorship().getId());
-		}
+		boolean showCreate;
+		super.unbindObjects(this.donations, "name", "notes", "money", "kind");
+
+		showCreate = this.sponsorship.getDraftMode() && this.sponsorship.getSponsor().isPrincipal();
+		super.unbindGlobal("sponsorshipId", this.sponsorship.getId());
+		super.unbindGlobal("showCreate", showCreate);
 	}
 }
