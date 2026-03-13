@@ -14,7 +14,8 @@ any.strategy.form.label.moreInfo = More Info:
 any.strategy.form.label.draftMode = Draft:
 
 # Form buttons
-any.strategy.form.label.tactics = Tactics
+any.strategy.form.button.tactics = Tactics
+any.strategy.form.button.fundraiser = Fundraiser Profile
 
 # List labels
 any.strategy.list.label.ticker = Ticker
