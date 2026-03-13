@@ -69,6 +69,10 @@ master.menu.fundraiser.strategies-list = Strategies
 master.menu.inventor = Inventor
 master.menu.inventor.invention-list = Inventions
 
+# master.menu.any.inventor ##########################################################
+
+master.menu.any.inventor.invention-list = Published Inventions
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
