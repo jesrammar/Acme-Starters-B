@@ -20,6 +20,7 @@ public class PartController extends AbstractController<Inventor, Part> {
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("list", PartListService.class);
+		super.addBasicCommand("show", PartShowService.class);
 	}
 
 }

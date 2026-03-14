@@ -1,8 +1,6 @@
 
 package acme.features.inventor.part;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,24 +9,25 @@ import acme.entities.inventions.Part;
 import acme.realms.Inventor;
 
 @Service
-public class PartListService extends AbstractService<Inventor, Part> {
+public class PartShowService extends AbstractService<Inventor, Part> {
 
 	// Internal state
 
 	@Autowired
-	private PartRepository		repository;
+	private PartRepository	repository;
 
-	private Collection<Part>	parts;
+	private Part			part;
 
 	// AbstractService interface
 
 
 	@Override
 	public void load() {
-		int principalId;
+		int partId, inventorId;
 
-		principalId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.parts = this.repository.findPartsByInventorId(principalId);
+		partId = super.getRequest().getData("id", int.class);
+		inventorId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.part = this.repository.findPartByIdAndInventorId(partId, inventorId);
 	}
 
 	@Override
@@ -39,7 +38,7 @@ public class PartListService extends AbstractService<Inventor, Part> {
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.parts, "name", "description", "cost", "kind");
+		super.unbindObject(this.part, "name", "description", "cost", "kind");
 	}
 
 }
