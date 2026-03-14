@@ -1,0 +1,9 @@
+# Títulos
+any.part.list.title = Listado de Partes
+any.part.form.title = Mostrar Parte
+
+# Etiquetas de listado
+any.part.list.label.name = Nombre
+any.part.list.label.description = Descripción
+any.part.list.label.cost = Coste
+any.part.list.label.kind = Tipo
