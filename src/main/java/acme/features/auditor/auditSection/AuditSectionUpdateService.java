@@ -4,7 +4,6 @@ package acme.features.auditor.auditSection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.models.Tuple;
 import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.audit.AuditSection;
@@ -29,7 +28,7 @@ public class AuditSectionUpdateService extends AbstractService<Auditor, AuditSec
 
 	@Override
 	public void authorise() {
-		boolean status = this.section != null && this.section.getAuditReport() != null && this.section.getAuditReport().getDraftMode();
+		boolean status = this.section != null && this.section.getAuditReport().getDraftMode();
 		super.setAuthorised(status);
 	}
 
@@ -50,12 +49,9 @@ public class AuditSectionUpdateService extends AbstractService<Auditor, AuditSec
 
 	@Override
 	public void unbind() {
-		Tuple tuple = super.unbindObject(this.section, "name", "notes", "hours");
-
+		super.unbindObject(this.section, "name", "notes", "hours");
 		super.unbindGlobal("auditReportDraftMode", this.section.getAuditReport().getDraftMode());
 		super.unbindGlobal("reportId", this.section.getAuditReport().getId());
-		super.unbindGlobal("showCreate", this.section.getAuditReport().getDraftMode());
-
 		SelectChoices choices = SelectChoices.from(SectionKind.class, this.section.getKind());
 		super.unbindGlobal("kind", choices);
 	}

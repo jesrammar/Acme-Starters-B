@@ -27,7 +27,7 @@ public class AuditSectionListService extends AbstractService<Auditor, AuditSecti
 
 	@Override
 	public void load() {
-		int reportId = super.getRequest().getData("auditReportId", int.class);
+		int reportId = super.getRequest().getData("reportId", int.class);
 		int auditorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
 		this.sections = this.repository.findSectionsByReportIdAndAuditorId(reportId, auditorId);
@@ -36,12 +36,8 @@ public class AuditSectionListService extends AbstractService<Auditor, AuditSecti
 
 	@Override
 	public void unbind() {
-
-		int reportId = super.getRequest().getData("auditReportId", int.class);
-
 		super.unbindObjects(this.sections, "name", "kind", "notes", "hours");
-
-		super.unbindGlobal("reportId", reportId);
+		super.unbindGlobal("reportId", super.getRequest().getData("reportId", int.class));
 		super.unbindGlobal("auditReportDraftMode", this.report.getDraftMode());
 	}
 }

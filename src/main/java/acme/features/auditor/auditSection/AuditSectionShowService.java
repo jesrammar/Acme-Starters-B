@@ -4,7 +4,6 @@ package acme.features.auditor.auditSection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.models.Tuple;
 import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.audit.AuditSection;
@@ -35,7 +34,7 @@ public class AuditSectionShowService extends AbstractService<Auditor, AuditSecti
 
 	@Override
 	public void unbind() {
-		Tuple tuple = super.unbindObject(this.section, "name", "notes", "hours");
+		super.unbindObject(this.section, "name", "notes", "hours");
 		super.unbindGlobal("auditReportDraftMode", this.section.getAuditReport().getDraftMode());
 		super.unbindGlobal("reportId", this.section.getAuditReport().getId());
 

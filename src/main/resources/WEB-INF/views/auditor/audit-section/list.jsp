@@ -11,5 +11,5 @@
 </acme:list>
 
 <jstl:if test="${auditReportDraftMode}">
-	<acme:button code="auditor.audit-section.button.create" action="/auditor/audit-section/create?auditReportId=${auditReportId}"/>
+	<acme:button code="auditor.audit-section.button.create" action="/auditor/audit-section/create?reportId=${reportId}"/>
 </jstl:if>
