@@ -24,7 +24,7 @@
 		
 		<acme:menu-option code="master.menu.any">
 	        <acme:menu-suboption code="master.menu.any.audit-report-list" action="/any/audit-report/list"/>
-    		<acme:menu-suboption code="master.menu.fundraiser.strategies-list" action="/any/strategy/list"/>
+    		<acme:menu-suboption code="master.menu.any.fundraiser.strategies-list" action="/any/strategy/list"/>
     		<acme:menu-suboption code="master.menu.any.inventor.invention-list" action="/any/invention/list"/>	        
     	</acme:menu-option>
 

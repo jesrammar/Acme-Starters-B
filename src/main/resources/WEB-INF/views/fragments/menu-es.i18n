@@ -45,6 +45,11 @@ master.menu.any.audit-report-list = Informes de Auditoría
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report-list = Informes de Auditoría
 
+
+# master.any.menu.fundraiser ##########################################################
+
+master.menu.any.fundraiser.strategies-list = Estrategias publicadas
+
 # master.menu.fundraiser ##########################################################
 
 master.menu.fundraiser = Recaudador de fondos

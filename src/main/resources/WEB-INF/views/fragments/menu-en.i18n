@@ -59,6 +59,10 @@ master.menu.spokesperson.campaign-list = Campaigns
 master.menu.sponsor = Sponsor
 master.menu.sponsor.sponsorship-list = Sponsorships
 
+# master.any.menu.fundraiser ##########################################################
+
+master.menu.any.fundraiser.strategies-list = Published strategies
+
 # master.menu.fundraiser ##########################################################
 
 master.menu.fundraiser = Fundraiser
