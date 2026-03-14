@@ -1,0 +1,5 @@
+# messages-en.i18n for audit-section
+
+# Titles
+any.audit-section.list.title = Listing of Audit Sections
+any.audit-section.form.title = Audit Section Form
