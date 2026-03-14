@@ -32,7 +32,7 @@
 				<acme:submit code="auditor.audit-report.button.delete" action="/auditor/audit-report/delete"/>
 			</jstl:if>
 			
-			<acme:button code="auditor.audit-report.button.sections" action="/auditor/audit-section/list?auditReportId=${id}"/>			
+			<acme:button code="auditor.audit-report.button.sections" action="/auditor/audit-section/list?reportId=${id}"/>			
 		</jstl:when>
 	</jstl:choose>
 </acme:form>
