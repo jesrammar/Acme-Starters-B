@@ -28,7 +28,7 @@ public class PartListService extends AbstractService<Inventor, Part> {
 		int principalId;
 
 		principalId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.parts = this.repository.findAllPartsByInventorId(principalId);
+		this.parts = this.repository.findPartsByInventorId(principalId);
 	}
 
 	@Override
