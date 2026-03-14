@@ -29,7 +29,6 @@ public class AuditSectionCreateService extends AbstractService<Auditor, AuditSec
 
 		this.auditSection = super.newObject(AuditSection.class);
 		this.auditSection.setAuditReport(report);
-		;
 	}
 
 	@Override
@@ -59,7 +58,7 @@ public class AuditSectionCreateService extends AbstractService<Auditor, AuditSec
 		Tuple tuple = super.unbindObject(this.auditSection, "name", "notes", "hours", "kind");
 		choices = SelectChoices.from(SectionKind.class, this.auditSection.getKind());
 		tuple.put("reportId", this.auditSection.getAuditReport().getId());
-		tuple.put("draftMode", this.auditSection.getAuditReport().getDraftMode());
-		tuple.put("kinds", choices);
+		tuple.put("auditReportDraftMode", this.auditSection.getAuditReport().getDraftMode());
+		tuple.put("kind", choices);
 	}
 }
