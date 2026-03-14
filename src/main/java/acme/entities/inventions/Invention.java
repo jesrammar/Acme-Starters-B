@@ -19,6 +19,7 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -82,7 +83,7 @@ public class Invention extends AbstractEntity {
 	private InventionRepository	repository;
 
 
-	// @Mandatory
+	@Mandatory
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
@@ -90,7 +91,8 @@ public class Invention extends AbstractEntity {
 		return months;
 	}
 
-	//	@Mandatory
+	@Mandatory
+	@ValidMoney
 	@Transient
 	public Money getCost() {
 		Money result = new Money();
