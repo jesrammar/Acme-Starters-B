@@ -1,0 +1,8 @@
+# Títulos
+inventor.part.list.title = Listado de Partes
+
+# Etiquetas de listado
+inventor.part.list.label.name = Nombre
+inventor.part.list.label.description = Descripción
+inventor.part.list.label.cost = Coste
+inventor.part.list.label.kind = Tipo
