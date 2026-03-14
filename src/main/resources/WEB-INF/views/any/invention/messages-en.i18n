@@ -1,5 +1,6 @@
 # Titles
 any.invention.list.title = Listing of Published Inventions
+any.invention.form.title = Show Published Invention
 
 # List labels
 any.invention.list.label.ticker = Ticker
@@ -8,6 +9,14 @@ any.invention.list.label.description = Description
 any.invention.list.label.startMoment = Start Moment
 any.invention.list.label.endMoment = End Moment
 any.invention.list.label.moreInfo = More Info
-any.invention.list.label.draftMode = Draft Mode
-any.invention.list.label.monthsActive = Months Active
-any.invention.list.label.cost = Cost
+
+# Form labels
+any.invention.form.label.ticker = Ticker
+any.invention.form.label.name = Name
+any.invention.form.label.description = Description
+any.invention.form.label.startMoment = Start Moment
+any.invention.form.label.endMoment = End Moment
+any.invention.form.label.moreInfo = More Info
+
+# Buttons labels
+any.invention.form.button.parts = Parts
