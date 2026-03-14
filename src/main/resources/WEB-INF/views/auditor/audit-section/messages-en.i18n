@@ -4,14 +4,13 @@
 auditor.audit-section.list.title = Listing of Audit Sections
 auditor.audit-section.form.title = Audit Section Form
 
-# List labels
-auditor.audit-section.list.label.title = Title
-auditor.audit-section.list.label.notes = Notes
-auditor.audit-section.list.label.hours = Hours
-auditor.audit-section.list.label.kind = Section Type
+# Labels
+auditor.audit-section.label.name = Name
+auditor.audit-section.label.notes = Notes
+auditor.audit-section.label.hours = Hours
+auditor.audit-section.label.kind = Section Type
 
-# Form labels
-auditor.audit-section.form.label.title = Title:
-auditor.audit-section.form.label.notes = Notes:
-auditor.audit-section.form.label.hours = Hours:
-auditor.audit-section.form.label.kind = Section Type:
+# Buttons
+auditor.audit-section.button.update=Update
+auditor.audit-section.button.delete=Delete
+auditor.audit-section.button.create=Create
