@@ -9,7 +9,7 @@ import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.inventions.Invention;
-import acme.features.inventions.InventionRepository;
+import acme.features.inventor.invention.InventionRepository;
 
 @Validator
 public class InventionValidator extends AbstractValidator<ValidInvention, Invention> {

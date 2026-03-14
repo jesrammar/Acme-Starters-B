@@ -1,5 +1,5 @@
 
-package acme.features.inventions;
+package acme.features.inventor.invention;
 
 import java.util.Collection;
 

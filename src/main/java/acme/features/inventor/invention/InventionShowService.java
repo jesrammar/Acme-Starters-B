@@ -1,5 +1,5 @@
 
-package acme.features.inventions;
+package acme.features.inventor.invention;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,7 +37,7 @@ public class InventionShowService extends AbstractService<Inventor, Invention> {
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 	}
 
 }
