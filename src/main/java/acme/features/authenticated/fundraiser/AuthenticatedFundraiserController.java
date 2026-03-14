@@ -13,8 +13,6 @@ import acme.realms.Fundraiser;
 @Controller
 public class AuthenticatedFundraiserController extends AbstractController<Authenticated, Fundraiser> {
 
-	// Constructors -----------------------------------------------------------
-
 	@PostConstruct
 	protected void initialise() {
 		super.setMediaType(MediaType.TEXT_HTML);
