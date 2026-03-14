@@ -20,6 +20,7 @@ public class AnyPartController extends AbstractController<Any, Part> {
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("list", AnyPartListService.class);
+		super.addBasicCommand("show", AnyPartShowService.class);
 	}
 
 }
