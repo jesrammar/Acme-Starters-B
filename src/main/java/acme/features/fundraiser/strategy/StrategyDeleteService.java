@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
+import acme.features.fundraiser.tactic.TacticRepository;
 import acme.realms.Fundraiser;
 
 @Service
@@ -14,6 +15,8 @@ public class StrategyDeleteService extends AbstractService<Fundraiser, Strategy>
 	@Autowired
 	private StrategyRepository	repository;
 
+	@Autowired
+	private TacticRepository	tacticRepository;
 	private Strategy			strategy;
 
 
@@ -40,6 +43,7 @@ public class StrategyDeleteService extends AbstractService<Fundraiser, Strategy>
 
 	@Override
 	public void execute() {
+		this.tacticRepository.deleteAll(this.tacticRepository.findTacticsByStrategyId(this.strategy.getId()));
 		this.repository.delete(this.strategy);
 	}
 

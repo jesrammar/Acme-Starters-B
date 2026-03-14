@@ -13,3 +13,5 @@
     <acme:list-hidden path="description"/>
     <acme:list-hidden path="moreInfo"/>
 </acme:list>
+
+<acme:button code="fundraiser.strategy.list.button.create" action="/fundraiser/strategy/create"/>
