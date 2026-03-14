@@ -11,13 +11,10 @@ import acme.realms.Auditor;
 @Service
 public class AuditSectionDeleteService extends AbstractService<Auditor, AuditSection> {
 
-	// Repository ------------------------------------------------------------
 	@Autowired
 	private AuditSectionRepository	repository;
 
 	private AuditSection			section;
-
-	// AbstractService interface ---------------------------------------------
 
 
 	@Override
@@ -29,7 +26,7 @@ public class AuditSectionDeleteService extends AbstractService<Auditor, AuditSec
 
 	@Override
 	public void authorise() {
-		boolean status = this.section != null && this.section.getAuditReport().getDraftMode();
+		boolean status = this.section != null && this.section.getAuditReport() != null && this.section.getAuditReport().getDraftMode();
 		super.setAuthorised(status);
 	}
 
@@ -48,5 +45,7 @@ public class AuditSectionDeleteService extends AbstractService<Auditor, AuditSec
 
 	@Override
 	public void unbind() {
+		if (this.section != null)
+			super.unbindGlobal("reportId", this.section.getAuditReport().getId());
 	}
 }

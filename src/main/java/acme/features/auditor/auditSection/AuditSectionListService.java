@@ -39,7 +39,7 @@ public class AuditSectionListService extends AbstractService<Auditor, AuditSecti
 
 		int reportId = super.getRequest().getData("auditReportId", int.class);
 
-		super.unbindObjects(this.sections, "name", "kind", "hours");
+		super.unbindObjects(this.sections, "name", "kind", "notes", "hours");
 
 		super.unbindGlobal("reportId", reportId);
 		super.unbindGlobal("auditReportDraftMode", this.report.getDraftMode());

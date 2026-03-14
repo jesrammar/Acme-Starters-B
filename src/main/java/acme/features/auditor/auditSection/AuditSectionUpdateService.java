@@ -4,20 +4,20 @@ package acme.features.auditor.auditSection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.models.Tuple;
+import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.audit.AuditSection;
+import acme.entities.audit.SectionKind;
 import acme.realms.Auditor;
 
 @Service
 public class AuditSectionUpdateService extends AbstractService<Auditor, AuditSection> {
 
-	// Repository ------------------------------------------------------------
 	@Autowired
 	private AuditSectionRepository	repository;
 
 	private AuditSection			section;
-
-	// AbstractService interface ---------------------------------------------
 
 
 	@Override
@@ -29,7 +29,7 @@ public class AuditSectionUpdateService extends AbstractService<Auditor, AuditSec
 
 	@Override
 	public void authorise() {
-		boolean status = this.section != null && this.section.getAuditReport().getDraftMode();
+		boolean status = this.section != null && this.section.getAuditReport() != null && this.section.getAuditReport().getDraftMode();
 		super.setAuthorised(status);
 	}
 
@@ -50,6 +50,13 @@ public class AuditSectionUpdateService extends AbstractService<Auditor, AuditSec
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.section, "name", "notes", "hours", "kind");
+		Tuple tuple = super.unbindObject(this.section, "name", "notes", "hours");
+
+		super.unbindGlobal("auditReportDraftMode", this.section.getAuditReport().getDraftMode());
+		super.unbindGlobal("reportId", this.section.getAuditReport().getId());
+		super.unbindGlobal("showCreate", this.section.getAuditReport().getDraftMode());
+
+		SelectChoices choices = SelectChoices.from(SectionKind.class, this.section.getKind());
+		super.unbindGlobal("kind", choices);
 	}
 }
