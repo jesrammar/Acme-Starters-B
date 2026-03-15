@@ -1,68 +1,76 @@
 
 package acme.constraints;
 
-import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import acme.client.components.validation.AbstractValidator;
+import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.audit.AuditReport;
 import acme.features.auditor.auditReport.AuditReportRepository;
 
-public class AuditReportValidator implements ConstraintValidator<ValidAuditReport, AuditReport> {
+@Validator
+public class AuditReportValidator extends AbstractValidator<ValidAuditReport, AuditReport> {
 
 	@Autowired
 	private AuditReportRepository repository;
 
 
 	@Override
-	public boolean isValid(final AuditReport report, final ConstraintValidatorContext context) {
+	protected void initialise(final ValidAuditReport annotation) {
+		assert annotation != null;
+	}
 
-		if (report == null)
+	@Override
+	public boolean isValid(final AuditReport auditReport, final ConstraintValidatorContext context) {
+		assert context != null;
+		boolean isValid = true;
+
+		if (auditReport == null)
 			return true;
 
-		boolean valid = true;
-		context.disableDefaultConstraintViolation();
-
-		// Ticker único (SIEMPRE)
-		if (this.repository.existsAuditReportWithTicker(report.getTicker(), report.getId())) {
-			context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.duplicatedTicker.message}").addPropertyNode("ticker").addConstraintViolation();
-			valid = false;
+		// Check duplicated audit report with equal ticker
+		{
+			boolean uniqueAuditReport;
+			uniqueAuditReport = !this.repository.existsAuditReportWithTicker(auditReport.getTicker(), auditReport.getId());
+			super.state(context, uniqueAuditReport, "ticker", "acme.validation.auditReport.duplicatedTicker.message");
 		}
 
-		// Validaciones al publicar
-		if (Boolean.FALSE.equals(report.getDraftMode())) {
+		// For the already published audit reports
+		if (Boolean.FALSE.equals(auditReport.getDraftMode())) {
 
-			// Debe tener al menos una sección
-			if (report.getId() != 0) {
-				long count = this.repository.countSectionsByReportId(report.getId());
-
-				if (count == 0) {
-					context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.must-have-section.message}").addPropertyNode("draftMode").addConstraintViolation();
-					valid = false;
-				}
+			// Check audit report has at least one section
+			{
+				boolean hasAtLeastOneSection;
+				hasAtLeastOneSection = this.repository.countSectionsByReportId(auditReport.getId()) >= 1;
+				super.state(context, hasAtLeastOneSection, "*", "acme.validation.auditReport.sections.message");
 			}
 
-			// startMoment debe ser futuro
-			if (!MomentHelper.isFuture(report.getStartMoment())) {
-				context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.startMoment-NotFuture.message}").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
-			}
+			//			// Check startMoment is in the future
+			//			{
+			//				boolean startMomentInFuture;
+			//				startMomentInFuture = MomentHelper.isFuture(auditReport.getStartMoment());
+			//				super.state(context, startMomentInFuture, "startMoment", "acme.validation.auditReport.startMomentNotFuture.message");
+			//			}
+			//
+			//			// Check endMoment is in the future
+			//			{
+			//				boolean endMomentInFuture;
+			//				endMomentInFuture = MomentHelper.isFuture(auditReport.getEndMoment());
+			//				super.state(context, endMomentInFuture, "endMoment", "acme.validation.auditReport.endMomentNotFuture.message");
+			//			}
 
-			// endMoment debe ser futuro
-			if (!MomentHelper.isFuture(report.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.endMoment-NotFuture.message}").addPropertyNode("endMoment").addConstraintViolation();
-				valid = false;
+			// Check startMoment is before endMoment
+			{
+				boolean startMomentIsPreviousToEndMoment;
+				startMomentIsPreviousToEndMoment = MomentHelper.isBefore(auditReport.getStartMoment(), auditReport.getEndMoment());
+				super.state(context, startMomentIsPreviousToEndMoment, "startMoment", "acme.validation.auditReport.startMoment-PostEndMoment.message");
 			}
-
-			// Intervalo válido
-			if (!MomentHelper.isBefore(report.getStartMoment(), report.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("{acme.validation.auditReport.startMoment-PostEndMoment.message}").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
-			}
+			isValid = !super.hasErrors(context);
 		}
-
-		return valid;
+		return isValid;
 	}
+
 }

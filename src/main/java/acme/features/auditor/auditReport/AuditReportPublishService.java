@@ -46,15 +46,10 @@ public class AuditReportPublishService extends AbstractService<Auditor, AuditRep
 
 	@Override
 	public void validate() {
+		this.auditReport.setDraftMode(false);
 		super.validateObject(this.auditReport);
-
-		boolean hasSections;
-		long sectionsCount;
-
-		sectionsCount = this.repository.countSectionsByReportId(this.auditReport.getId());
-		hasSections = sectionsCount > 0;
-
-		super.state(hasSections, "*", "auditor.audit-report.error.no-sections");
+		if (super.getErrors().hasErrors())
+			this.auditReport.setDraftMode(true);
 	}
 
 	@Override
