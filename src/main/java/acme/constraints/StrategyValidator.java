@@ -19,14 +19,20 @@ public class StrategyValidator implements ConstraintValidator<ValidStrategy, Str
 	@Override
 	public boolean isValid(final Strategy strategy, final ConstraintValidatorContext context) {
 
+		assert context != null;
+		boolean valid = true;
+
 		if (strategy == null)
 			return true;
 
-		boolean valid = true;
+		//Para no dar dos mensajes de error
 		context.disableDefaultConstraintViolation();
 
-		// Ticker único
-		if (this.repository.existsStrategyWithTicker(strategy.getTicker(), strategy.getId())) {
+		//Ticker debe ser único
+		Strategy dbStrategy;
+		dbStrategy = this.repository.findStrategyByTicker(strategy.getTicker());
+
+		if (dbStrategy == null || dbStrategy.equals(strategy)) {
 			context.buildConstraintViolationWithTemplate("{acme.validation.strategy.duplicatedTicker.message}").addPropertyNode("ticker").addConstraintViolation();
 			valid = false;
 		}
@@ -38,7 +44,7 @@ public class StrategyValidator implements ConstraintValidator<ValidStrategy, Str
 			if (strategy.getId() != 0) {
 				long count = this.repository.countTacticsByStrategyId(strategy.getId());
 
-				if (count == 0) {
+				if (count < 1) {
 					context.buildConstraintViolationWithTemplate("{acme.validation.strategy.must-have-tactic.message}").addPropertyNode("draftMode").addConstraintViolation();
 					valid = false;
 				}
