@@ -19,6 +19,9 @@ public class TacticController extends AbstractController<Fundraiser, Tactic> {
 
 		super.addBasicCommand("list", TacticListService.class);
 		super.addBasicCommand("show", TacticShowService.class);
+		super.addBasicCommand("create", TacticCreateService.class);
+		super.addBasicCommand("update", TacticUpdateService.class);
+		super.addBasicCommand("delete", TacticDeleteService.class);
 
 	}
 }
