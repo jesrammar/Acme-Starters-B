@@ -48,6 +48,9 @@ public class PartListService extends AbstractService<Inventor, Part> {
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.parts, "name", "description", "cost", "kind");
+
+		super.unbindGlobal("inventionId", super.getRequest().getData("inventionId", int.class));
+		super.unbindGlobal("inventionDraftMode", this.invention.getDraftMode());
 	}
 
 }
