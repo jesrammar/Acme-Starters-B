@@ -17,8 +17,12 @@ auditor.audit-report.label.hours = Horas
 
 # Botones
 auditor.audit-report.button.sections = Secciones
-auditor.audit-report.button.update = Actualizar informe de auditoría
-auditor.audit-report.button.delete=Borrar informe de auditoría
-auditor.audit-report.button.create = Crear informe de auditoría
+auditor.audit-report.button.update = Actualizar
+auditor.audit-report.button.delete=Eliminar 
+auditor.audit-report.button.create = Crear
+auditor.audit-report.button.publish = Publicar
 auditor.audit-report.button.auditor-profile=Ver perfil del auditor
+
+#Error
+auditor.audit-report.error.no-sections = No se puede publicar un reporte de auditoría sin secciones. Por favor, añada al menos una.
 
