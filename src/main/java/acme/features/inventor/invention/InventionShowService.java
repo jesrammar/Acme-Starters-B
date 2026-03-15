@@ -4,6 +4,7 @@ package acme.features.inventor.invention;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.models.Tuple;
 import acme.client.services.AbstractService;
 import acme.entities.inventions.Invention;
 import acme.realms.Inventor;
@@ -31,13 +32,22 @@ public class InventionShowService extends AbstractService<Inventor, Invention> {
 
 	@Override
 	public void authorise() {
-		// TODO
-		super.setAuthorised(true);
+		boolean status;
+
+		status = this.invention != null && this.invention.getInventor().isPrincipal();
+
+		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
+		Tuple unbindedObject;
+
+		unbindedObject = super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
+
+		unbindedObject.put("monthsActive", this.invention.getMonthsActive());
+		unbindedObject.put("cost", this.invention.getCost());
+
 	}
 
 }
