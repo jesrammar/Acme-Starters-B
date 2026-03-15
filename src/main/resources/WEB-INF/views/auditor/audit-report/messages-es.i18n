@@ -18,7 +18,7 @@ auditor.audit-report.label.hours = Horas
 # Botones
 auditor.audit-report.button.sections = Secciones
 auditor.audit-report.button.update = Actualizar
-auditor.audit-report.button.delete=Borrar 
+auditor.audit-report.button.delete=Eliminar 
 auditor.audit-report.button.create = Crear
 auditor.audit-report.button.publish = Publicar
 auditor.audit-report.button.auditor-profile=Ver perfil del auditor
