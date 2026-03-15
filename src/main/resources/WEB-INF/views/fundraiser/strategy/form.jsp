@@ -27,7 +27,7 @@
 
 	<jstl:choose>
 		<jstl:when test="${_command == 'create'}">
-		<acme:submit code="fundraiser.strategy.button.create" action="/fundraiser/strategy/create"/>
+		<acme:submit code="fundraiser.strategy.form.button.create" action="/fundraiser/strategy/create"/>
 		</jstl:when>
 		<jstl:when test="${_command == 'show' || _command == 'update'}">
 			<jstl:if test="${draftMode}">

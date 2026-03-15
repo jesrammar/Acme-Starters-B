@@ -15,6 +15,7 @@ fundraiser.strategy.form.label.draftMode = Draft:
 
 # Form buttons
 fundraiser.strategy.form.button.tactics = Tactics
+fundraiser.strategy.form.button.create = Create fundraiser
 fundraiser.strategy.form.button.update = Update fundraiser
 fundraiser.strategy.form.button.delete = Delete fundraiser
 
