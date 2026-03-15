@@ -20,6 +20,8 @@ inventor.invention.form.label.description = Description
 inventor.invention.form.label.startMoment = Start Moment
 inventor.invention.form.label.endMoment = End Moment
 inventor.invention.form.label.moreInfo = More Info
+inventor.invention.form.label.monthsActive = Months Active
+inventor.invention.form.label.cost = Cost
 
 # Buttons labels
 inventor.invention.form.button.parts = Parts
