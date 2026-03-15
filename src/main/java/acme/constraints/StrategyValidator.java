@@ -32,7 +32,7 @@ public class StrategyValidator implements ConstraintValidator<ValidStrategy, Str
 		Strategy dbStrategy;
 		dbStrategy = this.repository.findStrategyByTicker(strategy.getTicker());
 
-		if (dbStrategy == null || dbStrategy.equals(strategy)) {
+		if (dbStrategy != null && dbStrategy.getId() != strategy.getId()) {
 			context.buildConstraintViolationWithTemplate("{acme.validation.strategy.duplicatedTicker.message}").addPropertyNode("ticker").addConstraintViolation();
 			valid = false;
 		}
