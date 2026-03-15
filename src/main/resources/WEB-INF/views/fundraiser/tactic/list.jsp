@@ -12,3 +12,7 @@
     <acme:list-hidden path="strategyId"/>
 
 </acme:list>
+
+<jstl:if test="${strategyDraftMode}">
+	<acme:button code="fundraiser.tactic.list.button.create" action="/fundraiser/tactic/create?strategyId=${strategyId}"/>
+</jstl:if>
