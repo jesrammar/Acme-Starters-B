@@ -16,8 +16,12 @@ auditor.audit-report.label.hours = Hours
 
 # Buttons
 auditor.audit-report.button.sections = Sections
-auditor.audit-report.button.update = Update audit report
-auditor.audit-report.button.delete=Delete audit report
-auditor.audit-report.button.create = Create audit report
+auditor.audit-report.button.update = Update
+auditor.audit-report.button.delete=Delete 
+auditor.audit-report.button.create = Create
+auditor.audit-report.button.publish = Publish
 auditor.audit-report.button.auditor-profile=View auditor profile
+
+# Error
+auditor.audit-report.error.no-sections = You cannot publish an audit report without sections. Please add at least one section.
 

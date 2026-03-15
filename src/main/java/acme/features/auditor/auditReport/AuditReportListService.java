@@ -44,14 +44,12 @@ public class AuditReportListService extends AbstractService<Auditor, AuditReport
 		for (AuditReport auditReport : this.auditReports) {
 
 			Tuple tuple;
-
 			tuple = super.unbindObject(auditReport, "ticker", "name", "startMoment", "endMoment", "draftMode");
-
 			tuple.put("hours", auditReport.getHours());
-
 			long sectionCount = this.repository.countSectionsByReportId(auditReport.getId());
-
 			tuple.put("sectionCount", sectionCount);
+			tuple.put("draftModeVisual", auditReport.getDraftMode() ? "✔" : "✖");
+
 		}
 	}
 }

@@ -30,8 +30,8 @@
 			<jstl:if test="${draftMode}">
 				<acme:submit code="auditor.audit-report.button.update" action="/auditor/audit-report/update"/>
 				<acme:submit code="auditor.audit-report.button.delete" action="/auditor/audit-report/delete"/>
+				<acme:submit code="auditor.audit-report.button.publish" action="/auditor/audit-report/publish"/>
 			</jstl:if>
-			
 			<acme:button code="auditor.audit-report.button.sections" action="/auditor/audit-section/list?reportId=${id}"/>			
 		</jstl:when>
 	</jstl:choose>
