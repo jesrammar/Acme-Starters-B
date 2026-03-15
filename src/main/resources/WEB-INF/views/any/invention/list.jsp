@@ -6,8 +6,11 @@
 <acme:list>
 	<acme:list-column code="any.invention.list.label.ticker" path="ticker"/>
 	<acme:list-column code="any.invention.list.label.name" path="name"/>
-	<acme:list-column code="any.invention.list.label.description" path="description"/>
 	<acme:list-column code="any.invention.list.label.startMoment" path="startMoment"/>
 	<acme:list-column code="any.invention.list.label.endMoment" path="endMoment"/>
-	<acme:list-column code="any.invention.list.label.moreInfo" path="moreInfo"/>
+	<acme:list-column code="any.invention.list.label.cost" path="cost"/>
+	<acme:list-column code="any.invention.list.label.partsCount" path="partsCount"/>
+	<acme:list-hidden path="monthsActive"/>
+	<acme:list-hidden path="description"/>
+	<acme:list-hidden path="moreInfo"/>
 </acme:list>

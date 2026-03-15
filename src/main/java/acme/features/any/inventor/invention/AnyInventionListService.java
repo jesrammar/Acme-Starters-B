@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.inventions.Invention;
@@ -30,13 +31,22 @@ public class AnyInventionListService extends AbstractService<Any, Invention> {
 
 	@Override
 	public void authorise() {
-		// TODO
 		super.setAuthorised(true);
 	}
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.inventions, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		for (Invention invention : this.inventions) {
+			Tuple unbindedInvention;
+
+			unbindedInvention = super.unbindObject(invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+
+			unbindedInvention.put("monthsActive", invention.getMonthsActive());
+			unbindedInvention.put("cost", invention.getCost());
+
+			long partsCount = this.repository.countPartsByInventionId(invention.getId());
+			unbindedInvention.put("partsCount", partsCount);
+		}
 	}
 
 }
