@@ -32,8 +32,11 @@ public class PartShowService extends AbstractService<Inventor, Part> {
 
 	@Override
 	public void authorise() {
-		// TODO
-		super.setAuthorised(true);
+		boolean status;
+
+		status = this.part != null;
+
+		super.setAuthorised(status);
 	}
 
 	@Override
