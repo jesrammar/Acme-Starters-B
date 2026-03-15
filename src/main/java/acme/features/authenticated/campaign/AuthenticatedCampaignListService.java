@@ -1,4 +1,4 @@
-package acme.features.any.campaign;
+package acme.features.authenticated.campaign;
 
 import java.util.Collection;
 
@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
-import acme.client.components.principals.Any;
+import acme.client.components.principals.Authenticated;
 import acme.client.services.AbstractService;
 import acme.entities.campaigns.Campaign;
 
 @Service
-public class AnyCampaignListService extends AbstractService<Any, Campaign> {
+public class AuthenticatedCampaignListService extends AbstractService<Authenticated, Campaign> {
 
 	@Autowired
-	private AnyCampaignRepository	repository;
+	private AuthenticatedCampaignRepository	repository;
 
 	private Collection<Campaign>	campaigns;
 

@@ -20,18 +20,21 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
-import acme.constraints.ValidCampaignPublishable;
+import acme.constraints.ValidCampaign;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
+import acme.features.spokesperson.campaign.CampaignRepository;
+import acme.realms.Spokesperson;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-@ValidCampaignPublishable
+@ValidCampaign
 public class Campaign extends AbstractEntity {
 	
 	private static final long		serialVersionUID	= 1L;
@@ -91,20 +94,20 @@ public class Campaign extends AbstractEntity {
 		if (this.startMoment == null || this.endMoment == null || !MomentHelper.isAfter(this.endMoment, this.startMoment))
 			return 0.0;
 
-	
 		double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		double rounded = MathHelper.roundOff(months, 1);
 
-	
-		double rounded = Math.round(months * 10.0) / 10.0;
-
-		return Math.max(0.0, rounded);
+		return rounded;
 	}
 
 	
 	@Mandatory
 	@ValidNumber(min = 0.0)
 	@Transient
-	private Double getEffort() {
+	public Double getEffort() {
+		if (this.repository == null || this.getId() == 0)
+			return 0.0;
+
 		Double wrapper = this.repository.computeCampaignEffort(this.getId());
 		return wrapper == null ? 0.0 : wrapper.doubleValue();
 	}
