@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
+import acme.entities.inventions.Invention;
 import acme.entities.inventions.Part;
 import acme.realms.Inventor;
 
@@ -19,6 +20,7 @@ public class PartListService extends AbstractService<Inventor, Part> {
 	private PartRepository		repository;
 
 	private Collection<Part>	parts;
+	private Invention			invention;
 
 	// AbstractService interface
 
@@ -31,17 +33,24 @@ public class PartListService extends AbstractService<Inventor, Part> {
 		inventionId = super.getRequest().getData("inventionId", int.class);
 
 		this.parts = this.repository.findPartsByInventionIdAndInventorId(inventionId, principalId);
+		this.invention = this.repository.findInventionById(inventionId);
 	}
 
 	@Override
 	public void authorise() {
-		// TODO
-		super.setAuthorised(true);
+		boolean status;
+
+		status = this.invention != null && this.invention.getInventor().isPrincipal();
+
+		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.parts, "name", "description", "cost", "kind");
+
+		super.unbindGlobal("inventionId", super.getRequest().getData("inventionId", int.class));
+		super.unbindGlobal("inventionDraftMode", this.invention.getDraftMode());
 	}
 
 }
