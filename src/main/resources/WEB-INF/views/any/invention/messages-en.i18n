@@ -9,6 +9,8 @@ any.invention.list.label.description = Description
 any.invention.list.label.startMoment = Start Moment
 any.invention.list.label.endMoment = End Moment
 any.invention.list.label.moreInfo = More Info
+any.invention.list.label.cost = Cost
+any.invention.list.label.partsCount = Parts Count
 
 # Form labels
 any.invention.form.label.ticker = Ticker
