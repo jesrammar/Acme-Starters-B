@@ -6,6 +6,16 @@
 <acme:form>
 	<acme:form-textbox code="inventor.part.form.label.name" path="name"/>
 	<acme:form-textarea code="inventor.part.form.label.description" path="description"/>
-	<acme:form-moment code="inventor.part.form.label.cost" path="cost"/>
-	<acme:form-moment code="inventor.part.form.label.kind" path="kind"/>
+	<acme:form-money code="inventor.part.form.label.cost" path="cost"/>
+	<acme:form-select code="inventor.part.form.label.kind" path="kind" choices="${kindChoices}"/>
+	
+	<jstl:choose>
+		<jstl:when test="${acme:anyOf(_command, 'show|update|delete') && inventionDraftMode == true}">
+			<acme:submit code="inventor.part.button.update" action="/inventor/part/update"/>
+			<acme:submit code="inventor.part.button.delete" action="/inventor/part/delete"/>
+		</jstl:when>
+		<jstl:when test="${_command == 'create'}">
+			<acme:submit code="inventor.part.button.create" action="/inventor/part/create?inventionId=${inventionId}"/>
+		</jstl:when>		
+	</jstl:choose>	
 </acme:form>

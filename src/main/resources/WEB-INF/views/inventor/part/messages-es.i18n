@@ -16,3 +16,5 @@ inventor.part.form.label.kind = Tipo
 
 # Etiquetas de botones
 inventor.part.button.create = Crear
+inventor.part.button.update = Actualizar
+inventor.part.button.delete = Borrar
