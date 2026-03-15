@@ -20,8 +20,12 @@ inventor.invention.form.label.description = Descripción
 inventor.invention.form.label.startMoment = Momento Inicial
 inventor.invention.form.label.endMoment = Momento Final
 inventor.invention.form.label.moreInfo = Más info.
+inventor.invention.form.label.draftMode = Borrador
 inventor.invention.form.label.monthsActive = Meses activo
 inventor.invention.form.label.cost = Coste
 
 # Etiquetas de botones
-inventor.invention.form.button.parts = Partes
+inventor.invention.button.create = Crear
+inventor.invention.button.update = Actualizar
+inventor.invention.button.delete = Borrar
+inventor.invention.button.parts = Partes
