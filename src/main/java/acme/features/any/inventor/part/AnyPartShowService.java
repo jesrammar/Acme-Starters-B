@@ -31,8 +31,11 @@ public class AnyPartShowService extends AbstractService<Any, Part> {
 
 	@Override
 	public void authorise() {
-		// TODO
-		super.setAuthorised(true);
+		boolean status;
+
+		status = this.part != null && !this.part.getInvention().getDraftMode();
+
+		super.setAuthorised(status);
 	}
 
 	@Override
