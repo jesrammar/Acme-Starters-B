@@ -19,3 +19,5 @@ any.campaign.form.label.endMoment = End moment:
 any.campaign.form.label.moreInfo = More info:
 any.campaign.form.label.monthsActive = Active months:
 any.campaign.form.label.effort = Effort:
+any.campaign.form.button.milestones = View milestones
+any.campaign.form.button.spokesperson = View spokesperson
