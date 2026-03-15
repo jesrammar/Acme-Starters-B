@@ -19,6 +19,10 @@ any.invention.form.label.description = Descripción
 any.invention.form.label.startMoment = Momento Inicial
 any.invention.form.label.endMoment = Momento Final
 any.invention.form.label.moreInfo = Más info.
+any.invention.form.label.monthsActive = Meses Activo
+any.invention.form.label.cost = Coste
+any.invention.form.label.partsCount = Nº Partes
 
 # Buttons labels
-any.invention.form.button.parts = Partes
+any.invention.button.parts = Partes
+any.invention.button.inventor-profile = Perfil del Inventor
