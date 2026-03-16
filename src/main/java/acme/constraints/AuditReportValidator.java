@@ -48,19 +48,19 @@ public class AuditReportValidator extends AbstractValidator<ValidAuditReport, Au
 				super.state(context, hasAtLeastOneSection, "*", "acme.validation.auditReport.sections.message");
 			}
 
-			//			// Check startMoment is in the future
-			//			{
-			//				boolean startMomentInFuture;
-			//				startMomentInFuture = MomentHelper.isFuture(auditReport.getStartMoment());
-			//				super.state(context, startMomentInFuture, "startMoment", "acme.validation.auditReport.startMomentNotFuture.message");
-			//			}
-			//
-			//			// Check endMoment is in the future
-			//			{
-			//				boolean endMomentInFuture;
-			//				endMomentInFuture = MomentHelper.isFuture(auditReport.getEndMoment());
-			//				super.state(context, endMomentInFuture, "endMoment", "acme.validation.auditReport.endMomentNotFuture.message");
-			//			}
+			// Check startMoment is in the future
+			{
+				boolean startMomentInFuture;
+				startMomentInFuture = MomentHelper.isFuture(auditReport.getStartMoment());
+				super.state(context, startMomentInFuture, "startMoment", "acme.validation.auditReport.startMomentNotFuture.message");
+			}
+
+			// Check endMoment is in the future
+			{
+				boolean endMomentInFuture;
+				endMomentInFuture = MomentHelper.isFuture(auditReport.getEndMoment());
+				super.state(context, endMomentInFuture, "endMoment", "acme.validation.auditReport.endMomentNotFuture.message");
+			}
 
 			// Check startMoment is before endMoment
 			{

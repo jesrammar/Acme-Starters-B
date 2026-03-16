@@ -22,7 +22,10 @@ public class AuditSectionListService extends AbstractService<Auditor, AuditSecti
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		int reportId = super.getRequest().getData("reportId", int.class);
+		int auditorId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		AuditReport checkReport = this.repository.findAuditReportByIdAndAuditorId(reportId, auditorId);
+		super.setAuthorised(checkReport != null);
 	}
 
 	@Override
