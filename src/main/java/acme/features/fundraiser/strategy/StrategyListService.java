@@ -48,6 +48,8 @@ public class StrategyListService extends AbstractService<Fundraiser, Strategy> {
 
 			tuple.put("tacticCount", tacticCount);
 
+			tuple.put("draftModeVisual", strategy.getDraftMode() ? "✔" : "✖");
+
 		}
 	}
 
