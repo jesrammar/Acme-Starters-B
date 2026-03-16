@@ -31,19 +31,18 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 
 		if (sponsorship == null)
 			return true;
+		// Check duplicated sponsorship with equal ticker
+		{
+			boolean uniqueSponsorship;
+			Sponsorship existingSponsorship;
 
+			existingSponsorship = this.repository.findSponsorshipByTicker(sponsorship.getTicker());
+			uniqueSponsorship = existingSponsorship == null || existingSponsorship.equals(sponsorship);
+
+			super.state(context, uniqueSponsorship, "ticker", "acme.validation.sponsorship.duplicated-ticker.message");
+		}
 		// Validate if it is going to be published
 		if (Boolean.FALSE.equals(sponsorship.getDraftMode())) {
-			// Check duplicated sponsorship with equal ticker
-			{
-				boolean uniqueSponsorship;
-				Sponsorship existingSponsorship;
-
-				existingSponsorship = this.repository.findSponsorshipByTicker(sponsorship.getTicker());
-				uniqueSponsorship = existingSponsorship == null || existingSponsorship.equals(sponsorship);
-
-				super.state(context, uniqueSponsorship, "ticker", "acme.validation.sponsorship.duplicated-ticker.message");
-			}
 			// Check sponsorship has at least one donation
 			{
 				boolean hasSponsorshipAtLeastOneDonation;
@@ -75,8 +74,9 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 
 				super.state(context, startMomentIsPreviousToEndMoment, "startMoment", "acme.validation.sponsorship.startMoment-PostEndMoment.message");
 			}
-			isValid = !super.hasErrors(context);
+
 		}
+		isValid = !super.hasErrors(context);
 
 		return isValid;
 	}
