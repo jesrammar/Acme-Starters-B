@@ -18,6 +18,7 @@ public class AuthenticatedInventorController extends AbstractController<Authenti
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("create", AuthenticatedInventorCreateService.class);
+		super.addBasicCommand("update", AuthenticatedInventorUpdateService.class);
 	}
 
 }
