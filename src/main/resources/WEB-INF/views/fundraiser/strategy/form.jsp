@@ -29,7 +29,7 @@
 		<jstl:when test="${_command == 'create'}">
 		<acme:submit code="fundraiser.strategy.form.button.create" action="/fundraiser/strategy/create"/>
 		</jstl:when>
-		<jstl:when test="${_command == 'show' || _command == 'update'}">
+		<jstl:when test="${_command == 'show' || _command == 'update'|| _command == 'publish'}">
 			<jstl:if test="${draftMode}">
 				<acme:submit code="fundraiser.strategy.form.button.update" action="/fundraiser/strategy/update"/>
 				<acme:submit code="fundraiser.strategy.form.button.delete" action="/fundraiser/strategy/delete"/>

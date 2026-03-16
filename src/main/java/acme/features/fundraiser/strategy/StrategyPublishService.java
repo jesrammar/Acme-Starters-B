@@ -4,6 +4,7 @@ package acme.features.fundraiser.strategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
 import acme.realms.Fundraiser;
@@ -41,6 +42,16 @@ public class StrategyPublishService extends AbstractService<Fundraiser, Strategy
 	@Override
 	public void validate() {
 		this.strategy.setDraftMode(false);
+
+		if (!super.getErrors().hasErrors()) {
+			boolean isValidStart = this.strategy.getStartMoment() != null && MomentHelper.isFuture(this.strategy.getStartMoment());
+			boolean isValidEnd = this.strategy.getEndMoment() != null && MomentHelper.isFuture(this.strategy.getEndMoment());
+
+			super.state(isValidStart, "startMoment", "acme.validation.strategy.startMoment-notFuture.message");
+			super.state(isValidEnd, "endMoment", "acme.validation.strategy.endMoment-notFuture.message");
+
+		}
+
 		super.validateObject(this.strategy);
 
 		if (super.getErrors().hasErrors())
