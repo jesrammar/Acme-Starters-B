@@ -1,0 +1,7 @@
+# Titles
+any.inventor.form.title = Inventor Profile
+
+# Form Labels
+any.inventor.form.label.bio = Bio
+any.inventor.form.label.keyWords = Key Words
+any.inventor.form.label.licensed = Licensed
