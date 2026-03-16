@@ -33,7 +33,10 @@ public class TacticListService extends AbstractService<Fundraiser, Tactic> {
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		boolean status = true;
+		if (this.strategy == null)
+			status = this.strategy != null && !this.strategy.getDraftMode();
+		super.setAuthorised(status);
 	}
 
 	@Override

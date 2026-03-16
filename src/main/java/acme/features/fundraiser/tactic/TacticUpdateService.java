@@ -21,14 +21,23 @@ public class TacticUpdateService extends AbstractService<Fundraiser, Tactic> {
 
 	@Override
 	public void load() {
+		// 1. Cogemos estrictamente el ID de la táctica (Asegúrate de que la URL lleva ?id=...)
 		int id = super.getRequest().getData("id", int.class);
-		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.tactic = this.repository.findTacticByIdAndFundraiserId(id, fundraiserId);
+
+		// 2. Cargamos la táctica de la base de datos de forma estándar
+		this.tactic = this.repository.findTacticById(id);
 	}
 
 	@Override
 	public void authorise() {
-		boolean status = this.tactic != null && this.tactic.getStrategy().getDraftMode();
+		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
+
+		// 3. Comprobamos la seguridad completa aquí:
+		// - Que la táctica exista (no sea nula)
+		// - Que la estrategia asociada esté en modo borrador
+		// - Que el dueño de la estrategia sea el Fundraiser logueado
+		boolean status = this.tactic != null && this.tactic.getStrategy().getDraftMode() && this.tactic.getStrategy().getFundraiser().getId() == fundraiserId;
+
 		super.setAuthorised(status);
 	}
 
