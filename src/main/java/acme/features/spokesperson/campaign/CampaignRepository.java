@@ -13,7 +13,6 @@
 package acme.features.spokesperson.campaign;
 
 import java.util.Collection;
-import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -37,6 +36,12 @@ public interface CampaignRepository extends AbstractRepository {
 
 	@Query("select c from Campaign c where c.spokesperson.userAccount.id = :userAccountId")
 	Collection<Campaign> findCampaignsBySpokespersonUserAccountId(int userAccountId);
+
+	@Query("select c from Campaign c where c.draftMode = false or c.spokesperson.userAccount.id = :userAccountId")
+	Collection<Campaign> findVisibleCampaignsBySpokespersonUserAccountId(int userAccountId);
+
+	@Query("select c from Campaign c where c.id = :id and (c.draftMode = false or c.spokesperson.userAccount.id = :userAccountId)")
+	Campaign findVisibleCampaignById(int id, int userAccountId);
 
 	@Query("select s from Spokesperson s where s.userAccount.id = :userAccountId")
 	Spokesperson findSpokespersonByUserAccountId(int userAccountId);

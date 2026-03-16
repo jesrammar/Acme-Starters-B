@@ -23,18 +23,17 @@ public class MilestoneListService extends AbstractService<Spokesperson, Mileston
 	@Override
 	public void load() {
 		int campaignId;
+		int userAccountId;
 
 		campaignId = super.getRequest().getData("campaignId", int.class);
-		this.campaign = this.repository.findCampaignById(campaignId);
-		this.milestones = this.repository.findMilestonesByCampaignId(campaignId);
+		userAccountId = super.getRequest().getPrincipal().getAccountId();
+		this.campaign = this.repository.findVisibleCampaignById(campaignId, userAccountId);
+		this.milestones = this.campaign == null ? java.util.List.of() : this.repository.findVisibleMilestonesByCampaignId(campaignId, userAccountId);
 	}
 
 	@Override
 	public void authorise() {
-		boolean status;
-
-		status = this.campaign != null && this.campaign.getSpokesperson().isPrincipal();
-		super.setAuthorised(status);
+		super.setAuthorised(this.campaign != null);
 	}
 
 	@Override

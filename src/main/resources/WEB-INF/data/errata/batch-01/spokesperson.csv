@@ -18,3 +18,8 @@ spokesperson-err-08,user-account-consumer-01,"Lorem ipsum","Lorem ipsum",
 
 # key:userAccount - errata variations
 spokesperson-err-09,,"Lorem ipsum","Lorem ipsum",true
+# cv and achievements - extra @ValidText variations
+spokesperson-err-10,user-account-consumer-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX","Lorem ipsum",true
+spokesperson-err-11,user-account-consumer-01,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX",true
+# key:userAccount - extra missing/blank variation
+spokesperson-err-12, ,"Lorem ipsum","Lorem ipsum",true

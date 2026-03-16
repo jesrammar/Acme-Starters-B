@@ -20,17 +20,16 @@ public class CampaignShowService extends AbstractService<Spokesperson, Campaign>
 	@Override
 	public void load() {
 		int id;
+		int userAccountId;
 
 		id = super.getRequest().getData("id", int.class);
-		this.campaign = this.repository.findCampaignById(id);
+		userAccountId = super.getRequest().getPrincipal().getAccountId();
+		this.campaign = this.repository.findVisibleCampaignById(id, userAccountId);
 	}
 
 	@Override
 	public void authorise() {
-		boolean status;
-
-		status = this.campaign != null && this.campaign.getSpokesperson().isPrincipal();
-		super.setAuthorised(status);
+		super.setAuthorised(this.campaign != null);
 	}
 
 	@Override

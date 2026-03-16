@@ -21,3 +21,17 @@ campaign-err-19,IL19-X0219,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur 
 campaign-err-20,IM20-X0220,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,,spokesperson-err-01
 campaign-err-21,IN21-X0221,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,
 campaign-err-22,IO22-X0222,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/02/08 00:00,http://lorem.com/ipsum,false,spokesperson-err-01
+# Ticker - Extra invalid @ValidTicker variations aligned with invention style
+campaign-err-23,A00-12345,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-err-01
+campaign-err-24,AAA00-12345,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-err-01
+campaign-err-25,AB0#-12345,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-err-01
+campaign-err-26,AB12-1234,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-err-01
+campaign-err-27, AB12-12345,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-err-01
+# Moments - Missing values and additional publish edge cases
+campaign-err-28,IP28-X0228,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-err-01
+campaign-err-29,IQ29-X0229,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,,http://lorem.com/ipsum,true,spokesperson-err-01
+campaign-err-30,IR30-X0230,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/01 00:01,2025/01/01 00:02,http://lorem.com/ipsum,false,spokesperson-err-01
+# MoreInfo - Additional invalid URL variations
+campaign-err-31,IS31-X0231,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://,true,spokesperson-err-01
+campaign-err-32,IT32-X0232,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://a,true,spokesperson-err-01
+campaign-err-33,IU33-X0233,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,ftp://example.org,true,spokesperson-err-01

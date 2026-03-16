@@ -4,6 +4,22 @@
 
 <jstl:set var="readonly" value="${_command == 'show' || _command == 'delete'}"/>
 
+<jstl:if test="${_command == 'create'}">
+	<script type="text/javascript">
+		clearReturnUrl();
+		pushReturnUrl("/spokesperson/campaign/list");
+		sessionStorage.setItem(returnTopKey, getCurrentUrl());
+	</script>
+</jstl:if>
+
+<jstl:if test="${_command == 'update'}">
+	<script type="text/javascript">
+		clearReturnUrl();
+		pushReturnUrl("/spokesperson/campaign/show?id=${id}");
+		sessionStorage.setItem(returnTopKey, getCurrentUrl());
+	</script>
+</jstl:if>
+
 <jstl:if test="${_command == 'delete'}">
 	<script type="text/javascript">
 		clearReturnUrl();

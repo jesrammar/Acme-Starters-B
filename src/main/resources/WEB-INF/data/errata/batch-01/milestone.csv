@@ -24,3 +24,10 @@ milestone-err-12,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipisci
 
 # key:campaign - errata variations
 milestone-err-13,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,
+# title - extra @ValidHeader variations
+milestone-err-14,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temX","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-err-01
+# achievements - extra @ValidText variations
+milestone-err-15,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX",50.00,TEASER,campaign-err-01
+# kind - invalid enum and campaign reference
+milestone-err-16,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,INVALID,campaign-err-01
+milestone-err-17,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-does-not-exist

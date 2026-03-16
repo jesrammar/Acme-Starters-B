@@ -94,11 +94,11 @@ public class Campaign extends AbstractEntity {
 		if (this.startMoment == null || this.endMoment == null || !MomentHelper.isAfter(this.endMoment, this.startMoment))
 			return 0.0;
 
-		double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		double rounded = MathHelper.roundOff(months, 1);
+		final double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 
-		return rounded;
+		return MathHelper.roundOff(months, 1);
 	}
+
 
 	
 	@Mandatory
@@ -109,6 +109,7 @@ public class Campaign extends AbstractEntity {
 			return 0.0;
 
 		Double wrapper = this.repository.computeCampaignEffort(this.getId());
+		
 		return wrapper == null ? 0.0 : wrapper.doubleValue();
 	}
 }
