@@ -27,8 +27,11 @@ public class InventionCreateService extends AbstractService<Inventor, Invention>
 
 	@Override
 	public void authorise() {
-		// TODO: Revisar
-		super.setAuthorised(true);
+		boolean status;
+
+		status = this.invention != null;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

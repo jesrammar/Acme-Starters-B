@@ -16,4 +16,4 @@
 	<acme:list-column code="inventor.invention.list.label.cost" path="cost"/>
 </acme:list>
 
-<acme:button code="inventor.invention.button.create" action="/inventor/invention/create"/>
+<acme:button code="inventor.invention.form.button.create" action="/inventor/invention/create"/>
