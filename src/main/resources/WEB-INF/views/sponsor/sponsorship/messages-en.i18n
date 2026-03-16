@@ -11,7 +11,7 @@ sponsor.sponsorship.form.label.description = Description:
 sponsor.sponsorship.form.label.startMoment = Start Date:
 sponsor.sponsorship.form.label.endMoment = End Date:
 sponsor.sponsorship.form.label.moreInfo = More info:
-sponsor.sponsorship.form.label.draftMode = Draft Mode
+sponsor.sponsorship.form.label.draftMode = Draft Mode:
 
 # Form buttons
 sponsor.sponsorship.form.button.donations = Donations

@@ -9,13 +9,13 @@ import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.sponsorships.Sponsorship;
-import acme.features.sponsorships.sponsorship.SponsorshipRepository;
+import acme.features.sponsor.sponsorship.SponsorSponsorshipRepository;
 
 @Validator
 public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sponsorship> {
 
 	@Autowired
-	private SponsorshipRepository repository;
+	private SponsorSponsorshipRepository repository;
 
 
 	@Override

@@ -11,9 +11,9 @@ user-account-auditor-03,true,"UserIdentity{name: 'Manu', surname: 'Sabido', emai
 user-account-inventor-01,true,"UserIdentity{name: 'John', surname: 'Doe', email: 'johndoe@acme.com'}",inventor1,inventor1
 user-account-inventor-02,true,"UserIdentity{name: 'Jane', surname: 'Doe', email: 'janedoe@acme.com'}",inventor2,inventor2
 user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Diaz', email: 'juandiaz@acme.com'}",inventor3,inventor3
-user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor01', surname: 'Sponsor', email: 'sponsor01@acme.com'}",sponsor01,sponsor01
-user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor02', surname: 'Sponsor', email: 'sponsor02@acme.com'}",sponsor02,sponsor02
-user-account-sponsor-03,true,"UserIdentity{name: 'Sponsor03', surname: 'Sponsor', email: 'sponsor03@acme.com'}",sponsor03,sponsor03
+user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor1', surname: 'Sponsor', email: 'sponsor1@acme.com'}",sponsor1,sponsor1
+user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor2', surname: 'Sponsor', email: 'sponsor2@acme.com'}",sponsor2,sponsor2
+user-account-sponsor-03,true,"UserIdentity{name: 'Sponsor3', surname: 'Sponsor', email: 'sponsor3@acme.com'}",sponsor3,sponsor3
 user-account-fundraiser-01,true,"UserIdentity{name: 'Miguel', surname: 'Lopez', email: 'miglop@acme.com'}",fundraiser1,fundraiser1
 user-account-fundraiser-02,true,"UserIdentity{name: 'Mike', surname: 'Smith', email: 'mikesmith@acme.com'}",fundraiser2,fundraiser2
 user-account-fundraiser-03,true,"UserIdentity{name: 'Michael', surname: 'Irving', email: 'michaelirv@acme.com'}",fundraiser3,fundraiser3
