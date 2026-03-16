@@ -17,17 +17,13 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:menu-bar>
-	<acme:menu-left>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
-		</acme:menu-option>
-		
+	<acme:menu-left>		
 		<acme:menu-option code="master.menu.any">
-	    <acme:menu-suboption code="master.menu.any.campaign-list" action="/any/campaign/list"/>
-	    <acme:menu-suboption code="master.menu.any.audit-report-list" action="/any/audit-report/list"/>
-    	<acme:menu-suboption code="master.menu.any.fundraiser.strategies-list" action="/any/strategy/list"/>
-    	<acme:menu-suboption code="master.menu.any.inventor.invention-list" action="/any/invention/list"/>	        
-    </acme:menu-option>
+		    <acme:menu-suboption code="master.menu.any.campaign-list" action="/any/campaign/list"/>
+		    <acme:menu-suboption code="master.menu.any.audit-report-list" action="/any/audit-report/list"/>
+	    	<acme:menu-suboption code="master.menu.any.fundraiser.strategies-list" action="/any/strategy/list"/>
+	    	<acme:menu-suboption code="master.menu.any.inventor.invention-list" action="/any/invention/list"/>	        
+    	</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.list-user-accounts" action="/administrator/user-account/list"/>
@@ -36,14 +32,6 @@
 			<acme:menu-suboption code="master.menu.administrator.populate-db-sample" action="/administrator/system/populate-sample"/>			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-system-down" action="/administrator/system/shut-down"/>
-		</acme:menu-option>
-
-		<acme:menu-option code="master.menu.provider" access="hasRealm('Provider')">
-			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
-		</acme:menu-option>
-
-		<acme:menu-option code="master.menu.consumer" access="hasRealm('Consumer')">
-			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
