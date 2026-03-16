@@ -19,13 +19,14 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidInvention;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
-import acme.features.inventions.InventionRepository;
+import acme.features.inventor.invention.InventionRepository;
 import acme.realms.Inventor;
 import lombok.Getter;
 import lombok.Setter;
@@ -82,7 +83,7 @@ public class Invention extends AbstractEntity {
 	private InventionRepository	repository;
 
 
-	// @Mandatory
+	@Mandatory
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
@@ -90,7 +91,8 @@ public class Invention extends AbstractEntity {
 		return months;
 	}
 
-	//	@Mandatory
+	@Mandatory
+	@ValidMoney
 	@Transient
 	public Money getCost() {
 		Money result = new Money();

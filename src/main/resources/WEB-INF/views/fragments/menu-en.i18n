@@ -59,6 +59,10 @@ master.menu.spokesperson.campaign-list = Campaigns
 master.menu.sponsor = Sponsor
 master.menu.sponsor.sponsorship-list = Sponsorships
 
+# master.menu.any.fundraiser ##########################################################
+
+master.menu.any.fundraiser.strategies-list = Published strategies
+
 # master.menu.fundraiser ##########################################################
 
 master.menu.fundraiser = Fundraiser
@@ -69,17 +73,32 @@ master.menu.fundraiser.strategies-list = Strategies
 master.menu.inventor = Inventor
 master.menu.inventor.invention-list = Inventions
 
+# master.menu.any.inventor ##########################################################
+
+master.menu.any.inventor.invention-list = Published Inventions
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
 master.menu.user-account.general-profile = General profile
+
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.provider-profile = Provider profile
+
 master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.consumer-profile = Consumer profile
 
+master.menu.user-account.become-spokesperson = Acquire Spokesperson Role
+master.menu.user-account.spokesperson-profile = Spokesperson Profile
+
 master.menu.user-account.become-auditor = Acquire Auditor Role
 master.menu.user-account.auditor-profile = Auditor Profile
+
+master.menu.user-account.become-fundraiser = Acquire fundraiser role
+master.menu.user-account.fundraiser-profile= Fundraiser profile
+
+master.menu.user-account.become-inventor = Acquire Inventor Role
+master.menu.user-account.inventor-profile = Inventor Profile
 
 master.menu.user-account.become-sponsor = Acquire Sponsor Role
 master.menu.user-account.sponsor-profile = Sponsor Profile

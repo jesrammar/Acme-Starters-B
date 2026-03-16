@@ -1,29 +1,5 @@
 # messages-es.i18n
 
 # Títulos
-any.audit-report.form.title = Formulario de Informe de auditoría
-any.audit-report.list.title = Listado de Informes de auditoría
-
-# Etiquetas del formulario
-any.audit-report.form.label.ticker = Código:
-any.audit-report.form.label.name = Nombre:
-any.audit-report.form.label.description = Descripción:
-any.audit-report.form.label.startMoment = Fecha de inicio:
-any.audit-report.form.label.endMoment = Fecha de fin:
-any.audit-report.form.label.moreInfo = Más información:
-any.audit-report.form.label.draftMode = Modo borrador
-
-# Botones del formulario
-any.audit-report.form.button.sections = Secciones
-any.audit-report.form.button.auditor-profile=Ver perfil del auditor
-
-# Etiquetas de la lista
-any.audit-report.list.label.ticker = Código
-any.audit-report.list.label.name = Nombre
-any.audit-report.list.label.draftMode = Borrador
-any.audit-report.list.label.startMoment = Fecha inicio
-any.audit-report.list.label.endMoment = Fecha fin
-any.audit-report.list.label.sectionCount = Secciones
-any.audit-report.list.label.hours = Horas
-any.audit-report.list.label.description = Descripción
-any.audit-report.list.label.moreInfo = Más información
+any.audit-report.form.title = Formulario de Informe de Auditoría
+any.audit-report.list.title = Listado de Informes de Auditoría

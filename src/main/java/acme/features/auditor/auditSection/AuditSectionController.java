@@ -19,8 +19,8 @@ public class AuditSectionController extends AbstractController<Auditor, AuditSec
 
 		super.addBasicCommand("list", AuditSectionListService.class);
 		super.addBasicCommand("show", AuditSectionShowService.class);
-		//	super.addBasicCommand("create", AuditSectionCreateService.class);
-		//	super.addBasicCommand("update", AuditSectionUpdateService.class);
-		// super.addBasicCommand("delete", AuditSectionDeleteService.class);
+		super.addBasicCommand("create", AuditSectionCreateService.class);
+		super.addBasicCommand("update", AuditSectionUpdateService.class);
+		super.addBasicCommand("delete", AuditSectionDeleteService.class);
 	}
 }

@@ -1,0 +1,11 @@
+# Page titles
+authenticated.fundraiser.form.title= Fundraiser form
+
+# Labels form
+authenticated.fundraiser.form.label.bank=Bank
+authenticated.fundraiser.form.label.statement=Statement
+authenticated.fundraiser.form.label.agent=Agent
+
+# Buttons form
+authenticated.fundraiser.form.button.create=Create fundraiser
+authenticated.fundraiser.form.button.update=Update fundraiser

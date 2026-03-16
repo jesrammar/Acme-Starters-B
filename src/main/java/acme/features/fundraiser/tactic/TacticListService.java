@@ -6,8 +6,8 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.models.Tuple;
 import acme.client.services.AbstractService;
+import acme.entities.strategies.Strategy;
 import acme.entities.strategies.Tactic;
 import acme.realms.Fundraiser;
 
@@ -19,11 +19,16 @@ public class TacticListService extends AbstractService<Fundraiser, Tactic> {
 
 	private Collection<Tactic>	tactics;
 
+	private Strategy			strategy;
+
 
 	@Override
 	public void load() {
 		int strategyId = super.getRequest().getData("strategyId", int.class);
-		this.tactics = (Collection<Tactic>) this.repository.findTacticsByStrategyId(strategyId);
+		this.tactics = this.repository.findTacticsByStrategyId(strategyId);
+		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.strategy = this.repository.findStrategyByIdAndFundraiserId(strategyId, fundraiserId);
+
 	}
 
 	@Override
@@ -33,10 +38,9 @@ public class TacticListService extends AbstractService<Fundraiser, Tactic> {
 
 	@Override
 	public void unbind() {
-		for (Tactic tactic : this.tactics) {
-			Tuple tuple = super.unbindObject(tactic, "name", "notes", "expectedPercentage", "kind");
-			tuple.put("strategyId", tactic.getStrategy().getId());
-		}
+		super.unbindObjects(this.tactics, "name", "kind", "notes", "expectedPercentage");
+		super.unbindGlobal("strategyId", super.getRequest().getData("strategyId", int.class));
+		super.unbindGlobal("strategyDraftMode", this.strategy.getDraftMode());
 
 	}
 }

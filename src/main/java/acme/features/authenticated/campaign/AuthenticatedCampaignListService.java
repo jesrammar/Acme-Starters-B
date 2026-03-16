@@ -1,0 +1,42 @@
+package acme.features.authenticated.campaign;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import acme.client.components.models.Tuple;
+import acme.client.components.principals.Authenticated;
+import acme.client.services.AbstractService;
+import acme.entities.campaigns.Campaign;
+
+@Service
+public class AuthenticatedCampaignListService extends AbstractService<Authenticated, Campaign> {
+
+	@Autowired
+	private AuthenticatedCampaignRepository	repository;
+
+	private Collection<Campaign>	campaigns;
+
+	@Override
+	public void load() {
+		this.campaigns = this.repository.findPublishedCampaigns();
+	}
+
+	@Override
+	public void authorise() {
+		super.setAuthorised(true);
+	}
+
+	@Override
+	public void unbind() {
+		for (Campaign campaign : this.campaigns) {
+			Tuple tuple;
+
+			tuple = super.unbindObject(campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
+			tuple.put("monthsActive", campaign.getMonthsActive());
+			Double effort = this.repository.computeCampaignEffort(campaign.getId());
+			tuple.put("effort", effort == null ? 0.0 : effort);
+		}
+	}
+}

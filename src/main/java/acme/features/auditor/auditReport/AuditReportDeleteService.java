@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.audit.AuditReport;
+import acme.features.auditor.auditSection.AuditSectionRepository;
 import acme.realms.Auditor;
 
 @Service
@@ -14,6 +15,9 @@ public class AuditReportDeleteService extends AbstractService<Auditor, AuditRepo
 	// Repository ------------------------------------------------------------
 	@Autowired
 	private AuditReportRepository	repository;
+
+	@Autowired
+	private AuditSectionRepository	sectionReporitory;
 
 	private AuditReport				auditReport;
 
@@ -43,7 +47,7 @@ public class AuditReportDeleteService extends AbstractService<Auditor, AuditRepo
 
 	@Override
 	public void execute() {
-
+		this.sectionReporitory.deleteAll(this.sectionReporitory.findSectionsByReportIdAndAuditorId(this.auditReport.getId(), this.auditReport.getAuditor().getId()));
 		this.repository.delete(this.auditReport);
 	}
 

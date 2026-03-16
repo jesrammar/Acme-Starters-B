@@ -1,0 +1,20 @@
+# Títulos
+inventor.part.list.title = Listado de Partes
+inventor.part.form.title = Mostrar Parte
+
+# Etiquetas de listado
+inventor.part.list.label.name = Nombre
+inventor.part.list.label.description = Descripción
+inventor.part.list.label.cost = Coste
+inventor.part.list.label.kind = Tipo
+
+# Etiquetas de formulario
+inventor.part.form.label.name = Nombre
+inventor.part.form.label.description = Descripción
+inventor.part.form.label.cost = Coste
+inventor.part.form.label.kind = Tipo
+
+# Etiquetas de botones
+inventor.part.button.create = Crear
+inventor.part.button.update = Actualizar
+inventor.part.button.delete = Borrar

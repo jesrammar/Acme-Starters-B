@@ -15,17 +15,21 @@ public interface StrategyRepository extends AbstractRepository {
 	Double getExpectedPercentage(int strategyId);
 
 	//Obtener una strategy mediante su ID
-	@Query("select str from Strategy str where str.id = :id")
+	@Query("select str from Strategy str where str.id = ?1")
 	Strategy findStrategyById(int id);
 
 	//Obtener la strategy de un fundraiser
-	@Query("select str from Strategy str where str.fundraiser.userAccount.id = :userAccountId")
+	@Query("select str from Strategy str where str.fundraiser.userAccount.id = ?1")
 	Iterable<Strategy> findStrategyByFundraiserId(int userAccountId);
 
 	// Contar tactics de una strategy
 	@Query("select count(t) from Tactic t where t.strategy.id = ?1")
 	long countTacticsByStrategyId(int strategyId);
 
-	@Query("select count(str) > 0 from Strategy str where str.ticker = :ticker and str.id != :id")
-	boolean existsStrategyWithTicker(String ticker, int id);
+	//Obtener una estrategia mediante su ticker 
+	@Query("select str from Strategy str where str.ticker = ?1")
+	Strategy findStrategyByTicker(String ticker);
+
+	@Query("select str from Strategy str where str.id = ?1 and str.fundraiser.id = ?2")
+	Strategy findOneByIdAndFundraiserId(int id, int fundraiserId);
 }

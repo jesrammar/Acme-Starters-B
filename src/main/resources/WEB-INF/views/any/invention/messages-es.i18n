@@ -1,0 +1,28 @@
+# Títulos
+any.invention.list.title = Listado de Inventos Publicados
+any.invention.form.title = Mostrar Invento Publicado
+
+# Etiquetas de listado
+any.invention.list.label.ticker = Ticker
+any.invention.list.label.name = Nombre
+any.invention.list.label.description = Descripción
+any.invention.list.label.startMoment = Momento Inicial
+any.invention.list.label.endMoment = Momento Final
+any.invention.list.label.moreInfo = Más info.
+any.invention.list.label.cost = Coste
+any.invention.list.label.partsCount = Nº Partes
+
+# Etiquetas de formulario
+any.invention.form.label.ticker = Ticker
+any.invention.form.label.name = Nombre
+any.invention.form.label.description = Descripción
+any.invention.form.label.startMoment = Momento Inicial
+any.invention.form.label.endMoment = Momento Final
+any.invention.form.label.moreInfo = Más info.
+any.invention.form.label.monthsActive = Meses Activo
+any.invention.form.label.cost = Coste
+any.invention.form.label.partsCount = Nº Partes
+
+# Buttons labels
+any.invention.button.parts = Partes
+any.invention.button.inventor-profile = Perfil del Inventor

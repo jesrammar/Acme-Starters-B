@@ -9,7 +9,7 @@ import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.inventions.Invention;
-import acme.features.inventions.InventionRepository;
+import acme.features.inventor.invention.InventionRepository;
 
 @Validator
 public class InventionValidator extends AbstractValidator<ValidInvention, Invention> {
@@ -31,18 +31,19 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 		if (invention == null)
 			return true;
 
-		// Validate if it's going to be published
+		// Check duplicated invention with equal ticker
+		{
+			boolean uniqueInvention;
+			Invention existingInvention;
+
+			existingInvention = this.repository.findInventionByTicker(invention.getTicker());
+			uniqueInvention = existingInvention == null || existingInvention.equals(invention);
+
+			super.state(context, uniqueInvention, "ticker", "acme.validation.invention.duplicated-ticker.message");
+		}
+
+		// For the already published inventions
 		if (Boolean.FALSE.equals(invention.getDraftMode())) {
-			// Check duplicated invention with equal ticker
-			{
-				boolean uniqueInvention;
-				Invention existingInvention;
-
-				existingInvention = this.repository.findInventionByTicker(invention.getTicker());
-				uniqueInvention = existingInvention == null || existingInvention.equals(invention);
-
-				super.state(context, uniqueInvention, "ticker", "acme.validation.invention.duplicated-ticker.message");
-			}
 			// Check invention has more than one part
 			{
 				boolean hasInventionAtLeastOnePart;
@@ -51,28 +52,13 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 
 				super.state(context, hasInventionAtLeastOnePart, "*", "acme.validation.invention.parts.message");
 			}
-			// Check dates are future
-			{
-				boolean startMomentIsFuture;
-
-				startMomentIsFuture = MomentHelper.isFuture(invention.getStartMoment());
-
-				super.state(context, startMomentIsFuture, "startMoment", "acme.validation.invention.startMoment-NotFuture.message");
-			}
-			{
-				boolean endMomentIsFuture;
-
-				endMomentIsFuture = MomentHelper.isFuture(invention.getEndMoment());
-
-				super.state(context, endMomentIsFuture, "endMoment", "acme.validation.invention.endMoment-NotFuture.message");
-			}
 			// Check startMoment is before endMoment
 			{
 				boolean startMomentIsPreviousToEndMoment;
 
 				startMomentIsPreviousToEndMoment = MomentHelper.isBefore(invention.getStartMoment(), invention.getEndMoment());
 
-				super.state(context, startMomentIsPreviousToEndMoment, "startMoment", "acme.validation.invention.startMoment-PostEndMoment.message");
+				super.state(context, startMomentIsPreviousToEndMoment, "startMoment", "acme.validation.invention.invalidMomentInterval.message");
 			}
 			isValid = !super.hasErrors(context);
 		}

@@ -7,13 +7,12 @@ import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.campaigns.Campaign;
-import acme.entities.campaigns.CampaignRepository;
 
 @Service
 public class AnyCampaignShowService extends AbstractService<Any, Campaign> {
 
 	@Autowired
-	private CampaignRepository		repository;
+	private AnyCampaignRepository	repository;
 
 	private Campaign				campaign;
 

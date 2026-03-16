@@ -14,7 +14,10 @@ fundraiser.strategy.form.label.moreInfo = Más información:
 fundraiser.strategy.form.label.draftMode = Borrador:
 
 # Form buttons
-fundraiser.strategy.fom.label.tactics = Tácticas
+fundraiser.strategy.form.button.tactics = Tácticas
+fundraiser.strategy.form.button.create = Crear recaudador de fondos
+fundraiser.strategy.form.button.update = Actualizar recaudador de fondos
+fundraiser.strategy.form.button.delete = Borrar recaudador de fondos
 
 # List labels
 fundraiser.strategy.list.label.ticker = Código
@@ -26,3 +29,6 @@ fundraiser.strategy.list.label.tacticCount= Tácticas
 fundraiser.strategy.list.label.expectedPercentage = Porcentaje esperado
 fundraiser.strategy.list.label.description = Descripción
 fundraiser.strategy.list.label.moreInfo = Más información
+
+#List buttons
+fundraiser.strategy.list.button.create = Crear estrategia

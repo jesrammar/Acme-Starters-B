@@ -11,7 +11,7 @@ acme.validation.ticker.message = The ticker must have letters, digits, underscor
 acme.validation.invention.invalidInvention.message = Invalid invention
 acme.validation.invention.duplicated-ticker.message = Already exists an invention with the same ticker
 acme.validation.invention.parts.message = Invention must have at least one part in order to be published
-acme.validation.invention.startMoment-NotFuture.message = The start moment must be in the future
+acme.validation.invention.invalidMomentInterval.message = The start moment must be in the future
 acme.validation.invention.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.invention.startMoment-PostEndMoment.message = The start moment must be before the end moment
 
@@ -30,9 +30,9 @@ acme.validation.sponsorship.startMoment-PostEndMoment.message = The start moment
 
 acme.validation.auditReport.invalidAuditReport.message = The audit report isn't a valid audit report
 acme.validation.auditReport.duplicatedTicker.message = An audit report with the same ticker already exists
-acme.validation.auditReport.must-have-section.message = The audit report must have at least one section before being published
-acme.validation.auditReport.startMoment-NotFuture.message = The start moment must be in the future
-acme.validation.auditReport.endMoment-NotFuture.message = The end moment must be in the future
+acme.validation.auditReport.sections.message = The audit report must have at least one section before being published
+acme.validation.auditReport.startMomentNotFuture.message = The start moment must be in the future
+acme.validation.auditReport.endMomentNotFuture.message = The end moment must be in the future
 acme.validation.auditReport.startMoment-PostEndMoment.message = The start moment must be earlier than the end moment
 
 

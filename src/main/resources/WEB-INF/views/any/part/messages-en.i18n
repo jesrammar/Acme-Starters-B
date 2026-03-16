@@ -1,0 +1,15 @@
+# Titles
+any.part.list.title = Listing of Parts
+any.part.form.title = Show Part
+
+# List labels
+any.part.list.label.name = Name
+any.part.list.label.description = Description
+any.part.list.label.cost = Cost
+any.part.list.label.kind = Kind
+
+# Form labels
+any.part.form.label.name = Name
+any.part.form.label.description = Description
+any.part.form.label.cost = Cost
+any.part.form.label.kind = Kind
