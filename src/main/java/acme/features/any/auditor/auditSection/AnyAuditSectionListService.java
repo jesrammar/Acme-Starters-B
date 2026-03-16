@@ -22,7 +22,9 @@ public class AnyAuditSectionListService extends AbstractService<Any, AuditSectio
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		int auditReportId = super.getRequest().getData("auditReportId", int.class);
+		int count = this.repository.countPublishedReportsById(auditReportId);
+		super.setAuthorised(count == 1);
 	}
 
 	@Override

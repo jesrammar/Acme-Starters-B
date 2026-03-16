@@ -17,4 +17,7 @@ public interface AnyAuditSectionRepository extends AbstractRepository {
 
 	@Query("select s from AuditSection s where s.id = :id and s.auditReport.draftMode = false")
 	AuditSection findPublishedAuditSectionById(int id);
+
+	@Query("select count(r) from AuditReport r where r.id = :reportId and r.draftMode = false")
+	int countPublishedReportsById(int reportId);
 }

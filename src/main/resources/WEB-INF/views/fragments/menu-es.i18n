@@ -26,12 +26,12 @@ master.menu.any.campaign-list = Campañas Publicadas
 
 # master.menu.any.auditor ##########################################################
 
-master.menu.any.audit-report-list = Informes de Auditoría publicados
+master.menu.any.audit-report-list = Informes de Auditoría Publicados
 
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
-master.menu.auditor.audit-report-list = Informes de Auditoría
+master.menu.auditor.audit-report-list = Informes de Auditoría Publicados
 
 # master.menu.any.fundraiser ##########################################################
 

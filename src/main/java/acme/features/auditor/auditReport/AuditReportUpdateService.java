@@ -36,12 +36,14 @@ public class AuditReportUpdateService extends AbstractService<Auditor, AuditRepo
 
 	@Override
 	public void bind() {
-		super.bindObject(this.auditReport, "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.bindObject(this.auditReport, "name", "ticker", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
 	public void validate() {
 		super.validateObject(this.auditReport);
+		boolean uniqueTicker = !this.repository.existsAuditReportWithTicker(this.auditReport.getTicker(), this.auditReport.getId());
+		super.state(uniqueTicker, "ticker", "acme.validation.auditReport.duplicatedTicker.message");
 	}
 
 	@Override
