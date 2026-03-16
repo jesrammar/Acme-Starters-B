@@ -8,15 +8,14 @@ import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.audit.AuditReport;
-import acme.features.auditor.auditReport.AuditReportRepository;
 
 @Service
 public class AnyAuditReportShowService extends AbstractService<Any, AuditReport> {
 
 	@Autowired
-	private AuditReportRepository	repository;
+	private AnyAuditReportRepository	repository;
 
-	private AuditReport				auditReport;
+	private AuditReport					auditReport;
 
 
 	@Override
@@ -33,7 +32,7 @@ public class AnyAuditReportShowService extends AbstractService<Any, AuditReport>
 		int id;
 
 		id = super.getRequest().getData("id", int.class);
-		this.auditReport = this.repository.findAuditReportById(id);
+		this.auditReport = this.repository.findPublishedAuditReportById(id);
 	}
 
 	@Override

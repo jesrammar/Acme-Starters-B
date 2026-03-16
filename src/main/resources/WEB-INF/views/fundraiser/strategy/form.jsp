@@ -33,6 +33,8 @@
 			<jstl:if test="${draftMode}">
 				<acme:submit code="fundraiser.strategy.form.button.update" action="/fundraiser/strategy/update"/>
 				<acme:submit code="fundraiser.strategy.form.button.delete" action="/fundraiser/strategy/delete"/>
+				<acme:submit code="fundraiser.strategy.form.button.publish" action="/fundraiser/strategy/publish"/>
+			
 			</jstl:if>
 			
 			<acme:button code="fundraiser.strategy.form.button.tactics" action="/fundraiser/tactic/list?strategyId=${id}" />

@@ -15,10 +15,9 @@ fundraiser.strategy.form.label.draftMode = Borrador:
 
 # Form buttons
 fundraiser.strategy.form.button.tactics = Tácticas
-fundraiser.strategy.form.button.create = Crear recaudador de fondos
-fundraiser.strategy.form.button.update = Actualizar recaudador de fondos
-fundraiser.strategy.form.button.delete = Borrar recaudador de fondos
-
+fundraiser.strategy.form.button.update = Actualizar estrategia
+fundraiser.strategy.form.button.delete = Borrar estrategia
+fundraiser.strategy.form.button.publish = Publicar estrategia
 # List labels
 fundraiser.strategy.list.label.ticker = Código
 fundraiser.strategy.list.label.name = Nombre
@@ -32,3 +31,7 @@ fundraiser.strategy.list.label.moreInfo = Más información
 
 #List buttons
 fundraiser.strategy.list.button.create = Crear estrategia
+
+#Errors
+
+#fundraiser.strategy.error.no-tactics = No puedes publicar una estrategia sin al menos una táctica asignada
