@@ -80,3 +80,6 @@ master.menu.user-account.consumer-profile = Consumer profile
 
 master.menu.user-account.become-auditor = Acquire Auditor Role
 master.menu.user-account.auditor-profile = Auditor Profile
+
+master.menu.user-account.become-sponsor = Acquire Sponsor Role
+master.menu.user-account.sponsor-profile = Sponsor Profile
