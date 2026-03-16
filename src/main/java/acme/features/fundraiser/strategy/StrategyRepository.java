@@ -31,5 +31,5 @@ public interface StrategyRepository extends AbstractRepository {
 	Strategy findStrategyByTicker(String ticker);
 
 	@Query("select str from Strategy str where str.id = ?1 and str.fundraiser.id = ?2")
-	Strategy findOneByIdAndFundraiserId(int id, int fundraiserId);
+	Strategy findStrategyByIdAndFundraiserId(int id, int fundraiserId);
 }
