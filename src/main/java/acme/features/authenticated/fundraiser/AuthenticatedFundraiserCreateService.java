@@ -8,7 +8,6 @@ import acme.client.components.principals.Authenticated;
 import acme.client.components.principals.UserAccount;
 import acme.client.helpers.PrincipalHelper;
 import acme.client.services.AbstractService;
-import acme.realms.Auditor;
 import acme.realms.Fundraiser;
 
 @Service
@@ -31,7 +30,7 @@ public class AuthenticatedFundraiserCreateService extends AbstractService<Authen
 
 	@Override
 	public void authorise() {
-		boolean status = !super.getRequest().getPrincipal().hasRealmOfType(Auditor.class);
+		boolean status = !super.getRequest().getPrincipal().hasRealmOfType(Fundraiser.class);
 		super.setAuthorised(status);
 	}
 
