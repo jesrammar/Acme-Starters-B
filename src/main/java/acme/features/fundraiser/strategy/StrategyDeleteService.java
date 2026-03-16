@@ -49,6 +49,7 @@ public class StrategyDeleteService extends AbstractService<Fundraiser, Strategy>
 
 	@Override
 	public void unbind() {
+		super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 	}
 
 }

@@ -15,4 +15,5 @@ public interface AnyTacticRepository extends AbstractRepository {
 
 	@Query("select t from Tactic t where t.id = ?1 and t.strategy.draftMode = false")
 	Tactic findPublishedTacticById(int id);
+
 }

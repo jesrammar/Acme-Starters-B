@@ -22,13 +22,16 @@ public class TacticUpdateService extends AbstractService<Fundraiser, Tactic> {
 	@Override
 	public void load() {
 		int id = super.getRequest().getData("id", int.class);
-		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.tactic = this.repository.findTacticByIdAndFundraiserId(id, fundraiserId);
+
+		this.tactic = this.repository.findTacticById(id);
 	}
 
 	@Override
 	public void authorise() {
-		boolean status = this.tactic != null && this.tactic.getStrategy().getDraftMode();
+		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
+
+		boolean status = this.tactic != null && this.tactic.getStrategy().getDraftMode() && this.tactic.getStrategy().getFundraiser().getId() == fundraiserId;
+
 		super.setAuthorised(status);
 	}
 
