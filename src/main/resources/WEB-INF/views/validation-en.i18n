@@ -42,7 +42,8 @@ acme.validation.strategy.invalidStrategy.message = The strategy isn't a valid st
 acme.validation.strategy.duplicatedTicker.message= Already exists a strategy with the same ticker
 acme.validation.strategy.must-have-tactic.message= The strategy must have at least one tactic before being published
 acme.validation.strategy.startMoment-PostEndMoment.message = The start moment must be before the end moment
-
+acme.validation.strategy.startMoment-notFuture.message = The start moment must be in the future 
+acme.validation.strategy.endMoment-notFuture.message = The end moment must be in the future 
 
 # Campaign messages
 

@@ -37,7 +37,14 @@ public class StrategyCreateService extends AbstractService<Fundraiser, Strategy>
 
 	@Override
 	public void validate() {
+
+		if (!super.getErrors().hasErrors()) {
+			Strategy existing = this.repository.findStrategyByTicker(this.strategy.getTicker());
+
+			super.state(existing == null, "*", "acme.validation.strategy.duplicatedTicker.message");
+		}
 		super.validateObject(this.strategy);
+
 	}
 
 	@Override
