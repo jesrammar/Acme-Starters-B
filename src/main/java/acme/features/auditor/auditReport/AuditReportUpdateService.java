@@ -36,7 +36,7 @@ public class AuditReportUpdateService extends AbstractService<Auditor, AuditRepo
 
 	@Override
 	public void bind() {
-		super.bindObject(this.auditReport, "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.bindObject(this.auditReport, "name", "ticker", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
