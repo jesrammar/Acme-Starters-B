@@ -20,5 +20,5 @@ user-account-fundraiser-03,true,"UserIdentity{name: 'Michael', surname: 'Irving'
 user-account-spokesperson-01,true,"UserIdentity{name: 'Spokesperson01', surname: 'Spokesperson', email: 'spokesperson1@acme.com'}",spokesperson1,spokesperson1
 user-account-spokesperson-02,true,"UserIdentity{name: 'Spokesperson02', surname: 'SpokespersonTwo', email: 'spokesperson2@acme.com'}",spokesperson2,spokesperson2
 user-account-spokesperson-03,true,"UserIdentity{name: 'Spokesperson03', surname: 'SpokespersonThree', email: 'spokesperson3@acme.com'}",spokesperson3,spokesperson3
-user-account-administrator-01,true,"UserIdentity{name: 'Billy', surname: 'Thompson', email: 'billythompson@acme.com'}",administrator1,administrator1
-user-account-administrator-02,true,"UserIdentity{name: 'Marta', surname: 'Díaz', email: 'martadiaz@acme.com'}",administrator2,administrator2
+user-account-administrator-02,true,"UserIdentity{name: 'Billy', surname: 'Thompson', email: 'billythompson@acme.com'}",administrator1,administrator1
+user-account-administrator-03,true,"UserIdentity{name: 'Marta', surname: 'Díaz', email: 'martadiaz@acme.com'}",administrator2,administrator2
