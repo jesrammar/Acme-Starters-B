@@ -19,9 +19,9 @@ public interface SponsorSponsorshipRepository extends AbstractRepository {
 	@Query("select i from Sponsorship i where i.sponsor.userAccount.id = :userAccountId")
 	Iterable<Sponsorship> findSponsorshipsBySponsorId(int userAccountId);
 
-	@Query("select sum(d.money.amount) from Donation d where d.sponsorship.id = :id")
-	Double sumTotalMoneyBySponsorshipId(int id);
+	@Query("select sum(d.money.amount) from Donation d where d.sponsorship.id = :sponsorshipId")
+	Double sumTotalMoneyBySponsorshipId(int sponsorshipId);
 
-	@Query("select count(d) from Donation d where d.sponsorship.id = :donationId")
-	long countDonationsBySponsorshipId(int donationId);
+	@Query("select count(d) from Donation d where d.sponsorship.id = :sponsorshipId")
+	long countDonationsBySponsorshipId(int sponsorshipId);
 }

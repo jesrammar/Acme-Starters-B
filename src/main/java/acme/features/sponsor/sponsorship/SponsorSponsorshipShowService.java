@@ -15,7 +15,7 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 	@Autowired
 	private SponsorSponsorshipRepository	repository;
 
-	private Sponsorship				sponsorship;
+	private Sponsorship						sponsorship;
 
 	// AbstractService interface -------------------------------------------
 
@@ -45,6 +45,8 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 		tuple = super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 
 		tuple.put("money", this.sponsorship.getTotalMoney());
+
+		tuple.put("activeMonths", this.sponsorship.getMonthsActive());
 
 		long donationCount = this.repository.countDonationsBySponsorshipId(this.sponsorship.getId());
 

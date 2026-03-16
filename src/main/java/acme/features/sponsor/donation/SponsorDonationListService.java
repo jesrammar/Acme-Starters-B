@@ -15,10 +15,10 @@ import acme.realms.Sponsor;
 public class SponsorDonationListService extends AbstractService<Sponsor, Donation> {
 
 	@Autowired
-	private SponsorDonationRepository		repository;
+	private SponsorDonationRepository	repository;
 
-	private Collection<Donation>	donations;
-	private Sponsorship				sponsorship;
+	private Collection<Donation>		donations;
+	private Sponsorship					sponsorship;
 
 
 	@Override
@@ -35,8 +35,7 @@ public class SponsorDonationListService extends AbstractService<Sponsor, Donatio
 	@Override
 	public void authorise() {
 		boolean status = false;
-		status = this.sponsorship != null && //
-			(this.sponsorship.getSponsor().isPrincipal() || !this.sponsorship.getDraftMode());
+		status = this.sponsorship != null && this.sponsorship.getSponsor().isPrincipal();
 		super.setAuthorised(status);
 	}
 

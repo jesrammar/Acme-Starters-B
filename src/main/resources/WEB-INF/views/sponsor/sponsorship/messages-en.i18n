@@ -11,7 +11,6 @@ sponsor.sponsorship.form.label.description = Description:
 sponsor.sponsorship.form.label.startMoment = Start Date:
 sponsor.sponsorship.form.label.endMoment = End Date:
 sponsor.sponsorship.form.label.moreInfo = More info:
-sponsor.sponsorship.form.label.draftMode = Draft Mode:
 
 # Form buttons
 sponsor.sponsorship.form.button.donations = Donations
@@ -24,5 +23,6 @@ sponsor.sponsorship.list.label.startMoment = Start Date
 sponsor.sponsorship.list.label.endMoment = End Date
 sponsor.sponsorship.list.label.donationCount = Donations
 sponsor.sponsorship.list.label.money = Money
+sponsor.sponsorship.list.label.activeMonths = Active Months
 sponsor.sponsorship.list.label.description = Description
 sponsor.sponsorship.list.label.moreInfo = More info

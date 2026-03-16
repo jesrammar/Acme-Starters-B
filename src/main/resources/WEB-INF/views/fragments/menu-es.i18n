@@ -41,7 +41,7 @@ master.menu.any.campaign-list = Campañas publicadas
 
 # master.menu.any.auditor ##########################################################
 
-master.menu.any.audit-report-list = Informes de Auditoría
+master.menu.any.audit-report-list = Informes de Auditoría publicados
 
 # master.menu.auditor ##########################################################
 
@@ -62,6 +62,10 @@ master.menu.fundraiser.strategies-list = Estrategias
 master.menu.sponsor = Patrocinador
 master.menu.sponsor.sponsorship-list = Patrocinios
 
+# master.menu.any.sponsor ##########################################################
+
+master.menu.any.sponsor.sponsorship-list = Patrocinios publicados
+
 # master.menu.inventor ##########################################################
 
 master.menu.inventor = Inventor
@@ -69,7 +73,7 @@ master.menu.inventor.invention-list = Inventos
 
 # master.menu.any.inventor ##########################################################
 
-master.menu.any.inventor.invention-list = Inventos Publicados
+master.menu.any.inventor.invention-list = Inventos publicados
 
 # master.menu.user-account ####################################################
 

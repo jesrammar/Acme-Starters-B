@@ -17,7 +17,7 @@ public class SponsorDonationShowService extends AbstractService<Sponsor, Donatio
 	@Autowired
 	private SponsorDonationRepository	repository;
 
-	private Donation			donation;
+	private Donation					donation;
 
 
 	@Override
@@ -32,8 +32,7 @@ public class SponsorDonationShowService extends AbstractService<Sponsor, Donatio
 	@Override
 	public void authorise() {
 		boolean status = false;
-		status = this.donation != null && //
-			(this.donation.getSponsorship().getSponsor().isPrincipal() || !this.donation.getSponsorship().getDraftMode());
+		status = this.donation != null && this.donation.getSponsorship().getSponsor().isPrincipal();
 		super.setAuthorised(status);
 	}
 
