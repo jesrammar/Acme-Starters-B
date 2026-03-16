@@ -1,0 +1,31 @@
+# messages-es.i18n
+
+# Títulos
+any.sponsorship.form.title = Mostrar Patrocinio Publicado
+any.sponsorship.list.title = Listado de Patrocinios Publicados
+
+# Etiquetas de formulario
+any.sponsorship.form.label.ticker = Ticker
+any.sponsorship.form.label.name = Nombre
+any.sponsorship.form.label.description = Descripción
+any.sponsorship.form.label.startMoment = Fecha de inicio
+any.sponsorship.form.label.endMoment = Fecha de fin
+any.sponsorship.form.label.moreInfo = Más información
+any.sponsorship.form.label.activeMonths = Meses activos
+any.sponsorship.form.label.money = Dinero
+any.sponsorship.form.label.donationCount = Donaciones
+
+# Etiquetas de botones
+any.sponsorship.button.donations = Donaciones
+any.sponsorship.button.sponsor-profile = Perfil del Patrocinador
+
+# Etiquetas de listado
+any.sponsorship.list.label.ticker = Ticker
+any.sponsorship.list.label.name = Nombre
+any.sponsorship.list.label.startMoment = Fecha de inicio
+any.sponsorship.list.label.endMoment = Fecha de fin
+any.sponsorship.list.label.donationCount = Donaciones
+any.sponsorship.list.label.money = Dinero
+any.sponsorship.list.label.activeMonths = Meses activos
+any.sponsorship.list.label.description = Descripción
+any.sponsorship.list.label.moreInfo = Más información

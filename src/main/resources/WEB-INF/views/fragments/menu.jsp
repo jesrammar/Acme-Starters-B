@@ -17,12 +17,13 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:menu-bar>
-	<acme:menu-left>		
+	<acme:menu-left>
 		<acme:menu-option code="master.menu.any">
-		    <acme:menu-suboption code="master.menu.any.campaign-list" action="/any/campaign/list"/>
-		    <acme:menu-suboption code="master.menu.any.audit-report-list" action="/any/audit-report/list"/>
-	    	<acme:menu-suboption code="master.menu.any.fundraiser.strategies-list" action="/any/strategy/list"/>
-	    	<acme:menu-suboption code="master.menu.any.inventor.invention-list" action="/any/invention/list"/>	        
+	    	<acme:menu-suboption code="master.menu.any.campaign-list" action="/any/campaign/list"/>
+	    	<acme:menu-suboption code="master.menu.any.audit-report-list" action="/any/audit-report/list"/>
+    		<acme:menu-suboption code="master.menu.any.fundraiser.strategies-list" action="/any/strategy/list"/>
+    		<acme:menu-suboption code="master.menu.any.inventor.invention-list" action="/any/invention/list"/>
+    		<acme:menu-suboption code="master.menu.any.sponsor.sponsorship-list" action="/any/sponsorship/list"/>	        
     	</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
@@ -42,7 +43,7 @@
 		    <acme:menu-suboption code="master.menu.auditor.audit-report-list" action="/auditor/audit-report/list"/>
 		</acme:menu-option>
 		
-    <acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
+    	<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
 		    <acme:menu-suboption code="master.menu.fundraiser.strategies-list" action="/fundraiser/strategy/list"/>
 		</acme:menu-option>
     
@@ -58,7 +59,7 @@
 	<acme:menu-right>		
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.general-profile" action="/authenticated/user-account/update"/>
-      
+
 			<acme:menu-suboption code="master.menu.user-account.become-spokesperson" action="/authenticated/spokesperson/create" access="!hasRealm('Spokesperson')"/>
 			<acme:menu-suboption code="master.menu.user-account.spokesperson-profile" action="/authenticated/spokesperson/update" access="hasRealm('Spokesperson')"/>
 	        

@@ -5,10 +5,12 @@ sponsor.donation.form.title = Formulario de Donación
 sponsor.donation.list.title = Listado de Donaciones
 
 # Etiquetas del formulario
-sponsor.donation.form.label.title = Nombre:
-sponsor.donation.form.label.notes = Notas:
-sponsor.donation.form.label.money = Dinero:
-sponsor.donation.form.label.kind = Tipo de Donación:
+sponsor.donation.form.label.title = Nombre
+sponsor.donation.form.label.notes = Notas
+sponsor.donation.form.label.money = Dinero
+sponsor.donation.form.label.kind = Tipo de Donación
+
+sponsor.donation.form.placeholder.money = EUR 0.00 - 1,000,000.00
 
 # Botones del formulario
 
@@ -25,4 +27,4 @@ sponsor.donation.list.label.kind = Tipo de Donación
 
 # Botones de la lista
 
-sponsor.donation.list.button.create = Crear
+sponsor.donation.list.button.create = Crear Donación

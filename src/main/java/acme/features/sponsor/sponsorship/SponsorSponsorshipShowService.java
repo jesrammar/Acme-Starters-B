@@ -15,25 +15,25 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 	@Autowired
 	private SponsorSponsorshipRepository	repository;
 
-	private Sponsorship				sponsorship;
+	private Sponsorship						sponsorship;
 
 	// AbstractService interface -------------------------------------------
 
 
 	@Override
 	public void load() {
-		int id;
-
-		id = super.getRequest().getData("id", int.class);
-		this.sponsorship = this.repository.findSponsorshipById(id);
+		if (super.getRequest().hasData("id", int.class)) {
+			int id = super.getRequest().getData("id", int.class);
+			this.sponsorship = this.repository.findSponsorshipById(id);
+		} else
+			this.sponsorship = null;
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && // 
-			(this.sponsorship.getSponsor().isPrincipal() || !this.sponsorship.getDraftMode());
+		status = this.sponsorship != null && this.sponsorship.getSponsor().isPrincipal();
 
 		super.setAuthorised(status);
 	}
@@ -45,6 +45,8 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 		tuple = super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 
 		tuple.put("money", this.sponsorship.getTotalMoney());
+
+		tuple.put("activeMonths", this.sponsorship.getMonthsActive());
 
 		long donationCount = this.repository.countDonationsBySponsorshipId(this.sponsorship.getId());
 

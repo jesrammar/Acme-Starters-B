@@ -1,9 +1,58 @@
 
 package acme.features.sponsor.sponsorship;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.services.AbstractService;
+import acme.entities.sponsorships.Sponsorship;
+import acme.realms.Sponsor;
+
 @Service
-public class SponsorSponsorshipUpdateService {
+public class SponsorSponsorshipUpdateService extends AbstractService<Sponsor, Sponsorship> {
+
+	@Autowired
+	private SponsorSponsorshipRepository	repository;
+
+	private Sponsorship						sponsorship;
+
+
+	@Override
+	public void load() {
+		if (super.getRequest().hasData("id", int.class)) {
+			int id = super.getRequest().getData("id", int.class);
+			this.sponsorship = this.repository.findSponsorshipById(id);
+		} else
+			this.sponsorship = null;
+	}
+
+	@Override
+	public void authorise() {
+		boolean status;
+
+		status = this.sponsorship != null && //
+			this.sponsorship.getDraftMode() && this.sponsorship.getSponsor().isPrincipal();
+		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.sponsorship);
+	}
+
+	@Override
+	public void execute() {
+		this.repository.save(this.sponsorship);
+	}
+
+	@Override
+	public void unbind() {
+		super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+	}
 
 }

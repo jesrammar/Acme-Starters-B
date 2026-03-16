@@ -17,7 +17,7 @@ public class SponsorDonationDeleteService extends AbstractService<Sponsor, Donat
 	@Autowired
 	private SponsorDonationRepository	repository;
 
-	private Donation			donation;
+	private Donation					donation;
 
 
 	@Override
@@ -46,7 +46,6 @@ public class SponsorDonationDeleteService extends AbstractService<Sponsor, Donat
 
 	@Override
 	public void validate() {
-		super.validateObject(this.donation);
 	}
 
 	@Override
