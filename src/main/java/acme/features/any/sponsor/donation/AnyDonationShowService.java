@@ -19,15 +19,18 @@ public class AnyDonationShowService extends AbstractService<Any, Donation> {
 
 
 	@Override
-	public void authorise() {
-		boolean status = this.donation != null && !this.donation.getSponsorship().getDraftMode();
-		super.setAuthorised(status);
+	public void load() {
+		if (super.getRequest().hasData("id", int.class)) {
+			int id = super.getRequest().getData("id", int.class);
+			this.donation = this.repository.findPublishedDonationById(id);
+		} else
+			this.donation = null;
 	}
 
 	@Override
-	public void load() {
-		int id = super.getRequest().getData("id", int.class);
-		this.donation = this.repository.findPublishedDonationById(id);
+	public void authorise() {
+		boolean status = this.donation != null && !this.donation.getSponsorship().getDraftMode();
+		super.setAuthorised(status);
 	}
 
 	@Override

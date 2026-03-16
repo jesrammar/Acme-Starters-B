@@ -8,11 +8,6 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-# master.menu.anonymous #######################################################
-
-master.menu.anonymous = Anónimo
-master.menu.anonymous.favourite-link = Enlace favorito
-
 # master.menu.any #######################################################
 
 master.menu.any = Cualquiera
@@ -25,19 +20,9 @@ master.menu.administrator.populate-db-initial = Poblar BD (inicial)
 master.menu.administrator.populate-db-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-system-down = Parar el sistema
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Proveedor
-master.menu.provider.favourite-link = Enlace favorito
-
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumidor
-master.menu.consumer.favourite-link = Enlace favorito
-
 # master.menu.any.spokesperson ##########################################################
 
-master.menu.any.campaign-list = Campañas publicadas
+master.menu.any.campaign-list = Campañas Publicadas
 
 # master.menu.any.auditor ##########################################################
 
@@ -50,7 +35,7 @@ master.menu.auditor.audit-report-list = Informes de Auditoría
 
 # master.menu.any.fundraiser ##########################################################
 
-master.menu.any.fundraiser.strategies-list = Estrategias publicadas
+master.menu.any.fundraiser.strategies-list = Estrategias Publicadas
 
 # master.menu.fundraiser ##########################################################
 
@@ -64,7 +49,7 @@ master.menu.sponsor.sponsorship-list = Patrocinios
 
 # master.menu.any.sponsor ##########################################################
 
-master.menu.any.sponsor.sponsorship-list = Patrocinios publicados
+master.menu.any.sponsor.sponsorship-list = Patrocinios Publicados
 
 # master.menu.inventor ##########################################################
 
@@ -73,18 +58,12 @@ master.menu.inventor.invention-list = Inventos
 
 # master.menu.any.inventor ##########################################################
 
-master.menu.any.inventor.invention-list = Inventos publicados
+master.menu.any.inventor.invention-list = Inventos Publicados
 
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
 master.menu.user-account.general-profile = Perfil general
-
-master.menu.user-account.become-provider = Hacerse proveedor
-master.menu.user-account.provider-profile = Perfil de proveedor
-
-master.menu.user-account.become-consumer = Hazte consumidor
-master.menu.user-account.consumer-profile = Perfil de consumidor
 
 master.menu.user-account.become-spokesperson = Hazte portavoz
 master.menu.user-account.spokesperson-profile = Perfil de portavoz
@@ -102,5 +81,6 @@ master.menu.user-account.become-sponsor = Adquirir rol de Patrocinador
 master.menu.user-account.sponsor-profile = Perfil de Patrocinador
 
 # master.menu.spokesperson ####################################################
+
 master.menu.spokesperson = Portavoz
 master.menu.spokesperson.campaign-list = Campañas

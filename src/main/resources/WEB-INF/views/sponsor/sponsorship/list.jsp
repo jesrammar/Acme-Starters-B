@@ -15,3 +15,5 @@
     <acme:list-column code="sponsor.sponsorship.list.label.money" path="money"/>
     <acme:list-column code="sponsor.sponsorship.list.label.activeMonths" path="activeMonths"/>
 </acme:list>
+
+<acme:button code="sponsor.sponsorship.list.button.create" action="/sponsor/sponsorship/create"/>

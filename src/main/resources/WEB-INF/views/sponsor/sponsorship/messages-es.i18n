@@ -5,15 +5,20 @@ sponsor.sponsorship.form.title = Formulario de Patrocinio
 sponsor.sponsorship.list.title = Listado de Patrocinios
 
 # Etiquetas del formulario
-sponsor.sponsorship.form.label.ticker = Código:
-sponsor.sponsorship.form.label.name = Nombre:
-sponsor.sponsorship.form.label.description = Descripción:
-sponsor.sponsorship.form.label.startMoment = Fecha de inicio:
-sponsor.sponsorship.form.label.endMoment = Fecha de fin:
-sponsor.sponsorship.form.label.moreInfo = Más información:
+sponsor.sponsorship.form.label.ticker = Código
+sponsor.sponsorship.form.label.name = Nombre
+sponsor.sponsorship.form.label.description = Descripción
+sponsor.sponsorship.form.label.startMoment = Fecha de inicio
+sponsor.sponsorship.form.label.endMoment = Fecha de fin
+sponsor.sponsorship.form.label.moreInfo = Más información
 
 # Botones del formulario
 sponsor.sponsorship.form.button.donations = Donaciones
+sponsor.sponsorship.form.button.update = Actualizar
+sponsor.sponsorship.form.button.delete = Borrar
+sponsor.sponsorship.form.button.publish = Publicar
+sponsor.sponsorship.form.button.create = Crear
+sponsor.sponsorship.form.button.sponsor-profile = Ver perfil del patrocinador
 
 # Etiquetas de la lista
 sponsor.sponsorship.list.label.ticker = Código
@@ -26,3 +31,6 @@ sponsor.sponsorship.list.label.money = Dinero
 sponsor.sponsorship.list.label.activeMonths = Meses Activos
 sponsor.sponsorship.list.label.description = Descripción
 sponsor.sponsorship.list.label.moreInfo = Más información
+
+# Botones de la lista
+sponsor.sponsorship.list.button.create = Crear Patrocinio

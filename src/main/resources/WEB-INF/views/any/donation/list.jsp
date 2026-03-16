@@ -5,10 +5,10 @@
 
 <acme:list>
 
-    <acme:list-column code="any.donation.label.name" path="name" width="25%"/>
-    <acme:list-column code="any.donation.label.notes" path="notes" width="45%"/>
-    <acme:list-column code="any.donation.label.money" path="hours" width="10%"/>
-    <acme:list-column code="any.donation.label.kind" path="kind" width="10%"/>
+    <acme:list-column code="any.donation.list.label.name" path="name" width="25%"/>
+    <acme:list-column code="any.donation.list.label.notes" path="notes" width="45%"/>
+    <acme:list-column code="any.donation.list.label.money" path="money" width="10%"/>
+    <acme:list-column code="any.donation.list.label.kind" path="kind" width="10%"/>
     <acme:list-hidden path="sponsorshipId"/>
 
 </acme:list>
