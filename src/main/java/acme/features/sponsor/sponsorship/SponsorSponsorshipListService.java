@@ -54,6 +54,8 @@ public class SponsorSponsorshipListService extends AbstractService<Sponsor, Spon
 			long donationCount = this.repository.countDonationsBySponsorshipId(sponsorship.getId());
 
 			tuple.put("donationCount", donationCount);
+
+			tuple.put("draftModeVisual", sponsorship.getDraftMode() ? "✔" : "✖");
 		}
 	}
 

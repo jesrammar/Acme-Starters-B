@@ -6,7 +6,7 @@
 <acme:list>
     <acme:list-column code="sponsor.sponsorship.list.label.ticker" path="ticker"/>
     <acme:list-column code="sponsor.sponsorship.list.label.name" path="name"/>
-    <acme:list-column code="sponsor.sponsorship.list.label.draftMode" path="draftMode"/>
+    <acme:list-column code="sponsor.sponsorship.list.label.draftMode" path="draftModeVisual"/>
     <acme:list-column code="sponsor.sponsorship.list.label.description" path="description"/>
     <acme:list-column code="sponsor.sponsorship.list.label.moreInfo" path="moreInfo"/>
     <acme:list-column code="sponsor.sponsorship.list.label.startMoment" path="startMoment"/>
