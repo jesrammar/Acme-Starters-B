@@ -26,7 +26,7 @@ master.menu.any.campaign-list = Campañas Publicadas
 
 # master.menu.any.auditor ##########################################################
 
-master.menu.any.audit-report-list = Informes de Auditoría publicados
+master.menu.any.audit-report-list = Informes de Auditoría Publicados
 
 # master.menu.auditor ##########################################################
 
@@ -65,8 +65,8 @@ master.menu.any.inventor.invention-list = Inventos Publicados
 master.menu.user-account = Cuenta
 master.menu.user-account.general-profile = Perfil general
 
-master.menu.user-account.become-spokesperson = Hazte portavoz
-master.menu.user-account.spokesperson-profile = Perfil de portavoz
+master.menu.user-account.become-spokesperson = Adquirir rol de Portavoz
+master.menu.user-account.spokesperson-profile = Perfil de Portavoz
 
 master.menu.user-account.become-auditor = Adquirir rol de Auditor
 master.menu.user-account.auditor-profile = Perfil de Auditor
