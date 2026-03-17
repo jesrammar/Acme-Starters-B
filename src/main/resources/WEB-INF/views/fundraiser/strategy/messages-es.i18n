@@ -15,6 +15,7 @@ fundraiser.strategy.form.label.draftMode = Borrador:
 
 # Form buttons
 fundraiser.strategy.form.button.tactics = Tácticas
+fundraiser.strategy.form.button.create = Crear estrategia
 fundraiser.strategy.form.button.update = Actualizar estrategia
 fundraiser.strategy.form.button.delete = Borrar estrategia
 fundraiser.strategy.form.button.publish = Publicar estrategia
