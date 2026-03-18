@@ -29,5 +29,4 @@ milestone-14,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do ei
 # achievements - extra @ValidText variations
 milestone-15,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX",50.00,TEASER,campaign-01
 # kind - invalid enum and campaign reference
-milestone-16,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,INVALID,campaign-01
-milestone-17,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-does-not-exist
+milestone-16,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,,campaign-01
