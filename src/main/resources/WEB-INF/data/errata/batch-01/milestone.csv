@@ -1,26 +1,33 @@
 key,title,achievements,effort,kind,key:campaign
 
 # standard variations
-milestone-err-01,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-err-01
+milestone-01,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
 
 # title - errata variations
-milestone-err-02,,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-err-01
-milestone-err-03," ","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-err-01
+milestone-02,,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-03," ","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
 
 # achievements - errata variations
-milestone-err-04,"Lorem ipsum",,50.00,TEASER,campaign-err-01
-milestone-err-05,"Lorem ipsum"," ",50.00,TEASER,campaign-err-01
+milestone-04,"Lorem ipsum",,50.00,TEASER,campaign-01
+milestone-05,"Lorem ipsum"," ",50.00,TEASER,campaign-01
 
 # effort - errata variations
-milestone-err-06,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",,TEASER,campaign-err-01
-milestone-err-07,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",0.00,TEASER,campaign-err-01
-milestone-err-08,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",-0.01,TEASER,campaign-err-01
-milestone-err-09,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",0.009,TEASER,campaign-err-01
-milestone-err-10,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",1.234,TEASER,campaign-err-01
+milestone-06,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",,TEASER,campaign-01
+milestone-07,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",0.00,TEASER,campaign-01
+milestone-08,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",-0.01,TEASER,campaign-01
+milestone-09,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",0.009,TEASER,campaign-01
+milestone-10,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",1.234,TEASER,campaign-01
 
 # kind - errata variations
-milestone-err-11,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,,campaign-err-01
-milestone-err-12,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,
+milestone-11,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,,campaign-01
+milestone-12,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,
 
 # key:campaign - errata variations
-milestone-err-13,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,
+milestone-13,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,
+# title - extra @ValidHeader variations
+milestone-14,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temX","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+# achievements - extra @ValidText variations
+milestone-15,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorX",50.00,TEASER,campaign-01
+# kind - invalid enum and campaign reference
+milestone-16,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,INVALID,campaign-01
+milestone-17,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-does-not-exist

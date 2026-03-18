@@ -1,5 +1,5 @@
 /*
- * CampaignPublishableValidator.java
+ * CampaignValidator.java
  *
  * Copyright (C) 2012-2026 Rafael Corchuelo.
  *
@@ -12,15 +12,12 @@
 
 package acme.constraints;
 
-import java.util.Date;
-
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
-import acme.client.helpers.MomentHelper;
 import acme.client.helpers.StringHelper;
 import acme.entities.campaigns.Campaign;
 import acme.features.spokesperson.campaign.CampaignRepository;
@@ -47,17 +44,12 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 		if (campaign == null)
 			return true;
 
-		final Date start = campaign.getStartMoment();
-		final Date end = campaign.getEndMoment();
-
 		this.validateUniqueTicker(context, campaign);
-		this.validateInterval(context, start, end);
-
-		if (this.isPublishing(campaign))
-			this.validatePublishRules(context, campaign, start, end);
 
 		return !super.hasErrors(context);
 	}
+
+	
 
 	private void validateUniqueTicker(final ConstraintValidatorContext context, final Campaign campaign) {
 		assert context != null;
@@ -67,42 +59,9 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 			return;
 
 		final Campaign existingCampaign = this.repository.findCampaignByTicker(campaign.getTicker());
-		final boolean uniqueTicker = existingCampaign == null || existingCampaign.equals(campaign);
+		final boolean uniqueTicker = existingCampaign == null || existingCampaign.getId() == campaign.getId();
 
 		super.state(context, uniqueTicker, "ticker", "acme.validation.campaign.duplicated-ticker.message");
 	}
-
-	private boolean isPublishing(final Campaign campaign) {
-		assert campaign != null;
-
-		if (!Boolean.FALSE.equals(campaign.getDraftMode()))
-			return false;
-
-		if (campaign.getId() <= 0)
-			return true;
-
-		final Campaign persisted = this.repository.findCampaignById(campaign.getId());
-
-		return persisted != null && Boolean.TRUE.equals(persisted.getDraftMode());
-	}
-
-	private void validateInterval(final ConstraintValidatorContext context, final Date start, final Date end) {
-		if (start != null && end != null) {
-			final boolean correctInterval = MomentHelper.isBefore(start, end);
-			super.state(context, correctInterval, "startMoment", "acme.validation.campaign.moments.invalid-interval.message");
-		}
-	}
-
-	private void validatePublishRules(final ConstraintValidatorContext context, final Campaign campaign, final Date start, final Date end) {
-		final Long count = campaign.getId() == 0 ? 0L : this.repository.countMilestonesByCampaignId(campaign.getId());
-		final boolean hasMilestones = count != null && count > 0;
-		super.state(context, hasMilestones, "draftMode", "acme.validation.campaign.must-have-milestone.message");
-
-		final boolean startInFuture = start != null && MomentHelper.isFuture(start);
-		final boolean endInFuture = end != null && MomentHelper.isFuture(end);
-		super.state(context, startInFuture, "startMoment", "acme.validation.campaign.moments.must-be-future.message");
-		super.state(context, endInFuture, "endMoment", "acme.validation.campaign.moments.must-be-future.message");
-	}
-
 
 }

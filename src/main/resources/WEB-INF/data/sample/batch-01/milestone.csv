@@ -1,36 +1,44 @@
 key,title,achievements,effort,kind,key:campaign
-milestone-published-01,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-published-02,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-02
-milestone-published-03,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",25.00,ENGAGING,campaign-published-03
-milestone-published-04,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",35.00,CONVERSION,campaign-published-04
-milestone-published-05,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",10.00,TEASER,campaign-published-05
-milestone-title-base,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-01,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-02,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-05,โลเร็ม อปิซัม,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-06,لوريم إيبسوم,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-07,洛伦·伊普森,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-08,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-09,<script>alert('Hacked!');</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-title-case-10,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-achievements-base,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-achievements-case-01,Lorem ipsum,L,50.00,TEASER,campaign-published-01
-milestone-achievements-case-02,Lorem ipsum,Lo,50.00,TEASER,campaign-published-01
-milestone-achievements-case-03,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50.00,TEASER,campaign-published-01
-milestone-achievements-case-04,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50.00,TEASER,campaign-published-01
-milestone-achievements-case-05,Lorem ipsum,โลเร็ม อปิซัม,50.00,TEASER,campaign-published-01
-milestone-achievements-case-06,Lorem ipsum,لوريم إيبسوم,50.00,TEASER,campaign-published-01
-milestone-achievements-case-07,Lorem ipsum,洛伦·伊普森,50.00,TEASER,campaign-published-01
-milestone-achievements-case-08,Lorem ipsum,<marquee>Hacked</marquee>,50.00,TEASER,campaign-published-01
-milestone-achievements-case-09,Lorem ipsum,<script>alert('Hacked!');</script>,50.00,TEASER,campaign-published-01
-milestone-achievements-case-10,Lorem ipsum,' or 'A' = 'A,50.00,TEASER,campaign-published-01
-milestone-effort-base,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-effort-case-01,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.01,TEASER,campaign-published-01
-milestone-effort-case-02,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.02,TEASER,campaign-published-01
-milestone-effort-case-03,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",99.99,TEASER,campaign-published-01
-milestone-effort-case-04,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",100.00,TEASER,campaign-published-01
-milestone-kind-base,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-published-01
-milestone-kind-case-01,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,ENGAGING,campaign-published-01
-milestone-kind-case-02,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,CONVERSION,campaign-published-01
+milestone-01,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-02,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-02
+milestone-03,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",25.00,ENGAGING,campaign-03
+milestone-04,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",35.00,CONVERSION,campaign-04
+milestone-05,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",10.00,TEASER,campaign-05
+milestone-06,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-07,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-08,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-09,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-10,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-11,Thai sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-12,Arabic sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-13,Question sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-14,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-15,<script>alert('Hacked!');</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-16,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-17,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-18,Lorem ipsum,L,50.00,TEASER,campaign-01
+milestone-19,Lorem ipsum,Lo,50.00,TEASER,campaign-01
+milestone-20,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50.00,TEASER,campaign-01
+milestone-21,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50.00,TEASER,campaign-01
+milestone-22,Lorem ipsum,Thai sample,50.00,TEASER,campaign-01
+milestone-23,Lorem ipsum,Arabic sample,50.00,TEASER,campaign-01
+milestone-24,Lorem ipsum,Chinese sample,50.00,TEASER,campaign-01
+milestone-25,Lorem ipsum,<marquee>Hacked</marquee>,50.00,TEASER,campaign-01
+milestone-26,Lorem ipsum,<script>alert('Hacked!');</script>,50.00,TEASER,campaign-01
+milestone-27,Lorem ipsum,' or 'A' = 'A,50.00,TEASER,campaign-01
+milestone-28,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-29,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.01,TEASER,campaign-01
+milestone-30,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.02,TEASER,campaign-01
+milestone-31,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",99.99,TEASER,campaign-01
+milestone-32,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",100.00,TEASER,campaign-01
+milestone-33,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
+milestone-34,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,ENGAGING,campaign-01
+milestone-35,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,CONVERSION,campaign-01
+milestone-36,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",20.00,TEASER,campaign-47
+milestone-37,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",30.00,ENGAGING,campaign-47
+milestone-38,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",15.00,TEASER,campaign-48
+milestone-39,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",25.00,ENGAGING,campaign-48
+milestone-40,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",10.00,TEASER,campaign-49
+milestone-41,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",20.00,CONVERSION,campaign-49
+milestone-42,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",12.00,TEASER,campaign-50
+milestone-43,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",22.00,ENGAGING,campaign-50

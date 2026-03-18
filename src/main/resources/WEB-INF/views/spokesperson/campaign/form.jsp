@@ -4,6 +4,22 @@
 
 <jstl:set var="readonly" value="${_command == 'show' || _command == 'delete'}"/>
 
+<jstl:if test="${_command == 'create'}">
+	<script type="text/javascript">
+		clearReturnUrl();
+		pushReturnUrl("/spokesperson/campaign/list");
+		sessionStorage.setItem(returnTopKey, getCurrentUrl());
+	</script>
+</jstl:if>
+
+<jstl:if test="${_command == 'update'}">
+	<script type="text/javascript">
+		clearReturnUrl();
+		pushReturnUrl("/spokesperson/campaign/show?id=${id}");
+		sessionStorage.setItem(returnTopKey, getCurrentUrl());
+	</script>
+</jstl:if>
+
 <jstl:if test="${_command == 'delete'}">
 	<script type="text/javascript">
 		clearReturnUrl();
@@ -37,12 +53,15 @@
 	<jstl:if test="${_command == 'update'}">
 		<acme:submit code="spokesperson.campaign.form.button.update" action="/spokesperson/campaign/update"/>
 	</jstl:if>
+	<jstl:if test="${_command == 'publish'}">
+		<acme:submit code="spokesperson.campaign.form.button.publish" action="/spokesperson/campaign/publish"/>
+	</jstl:if>
 	<jstl:if test="${_command == 'delete'}">
 		<acme:submit code="spokesperson.campaign.form.button.delete" action="/spokesperson/campaign/delete?id=${param.id}"/>
 	</jstl:if>
 	<jstl:if test="${_command == 'show' && draftMode == true}">
 		<acme:button code="spokesperson.campaign.form.button.update" action="/spokesperson/campaign/update?id=${id}"/>
 		<acme:button code="spokesperson.campaign.form.button.delete" action="/spokesperson/campaign/delete?id=${id}"/>
-		<acme:submit code="spokesperson.campaign.form.button.publish" action="/spokesperson/campaign/publish"/>
+		<acme:button code="spokesperson.campaign.form.button.publish" action="/spokesperson/campaign/publish?id=${id}"/>
 	</jstl:if>
 </acme:form>

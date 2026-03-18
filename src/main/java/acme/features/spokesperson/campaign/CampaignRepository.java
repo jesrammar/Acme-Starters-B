@@ -13,7 +13,6 @@
 package acme.features.spokesperson.campaign;
 
 import java.util.Collection;
-import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -38,6 +37,9 @@ public interface CampaignRepository extends AbstractRepository {
 	@Query("select c from Campaign c where c.spokesperson.userAccount.id = :userAccountId")
 	Collection<Campaign> findCampaignsBySpokespersonUserAccountId(int userAccountId);
 
+	@Query("select c from Campaign c where c.id = :id and c.spokesperson.userAccount.id = :userAccountId")
+	Campaign findCampaignByIdAndSpokespersonUserAccountId(int id, int userAccountId);
+
 	@Query("select s from Spokesperson s where s.userAccount.id = :userAccountId")
 	Spokesperson findSpokespersonByUserAccountId(int userAccountId);
 
@@ -52,5 +54,9 @@ public interface CampaignRepository extends AbstractRepository {
 
 	@Query("select sum(m.effort) from Milestone m where m.campaign.id = :campaignId")
 	Double computeCampaignEffort(int campaignId);
+	
+	@Query("select count(ar) > 0 from Campaign ar where ar.ticker = :ticker and ar.id != :id")
+	boolean existsCampaignWithTicker(String ticker, int id);
+
 }
 
