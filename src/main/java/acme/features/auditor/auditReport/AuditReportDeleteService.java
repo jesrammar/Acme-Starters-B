@@ -39,6 +39,7 @@ public class AuditReportDeleteService extends AbstractService<Auditor, AuditRepo
 
 	@Override
 	public void bind() {
+		super.bindObject(this.auditReport, "name", "ticker", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
@@ -53,6 +54,7 @@ public class AuditReportDeleteService extends AbstractService<Auditor, AuditRepo
 
 	@Override
 	public void unbind() {
+		super.unbindObject(this.auditReport, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 	}
 
 }

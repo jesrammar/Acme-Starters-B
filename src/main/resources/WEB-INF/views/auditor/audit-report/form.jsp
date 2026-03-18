@@ -26,7 +26,7 @@
 		<jstl:when test="${_command == 'create'}">
 			<acme:submit code="auditor.audit-report.button.create" action="/auditor/audit-report/create"/>
 		</jstl:when>
-		<jstl:when test="${_command == 'show' || _command == 'update' || _command == 'publish' }">
+		<jstl:when test="${_command == 'show' || _command == 'update' || _command == 'publish' || _command == 'delete' }">
 			<jstl:if test="${draftMode}">
 				<acme:submit code="auditor.audit-report.button.update" action="/auditor/audit-report/update"/>
 				<acme:submit code="auditor.audit-report.button.delete" action="/auditor/audit-report/delete"/>

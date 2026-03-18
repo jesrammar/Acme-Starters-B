@@ -27,7 +27,7 @@ master.menu.administrator.shut-system-down = Shut system down
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
-master.menu.auditor.audit-report-list = Published Audit Reports 
+master.menu.auditor.audit-report-list = My Audit Reports 
 
 # master.menu.any.auditor ##########################################################
 

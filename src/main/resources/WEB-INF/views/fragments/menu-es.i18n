@@ -31,7 +31,7 @@ master.menu.any.audit-report-list = Informes de Auditoría Publicados
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
-master.menu.auditor.audit-report-list = Informes de Auditoría Publicados
+master.menu.auditor.audit-report-list = Mis informes de auditoría
 
 # master.menu.any.fundraiser ##########################################################
 
