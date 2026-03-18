@@ -1,49 +1,48 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
-campaign-published-01,AB01-X0001,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/01/08 00:01,http://lorem.com/ipsum,false,spokesperson-01
-campaign-published-02,AC02-X0002,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/01/08 00:01,http://lorem.com/ipsum,false,spokesperson-02
-campaign-published-03,BM38-X0038,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 00:00,2025/01/09 00:01,http://lorem.com/ipsum,false,spokesperson-01
-campaign-published-04,BN39-X0039,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 00:00,2025/01/10 00:01,http://lorem.com/ipsum,false,spokesperson-02
-campaign-published-05,BO40-X0040,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/04/08 00:00,http://lorem.com/ipsum,false,spokesperson-01
-campaign-name-base,AD03-X0003,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-01,AE04-X0004,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-02,AF05-X0005,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-03,AG06-X0006,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-04,AH07-X0007,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-05,AI08-X0008,โลเร็ม อปิซัม,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-06,AJ09-X0009,لوريم إيبسوم,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-07,AK10-X0010,洛伦·伊普森,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-08,AL11-X0011,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-09,AM12-X0012,<script>alert('Hacked!');</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-name-case-10,AN13-X0013,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-base,AO14-X0014,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-01,AP15-X0015,Lorem ipsum,L,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-02,AQ16-X0016,Lorem ipsum,Lo,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-03,AR17-X0017,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-04,AS18-X0018,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-05,AT19-X0019,Lorem ipsum,โลเร็ม อปิซัม,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-06,AU20-X0020,Lorem ipsum,لوريم إيبسوم,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-07,AV21-X0021,Lorem ipsum,洛伦·伊普森,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-08,AW22-X0022,Lorem ipsum,<marquee>Hacked</marquee>,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-09,AX23-X0023,Lorem ipsum,<script>alert('Hacked!');</script>,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-description-case-10,AY24-X0024,Lorem ipsum,' or 'A' = 'A,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-startMoment-base,AZ25-X0025,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
-campaign-startMoment-case-01,BA26-X0026,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:01,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
-campaign-startMoment-case-02,BB27-X0027,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:58,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
-campaign-endMoment-base,BC28-X0028,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-endMoment-case-01,BD29-X0029,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:02,http://lorem.com/ipsum,true,spokesperson-01
-campaign-endMoment-case-02,BE30-X0030,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2200/12/31 23:58,http://lorem.com/ipsum,true,spokesperson-01
-campaign-endMoment-case-03,BF31-X0031,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
-campaign-moreInfo-base,BG32-X0032,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
-campaign-moreInfo-case-01,BH33-X0033,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,,true,spokesperson-01
-campaign-moreInfo-case-02,BI34-X0034,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://a.b,true,spokesperson-01
-campaign-moreInfo-case-03,BJ35-X0035,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,https://www.lorem-ipsum.org,true,spokesperson-01
-campaign-moreInfo-case-04,BK36-X0036,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?a=1&b=2,true,spokesperson-01
-campaign-moreInfo-case-05,BL37-X0037,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/a/b?a&b,true,spokesperson-01
-campaign-published-06,BP41-X0041,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/11 00:00,2025/03/11 00:00,http://lorem.com/ipsum,false,spokesperson-01
-# MoreInfo - Extra @ValidURL variations aligned with invention style
-campaign-moreInfo-case-06,BQ42-X0042,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/,true,spokesperson-01
-campaign-moreInfo-case-07,BR43-X0043,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/a,true,spokesperson-01
-campaign-moreInfo-case-08,BS44-X0044,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/a/b,true,spokesperson-01
-campaign-moreInfo-case-09,BT45-X0045,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?,true,spokesperson-01
-campaign-moreInfo-case-10,BU46-X0046,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?a,true,spokesperson-01
-campaign-moreInfo-case-11,BV47-X0047,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,true,spokesperson-01
+campaign-51,AB01-X0001,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/01/08 00:01,http://lorem.com/ipsum,false,spokesperson-01
+campaign-52,AC02-X0002,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/01/08 00:01,http://lorem.com/ipsum,false,spokesperson-02
+campaign-53,BM38-X0038,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 00:00,2025/01/09 00:01,http://lorem.com/ipsum,false,spokesperson-01
+campaign-54,BN39-X0039,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 00:00,2025/01/10 00:01,http://lorem.com/ipsum,false,spokesperson-02
+campaign-55,BO40-X0040,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/04/08 00:00,http://lorem.com/ipsum,false,spokesperson-01
+campaign-56,AD03-X0003,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-57,AE04-X0004,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-58,AF05-X0005,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-59,AG06-X0006,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-60,AH07-X0007,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-61,AI08-X0008,โลเร็ม อปิซัม,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-62,AJ09-X0009,لوريم إيبسوم,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-63,AK10-X0010,洛伦·伊普森,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-64,AL11-X0011,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-65,AM12-X0012,<script>alert('Hacked!');</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-66,AN13-X0013,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-67,AO14-X0014,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-68,AP15-X0015,Lorem ipsum,L,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-69,AQ16-X0016,Lorem ipsum,Lo,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-70,AR17-X0017,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-71,AS18-X0018,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-72,AT19-X0019,Lorem ipsum,โลเร็ม อปิซัม,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-73,AU20-X0020,Lorem ipsum,لوريم إيبسوم,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-74,AV21-X0021,Lorem ipsum,洛伦·伊普森,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-75,AW22-X0022,Lorem ipsum,<marquee>Hacked</marquee>,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-76,AX23-X0023,Lorem ipsum,<script>alert('Hacked!');</script>,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-77,AY24-X0024,Lorem ipsum,' or 'A' = 'A,2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-78,AZ25-X0025,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
+campaign-79,BA26-X0026,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:01,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
+campaign-80,BB27-X0027,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:58,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
+campaign-81,BC28-X0028,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-82,BD29-X0029,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:02,http://lorem.com/ipsum,true,spokesperson-01
+campaign-83,BE30-X0030,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2200/12/31 23:58,http://lorem.com/ipsum,true,spokesperson-01
+campaign-84,BF31-X0031,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
+campaign-85,BG32-X0032,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
+campaign-86,BH33-X0033,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,,true,spokesperson-01
+campaign-87,BI34-X0034,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://a.b,true,spokesperson-01
+campaign-88,BJ35-X0035,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,https://www.lorem-ipsum.org,true,spokesperson-01
+campaign-89,BK36-X0036,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?a=1&b=2,true,spokesperson-01
+campaign-90,BL37-X0037,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/a/b?a&b,true,spokesperson-01
+campaign-91,BP41-X0041,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/11 00:00,2025/03/11 00:00,http://lorem.com/ipsum,false,spokesperson-01
+campaign-92,BQ42-X0042,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/,true,spokesperson-01
+campaign-93,BR43-X0043,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/a,true,spokesperson-01
+campaign-94,BS44-X0044,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org/a/b,true,spokesperson-01
+campaign-95,BT45-X0045,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?,true,spokesperson-01
+campaign-96,BU46-X0046,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?a,true,spokesperson-01
+campaign-97,BV47-X0047,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,true,spokesperson-01
