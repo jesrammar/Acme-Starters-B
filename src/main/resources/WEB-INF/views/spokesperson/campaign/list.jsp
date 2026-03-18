@@ -7,7 +7,7 @@
 	<acme:list-column code="spokesperson.campaign.list.label.name" path="name" width="25%"/>
 	<acme:list-column code="spokesperson.campaign.list.label.startMoment" path="startMoment" width="15%"/>
 	<acme:list-column code="spokesperson.campaign.list.label.endMoment" path="endMoment" width="15%"/>
-	<acme:list-column code="spokesperson.campaign.list.label.draftMode" path="draftMode" width="10%"/>
+	<acme:list-column code="spokesperson.campaign.list.label.draftMode" path="draftModeVisual" width="10%"/>
 	<acme:list-column code="spokesperson.campaign.list.label.monthsActive" path="monthsActive" width="10%"/>
 	<acme:list-column code="spokesperson.campaign.list.label.effort" path="effort" width="10%"/>
 </acme:list>

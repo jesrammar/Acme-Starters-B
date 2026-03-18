@@ -12,15 +12,12 @@
 
 package acme.constraints;
 
-import java.util.Date;
-
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
-import acme.client.helpers.MomentHelper;
 import acme.client.helpers.StringHelper;
 import acme.entities.campaigns.Campaign;
 import acme.features.spokesperson.campaign.CampaignRepository;
@@ -47,11 +44,7 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 		if (campaign == null)
 			return true;
 
-		final Date startMoment = campaign.getStartMoment();
-		final Date endMoment = campaign.getEndMoment();
-
 		this.validateUniqueTicker(context, campaign);
-		this.validateInterval(context, startMoment, endMoment);
 
 		return !super.hasErrors(context);
 	}
@@ -71,12 +64,4 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 		super.state(context, uniqueTicker, "ticker", "acme.validation.campaign.duplicated-ticker.message");
 	}
 
-	private void validateInterval(final ConstraintValidatorContext context, final Date startMoment, final Date endMoment) {
-		assert context != null;
-
-		if (startMoment != null && endMoment != null) {
-			final boolean correctInterval = MomentHelper.isBefore(startMoment, endMoment);
-			super.state(context, correctInterval, "startMoment", "acme.validation.campaign.moments.invalid-interval.message");
-		}
-	}
 }

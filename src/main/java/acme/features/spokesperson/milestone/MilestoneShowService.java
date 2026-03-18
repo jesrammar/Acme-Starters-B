@@ -25,7 +25,7 @@ public class MilestoneShowService extends AbstractService<Spokesperson, Mileston
 
 		id = super.getRequest().getData("id", int.class);
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
-		this.milestone = this.repository.findVisibleMilestoneById(id, userAccountId);
+		this.milestone = this.repository.findMilestoneByIdAndSpokespersonUserAccountId(id, userAccountId);
 	}
 
 	@Override

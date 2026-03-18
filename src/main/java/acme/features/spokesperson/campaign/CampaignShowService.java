@@ -24,7 +24,7 @@ public class CampaignShowService extends AbstractService<Spokesperson, Campaign>
 
 		id = super.getRequest().getData("id", int.class);
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
-		this.campaign = this.repository.findVisibleCampaignById(id, userAccountId);
+		this.campaign = this.repository.findCampaignByIdAndSpokespersonUserAccountId(id, userAccountId);
 	}
 
 	@Override
