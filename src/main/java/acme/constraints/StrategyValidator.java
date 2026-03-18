@@ -29,7 +29,7 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 			//El ticker debe ser único
 
 			Strategy dbStrategy = this.repository.findStrategyByTicker(strategy.getTicker());
-			Boolean isUnique = dbStrategy == null || dbStrategy.equals(strategy);
+			Boolean isUnique = dbStrategy == null || dbStrategy.getId() == strategy.getId();
 			super.state(context, isUnique, "*", "acme.validation.strategy.duplicatedTicker.message");
 		}
 		// Validaciones al publicar una strategy
