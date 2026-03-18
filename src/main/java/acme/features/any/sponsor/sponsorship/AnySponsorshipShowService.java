@@ -30,9 +30,11 @@ public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship>
 	@Override
 	public void load() {
 		int id;
-
-		id = super.getRequest().getData("id", int.class);
-		this.sponsorship = this.repository.findPublishedSponsorshipById(id);
+		if (super.getRequest().hasData("id", int.class)) {
+			id = super.getRequest().getData("id", int.class);
+			this.sponsorship = this.repository.findPublishedSponsorshipById(id);
+		} else
+			this.sponsorship = null;
 	}
 
 	@Override
