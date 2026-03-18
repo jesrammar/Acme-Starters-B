@@ -24,7 +24,7 @@ public class StrategyDeleteService extends AbstractService<Fundraiser, Strategy>
 	public void load() {
 		int id = super.getRequest().getData("id", int.class);
 		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.strategy = this.repository.findOneByIdAndFundraiserId(id, fundraiserId);
+		this.strategy = this.repository.findStrategyByIdAndFundraiserId(id, fundraiserId);
 	}
 
 	@Override
@@ -49,6 +49,7 @@ public class StrategyDeleteService extends AbstractService<Fundraiser, Strategy>
 
 	@Override
 	public void unbind() {
+		super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 	}
 
 }

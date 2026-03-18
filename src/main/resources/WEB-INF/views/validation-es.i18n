@@ -37,7 +37,8 @@ acme.validation.strategy.invalidStrategy.message = La estrategia no es válida
 acme.validation.strategy.duplicatedTicker.message= Ya existe una estrategia con el mismo código
 acme.validation.strategy.must-have-tactic.message= Las estrategias deben de tener al menos una táctica
 acme.validation.strategy.startMoment-PostEndMoment.message = La fecha de inicio no puede ser posterior a la de fin
-
+acme.validation.strategy.startMoment-notFuture.message = La fecha de inicio debe estar en el futuro 
+acme.validation.strategy.endMoment-notFuture.message = La fecha de fin debe estar en el futuro
 # Mensajes de Campaign
 
 acme.validation.campaign.must-have-milestone.message = La campaña debe tener al menos un hito para publicarse

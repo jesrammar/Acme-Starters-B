@@ -25,7 +25,8 @@ inventor.invention.form.label.monthsActive = Meses activo
 inventor.invention.form.label.cost = Coste
 
 # Etiquetas de botones
-inventor.invention.button.create = Crear
-inventor.invention.button.update = Actualizar
-inventor.invention.button.delete = Borrar
-inventor.invention.button.parts = Partes
+inventor.invention.form.button.parts = Partes
+inventor.invention.form.button.create = Crear
+inventor.invention.form.button.update = Actualizar
+inventor.invention.form.button.delete = Borrar
+inventor.invention.form.button.publish = Publicar

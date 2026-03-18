@@ -29,10 +29,11 @@
 		<jstl:when test="${_command == 'create'}">
 		<acme:submit code="fundraiser.strategy.form.button.create" action="/fundraiser/strategy/create"/>
 		</jstl:when>
-		<jstl:when test="${_command == 'show' || _command == 'update'}">
+			<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish')}">			
 			<jstl:if test="${draftMode}">
 				<acme:submit code="fundraiser.strategy.form.button.update" action="/fundraiser/strategy/update"/>
 				<acme:submit code="fundraiser.strategy.form.button.delete" action="/fundraiser/strategy/delete"/>
+				<acme:submit code="fundraiser.strategy.form.button.publish" action="/fundraiser/strategy/publish"/>
 			</jstl:if>
 			
 			<acme:button code="fundraiser.strategy.form.button.tactics" action="/fundraiser/tactic/list?strategyId=${id}" />

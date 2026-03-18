@@ -15,3 +15,5 @@
 	<acme:list-column code="inventor.invention.list.label.monthsActive" path="monthsActive"/>
 	<acme:list-column code="inventor.invention.list.label.cost" path="cost"/>
 </acme:list>
+
+<acme:button code="inventor.invention.form.button.create" action="/inventor/invention/create"/>

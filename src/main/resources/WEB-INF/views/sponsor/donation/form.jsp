@@ -7,7 +7,7 @@
 
     <acme:form-textbox code="sponsor.donation.form.label.title" path="name"/>
     <acme:form-textarea code="sponsor.donation.form.label.notes" path="notes"/>
-    <acme:form-double code="sponsor.donation.form.label.money" path="money"/>
+    <acme:form-money code="sponsor.donation.form.label.money" path="money"/>
     <acme:form-select code="sponsor.donation.form.label.kind" path="kind" choices="${kinds}"/>
 
 	<jstl:choose>

@@ -38,6 +38,9 @@ public class AuditReportCreateService extends AbstractService<Auditor, AuditRepo
 	@Override
 	public void validate() {
 		super.validateObject(this.auditReport);
+		boolean uniqueTicker;
+		uniqueTicker = !this.repository.existsAuditReportWithTicker(this.auditReport.getTicker(), this.auditReport.getId());
+		super.state(uniqueTicker, "ticker", "acme.validation.auditReport.duplicatedTicker.message");
 	}
 
 	@Override

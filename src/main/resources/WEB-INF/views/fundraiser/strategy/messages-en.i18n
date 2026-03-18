@@ -15,9 +15,10 @@ fundraiser.strategy.form.label.draftMode = Draft:
 
 # Form buttons
 fundraiser.strategy.form.button.tactics = Tactics
-fundraiser.strategy.form.button.create = Create fundraiser
-fundraiser.strategy.form.button.update = Update fundraiser
-fundraiser.strategy.form.button.delete = Delete fundraiser
+fundraiser.strategy.form.button.create = Create strategy
+fundraiser.strategy.form.button.update = Update strategy
+fundraiser.strategy.form.button.delete = Delete strategy
+fundraiser.strategy.form.button.publish = Publish strategy
 
 
 # List labels
@@ -34,3 +35,7 @@ fundraiser.strategy.list.label.moreInfo = More info
 
 #List buttons
 fundraiser.strategy.list.button.create = Create strategy
+
+#Errors
+
+#fundraiser.strategy.error.no-tactics = You cannot publish a strategy without tactics.

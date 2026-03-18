@@ -1,16 +1,16 @@
 
 package acme.constraints;
 
-import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import acme.client.components.validation.AbstractValidator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.strategies.Strategy;
 import acme.features.fundraiser.strategy.StrategyRepository;
 
-public class StrategyValidator implements ConstraintValidator<ValidStrategy, Strategy> {
+public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy> {
 
 	@Autowired
 	private StrategyRepository repository;
@@ -21,41 +21,31 @@ public class StrategyValidator implements ConstraintValidator<ValidStrategy, Str
 
 		assert context != null;
 		boolean valid = true;
-
-		if (strategy == null)
-			return true;
-
-		//Para no dar dos mensajes de error
-		context.disableDefaultConstraintViolation();
-
-		//Ticker debe ser único
-		Strategy dbStrategy;
-		dbStrategy = this.repository.findStrategyByTicker(strategy.getTicker());
-
-		if (dbStrategy != null && dbStrategy.getId() != strategy.getId()) {
-			context.buildConstraintViolationWithTemplate("{acme.validation.strategy.duplicatedTicker.message}").addPropertyNode("ticker").addConstraintViolation();
-			valid = false;
+		{
+			if (strategy == null)
+				return true;
 		}
+		{
+			//El ticker debe ser único
 
+			Strategy dbStrategy = this.repository.findStrategyByTicker(strategy.getTicker());
+			Boolean isUnique = dbStrategy == null || dbStrategy.getId() == strategy.getId();
+			super.state(context, isUnique, "*", "acme.validation.strategy.duplicatedTicker.message");
+		}
 		// Validaciones al publicar una strategy
 		if (Boolean.FALSE.equals(strategy.getDraftMode())) {
 
 			// Debe tener al menos una táctica
-			if (strategy.getId() != 0) {
-				long count = this.repository.countTacticsByStrategyId(strategy.getId());
-
-				if (count < 1) {
-					context.buildConstraintViolationWithTemplate("{acme.validation.strategy.must-have-tactic.message}").addPropertyNode("draftMode").addConstraintViolation();
-					valid = false;
-				}
-			}
+			long count = this.repository.countTacticsByStrategyId(strategy.getId());
+			super.state(context, count >= 1, "*", "acme.validation.strategy.must-have-tactic.message");
 
 			// Intervalo válido
-			if (!MomentHelper.isBefore(strategy.getStartMoment(), strategy.getEndMoment())) {
-				context.buildConstraintViolationWithTemplate("{acme.validation.strategy.startMoment-PostEndMoment.message}").addPropertyNode("startMoment").addConstraintViolation();
-				valid = false;
-			}
+
+			boolean startMomentIsBefore = MomentHelper.isBefore(strategy.getStartMoment(), strategy.getEndMoment());
+			super.state(context, startMomentIsBefore, "startMoment", "acme.validation.strategy.startMoment-PostEndMoment.message");
+
 		}
+		valid = !super.hasErrors(context);
 
 		return valid;
 	}

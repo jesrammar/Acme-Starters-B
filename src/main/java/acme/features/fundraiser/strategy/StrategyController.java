@@ -22,7 +22,7 @@ public class StrategyController extends AbstractController<Fundraiser, Strategy>
 		super.addBasicCommand("create", StrategyCreateService.class);
 		super.addBasicCommand("update", StrategyUpdateService.class);
 		super.addBasicCommand("delete", StrategyDeleteService.class);
-
+		super.addCustomCommand("publish", "update", StrategyPublishService.class);
 	}
 
 }

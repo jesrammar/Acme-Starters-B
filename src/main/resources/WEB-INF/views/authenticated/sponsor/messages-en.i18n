@@ -1,0 +1,11 @@
+# Page titles
+authenticated.sponsor.form.title= Sponsor Form
+
+# Labels form
+authenticated.sponsor.form.label.address=Address
+authenticated.sponsor.form.label.im=Instant Messaging
+authenticated.sponsor.form.label.gold=Gold Level
+
+# Buttons form
+authenticated.sponsor.form.button.create=Create Sponsor
+authenticated.sponsor.form.button.update=Update Sponsor

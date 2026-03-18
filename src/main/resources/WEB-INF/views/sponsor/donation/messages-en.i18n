@@ -5,12 +5,12 @@ sponsor.donation.form.title = Donation Form
 sponsor.donation.list.title = Listing of Donations
 
 # Form labels
-sponsor.donation.form.label.title = Name:
-sponsor.donation.form.label.notes = Notes:
-sponsor.donation.form.label.money = Money:
-sponsor.donation.form.label.kind = Donation Kind:
+sponsor.donation.form.label.title = Name
+sponsor.donation.form.label.notes = Notes
+sponsor.donation.form.label.money = Money
+sponsor.donation.form.label.kind = Donation Kind
 
-sponsor.donation.form.placeholder.money = 0.00 - 1,000,000.00
+sponsor.donation.form.placeholder.money = EUR 0.00 - 1,000,000.00
 
 # Form buttons
 
@@ -26,4 +26,4 @@ sponsor.donation.list.label.kind = Donation Kind
 
 # List buttons
 
-sponsor.donation.list.button.create = Create
+sponsor.donation.list.button.create = Create Donation

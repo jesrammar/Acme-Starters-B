@@ -31,7 +31,7 @@ public class AuthenticatedFundraiserCreateService extends AbstractService<Authen
 
 	@Override
 	public void authorise() {
-		boolean status = !super.getRequest().getPrincipal().hasRealmOfType(Auditor.class);
+		boolean status = !super.getRequest().getPrincipal().hasRealmOfType(Fundraiser.class);
 		super.setAuthorised(status);
 	}
 

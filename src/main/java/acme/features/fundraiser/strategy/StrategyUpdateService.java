@@ -21,7 +21,7 @@ public class StrategyUpdateService extends AbstractService<Fundraiser, Strategy>
 	public void load() {
 		int id = super.getRequest().getData("id", int.class);
 		int fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.strategy = this.repository.findOneByIdAndFundraiserId(id, fundraiserId);
+		this.strategy = this.repository.findStrategyByIdAndFundraiserId(id, fundraiserId);
 	}
 
 	@Override
@@ -37,6 +37,12 @@ public class StrategyUpdateService extends AbstractService<Fundraiser, Strategy>
 
 	@Override
 	public void validate() {
+		if (!super.getErrors().hasErrors()) {
+			Strategy existing = this.repository.findStrategyByTicker(this.strategy.getTicker());
+
+			super.state(existing == null || existing.getId() != this.strategy.getId(), "*", "acme.validation.strategy.duplicatedTicker.message");
+
+		}
 		super.validateObject(this.strategy);
 	}
 

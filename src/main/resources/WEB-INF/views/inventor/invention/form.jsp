@@ -24,23 +24,22 @@
 			<acme:form-moment code="inventor.invention.form.label.startMoment" path="startMoment"/>
 			<acme:form-moment code="inventor.invention.form.label.endMoment" path="endMoment"/>
 			<acme:form-url code="inventor.invention.form.label.moreInfo" path="moreInfo"/>
-			<acme:form-checkbox code="inventor.invention.form.label.draftMode" path="draftMode"/>			
-			<acme:form-double code="inventor.invention.form.label.monthsActive" path="monthsActive"/>
-			<acme:form-money code="inventor.invention.form.label.cost" path="cost"/>
+			<acme:form-checkbox code="inventor.invention.form.label.draftMode" path="draftMode"/>		
 		</jstl:otherwise>
 	</jstl:choose>
 	
 	<jstl:choose>
-		<jstl:when test="${_command == 'create'}">
-			<acme:submit code="inventor.invention.button.create" action="/inventor/invention/create"/>
+		<jstl:when test="${_command == 'show' && draftMode == false}">
+			<acme:button code="inventor.invention.form.button.parts" action="/inventor/part/list?inventionId=${id}"/>		
 		</jstl:when>
-		<jstl:when test="${ _command == 'show' || _command == 'update' }">
-			<jstl:if test="${draftMode}">
-				<acme:submit code="inventor.invention.button.update" action="/inventor/invention/update"/>
-				<acme:submit code="inventor.invention.button.delete" action="/inventor/invention/delete"/>
-			</jstl:if>
-			
-			<acme:button code="inventor.invention.button.parts" action="/inventor/part/list?inventionId=${id}"/>
+		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
+			<acme:button code="inventor.invention.form.button.parts" action="/inventor/part/list?inventionId=${id}"/>
+			<acme:submit code="inventor.invention.form.button.update" action="/inventor/invention/update"/>
+			<acme:submit code="inventor.invention.form.button.delete" action="/inventor/invention/delete"/>
+			<acme:submit code="inventor.invention.form.button.publish" action="/inventor/invention/publish"/>
+		</jstl:when>
+		<jstl:when test="${_command == 'create'}">
+			<acme:submit code="inventor.invention.form.button.create" action="/inventor/invention/create"/>
 		</jstl:when>
 	</jstl:choose>
 </acme:form>
