@@ -16,7 +16,7 @@ acme.validation.invention.startMoment-PostEndMoment.message = La fecha de inicio
 # Mensajes de Sponsorship
 
 acme.validation.sponsorship.invalidSponsorship.message = El patrocinio no es válido
-acme.validation.sponsorship.duplicated-ticker.message = Ya existe un patrocinio con el mismo ticker
+acme.validation.sponsorship.duplicated-ticker.message = Ya existe un patrocinio con el mismo código
 acme.validation.sponsorship.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.sponsorship.endMoment-NotFuture.message = La fecha de final debe estar en futuro
 acme.validation.sponsorship.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
