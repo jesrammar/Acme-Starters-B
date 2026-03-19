@@ -22,6 +22,7 @@ public class InventionController extends AbstractController<Inventor, Invention>
 		super.addBasicCommand("list", InventionListService.class);
 		super.addBasicCommand("show", InventionShowService.class);
 		super.addBasicCommand("create", InventionCreateService.class);
+		super.addBasicCommand("update", InventionUpdateService.class);
 	}
 
 }
