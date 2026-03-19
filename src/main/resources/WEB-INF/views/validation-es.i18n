@@ -25,8 +25,8 @@ acme.validation.sponsorship.donations.message = El patrocinio debe contener al m
 # Mensajes de AuditReport
 
 acme.validation.auditReport.invalidAuditReport.message = El audit report no es válido
-acme.validation.auditReport.duplicatedTicker.message = Ya existe un audit report con el mismo ticker
-acme.validation.auditReport.sections.message = El audit report debe tener al menos una sección para poder publicarse
+acme.validation.auditReport.duplicatedTicker.message = Ya existe un informe de auditoría con el mismo código
+acme.validation.auditReport.sections.message = El informe de auditoría debe tener al menos una sección para poder publicarse
 acme.validation.auditReport.startMomentNotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.auditReport.endMomentNotFuture.message = La fecha de final debe estar en futuro
 acme.validation.auditReport.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
