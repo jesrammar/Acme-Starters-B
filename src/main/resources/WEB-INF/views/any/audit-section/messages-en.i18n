@@ -3,3 +3,9 @@
 # Titles
 any.audit-section.list.title = Listing of Audit Sections
 any.audit-section.form.title = Audit Section Form
+
+# Labels
+any.audit-section.label.name = Name
+any.audit-section.label.notes = Notes
+any.audit-section.label.hours = Hours
+any.audit-section.label.kind = Section Type

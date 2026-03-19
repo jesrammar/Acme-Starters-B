@@ -3,3 +3,18 @@
 # Titles
 any.audit-report.form.title = Audit Report Form
 any.audit-report.list.title = Listing of Audit Reports
+
+# Labels
+any.audit-report.label.ticker = Ticker
+any.audit-report.label.name = Name
+any.audit-report.label.description = Description
+any.audit-report.label.startMoment = Start Date
+any.audit-report.label.endMoment = End Date
+any.audit-report.label.moreInfo = More info
+any.audit-report.label.draftMode = Draft Mode
+any.audit-report.label.sectionCount = Sections
+any.audit-report.label.hours = Hours
+
+# Buttons
+any.audit-report.button.sections = Sections
+any.audit-report.button.auditor-profile=View auditor profile
