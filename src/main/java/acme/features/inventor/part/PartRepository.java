@@ -25,6 +25,9 @@ public interface PartRepository extends AbstractRepository {
 	@Query("select p from Part p where p.invention.inventor.id = :inventorId")
 	Collection<Part> findPartsByInventorId(int inventorId);
 
+	@Query("select p from Part p where p.invention.id = :inventionId")
+	Collection<Part> findPartsByInventionId(int inventionId);
+
 	@Query("select p from Part p where p.invention.id = :inventionId and p.invention.inventor.id = :inventorId")
 	Collection<Part> findPartsByInventionIdAndInventorId(int inventionId, int inventorId);
 
