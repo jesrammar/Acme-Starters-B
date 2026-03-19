@@ -21,9 +21,6 @@ public interface InventionRepository extends AbstractRepository {
 	@Query("select i from Invention i where i.ticker = :ticker")
 	Invention findInventionByTicker(String ticker);
 
-	@Query("select i from Invention i where i.id = :inventionId and i.inventor.id = :inventorId")
-	Invention findOneByIdAndInventorId(int inventionId, int inventorId);
-
 	@Query("select sum(p.cost.amount) from Part p where p.invention.id = :id")
 	Double sumPartsCostByInventionId(int id);
 
