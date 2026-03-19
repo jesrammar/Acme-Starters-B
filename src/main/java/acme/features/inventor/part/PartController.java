@@ -22,6 +22,7 @@ public class PartController extends AbstractController<Inventor, Part> {
 		super.addBasicCommand("list", PartListService.class);
 		super.addBasicCommand("show", PartShowService.class);
 		super.addBasicCommand("create", PartCreateService.class);
+		super.addBasicCommand("update", PartUpdateService.class);
 	}
 
 }
