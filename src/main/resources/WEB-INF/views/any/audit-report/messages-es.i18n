@@ -3,3 +3,18 @@
 # Títulos
 any.audit-report.form.title = Formulario de Informe de Auditoría
 any.audit-report.list.title = Listado de Informes de Auditoría
+
+# Etiquetas 
+any.audit-report.label.ticker = Código
+any.audit-report.label.name = Nombre
+any.audit-report.label.description = Descripción
+any.audit-report.label.startMoment = Fecha de inicio
+any.audit-report.label.endMoment = Fecha de fin
+any.audit-report.label.moreInfo = Más información
+any.audit-report.label.draftMode = Modo borrador
+any.audit-report.label.sectionCount = Secciones
+any.audit-report.label.hours = Horas
+
+# Botones
+any.audit-report.button.sections = Secciones
+any.audit-report.button.auditor-profile=Ver perfil del auditor
