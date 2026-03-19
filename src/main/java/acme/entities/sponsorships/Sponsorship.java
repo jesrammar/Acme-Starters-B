@@ -37,7 +37,7 @@ import lombok.Setter;
 @ValidSponsorship
 public class Sponsorship extends AbstractEntity {
 
-	private static final long		serialVersionUID	= 1L;
+	private static final long				serialVersionUID	= 1L;
 
 	@Transient
 	@Autowired
@@ -46,43 +46,43 @@ public class Sponsorship extends AbstractEntity {
 	@Mandatory
 	@ValidTicker
 	@Column(unique = true)
-	private String					ticker;
+	private String							ticker;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String					name;
+	private String							name;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String					description;
+	private String							description;
 
 	@Mandatory
 	@ValidMoment
 	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date					startMoment;
+	private Date							startMoment;
 
 	@Mandatory
 	@ValidMoment
 	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date					endMoment;
+	private Date							endMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String					moreInfo;
+	private String							moreInfo;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean					draftMode;
+	private Boolean							draftMode;
 
 	// Relaciones
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Sponsor					sponsor;
+	private Sponsor							sponsor;
 
 
 	// Derivadas --------------------------------------------------
@@ -92,7 +92,9 @@ public class Sponsorship extends AbstractEntity {
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null || !MomentHelper.isAfter(this.endMoment, this.startMoment))
 			return 0.0;
-		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return Math.max(0.0, months);
 	}
 
 	@Mandatory
