@@ -75,6 +75,7 @@ public class CampaignPublishService extends AbstractService<Spokesperson, Campai
 
 	@Override
 	public void execute() {
+		this.campaign.setDraftMode(false);
 		this.repository.save(this.campaign);
 	}
 
