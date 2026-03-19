@@ -1,5 +1,11 @@
 # messages-es.i18n for audit-section
 
 # Títulos
-any.audit-section.list.title = Listado de Secciones de Auditoría
-any.audit-section.form.title = Formulario de Sección de Auditoría
+any.audit-section.list.title = Listado de Secciones de auditoria
+any.audit-section.form.title = Formulario de Sección de auditoria
+
+# Etiquetas
+any.audit-section.label.name = Nombre
+any.audit-section.label.notes = Notas
+any.audit-section.label.hours = Horas
+any.audit-section.label.kind = Tipo de Sección

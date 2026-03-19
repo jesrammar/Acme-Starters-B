@@ -3,8 +3,8 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:form readonly="true">
-    <acme:form-textbox code="auditor.audit-section.label.name" path="name"/>
-    <acme:form-textarea code="auditor.audit-section.label.notes" path="notes"/>
-    <acme:form-double code="auditor.audit-section.label.hours" path="hours"/>
-    <acme:form-textbox code="auditor.audit-section.label.kind" path="kind"/>
+    <acme:form-textbox code="any.audit-section.label.name" path="name"/>
+    <acme:form-textarea code="any.audit-section.label.notes" path="notes"/>
+    <acme:form-double code="any.audit-section.label.hours" path="hours"/>
+    <acme:form-textbox code="any.audit-section.label.kind" path="kind"/>
 </acme:form>
