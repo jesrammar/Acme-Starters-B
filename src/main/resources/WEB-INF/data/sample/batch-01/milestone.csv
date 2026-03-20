@@ -1,41 +1,45 @@
 key,title,achievements,effort,kind,key:campaign
+# Milestones linked to published campaigns visible from `any`
 milestone-01,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
 milestone-02,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-02
 milestone-03,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",25.00,ENGAGING,campaign-03
 milestone-04,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",35.00,CONVERSION,campaign-04
 milestone-05,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",10.00,TEASER,campaign-05
-milestone-06,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-07,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-08,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-09,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-10,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-11,Thai sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-12,Arabic sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-13,Question sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-14,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-15,<script>alert('Hacked!');</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-16,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-17,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-18,Lorem ipsum,L,50.00,TEASER,campaign-01
-milestone-19,Lorem ipsum,Lo,50.00,TEASER,campaign-01
-milestone-20,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50.00,TEASER,campaign-01
-milestone-21,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50.00,TEASER,campaign-01
-milestone-22,Lorem ipsum,Thai sample,50.00,TEASER,campaign-01
-milestone-23,Lorem ipsum,Arabic sample,50.00,TEASER,campaign-01
-milestone-24,Lorem ipsum,Chinese sample,50.00,TEASER,campaign-01
-milestone-25,Lorem ipsum,<marquee>Hacked</marquee>,50.00,TEASER,campaign-01
-milestone-26,Lorem ipsum,<script>alert('Hacked!');</script>,50.00,TEASER,campaign-01
-milestone-27,Lorem ipsum,' or 'A' = 'A,50.00,TEASER,campaign-01
-milestone-28,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-29,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.01,TEASER,campaign-01
-milestone-30,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.02,TEASER,campaign-01
-milestone-31,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",99.99,TEASER,campaign-01
-milestone-32,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",100.00,TEASER,campaign-01
-milestone-33,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-01
-milestone-34,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,ENGAGING,campaign-01
-milestone-35,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,CONVERSION,campaign-01
+# Boundary and robustness cases concentrated on one own draft campaign
+milestone-06,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-07,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-08,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-09,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-10,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-11,Thai sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-12,Arabic sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-13,Question sample,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-14,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-15,<script>alert('Hacked!');</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-16,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-17,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-18,Lorem ipsum,L,50.00,TEASER,campaign-06
+milestone-19,Lorem ipsum,Lo,50.00,TEASER,campaign-06
+milestone-20,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50.00,TEASER,campaign-06
+milestone-21,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50.00,TEASER,campaign-06
+milestone-22,Lorem ipsum,Thai sample,50.00,TEASER,campaign-06
+milestone-23,Lorem ipsum,Arabic sample,50.00,TEASER,campaign-06
+milestone-24,Lorem ipsum,Chinese sample,50.00,TEASER,campaign-06
+milestone-25,Lorem ipsum,<marquee>Hacked</marquee>,50.00,TEASER,campaign-06
+milestone-26,Lorem ipsum,<script>alert('Hacked!');</script>,50.00,TEASER,campaign-06
+milestone-27,Lorem ipsum,' or 'A' = 'A,50.00,TEASER,campaign-06
+milestone-28,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-29,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.01,TEASER,campaign-06
+milestone-30,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",0.02,TEASER,campaign-06
+milestone-31,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",99.99,TEASER,campaign-06
+milestone-32,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",100.00,TEASER,campaign-06
+milestone-33,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-06
+milestone-34,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,ENGAGING,campaign-06
+milestone-35,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,CONVERSION,campaign-06
+# Published campaign with multiple milestones for public navigation checks
 milestone-36,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",20.00,TEASER,campaign-47
 milestone-37,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",30.00,ENGAGING,campaign-47
+# Draft milestones of spokesperson-02 used for hacking checks
 milestone-38,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",15.00,TEASER,campaign-48
 milestone-39,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",25.00,ENGAGING,campaign-48
 milestone-40,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",10.00,TEASER,campaign-49

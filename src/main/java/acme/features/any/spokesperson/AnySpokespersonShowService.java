@@ -19,11 +19,16 @@ public class AnySpokespersonShowService extends AbstractService<Any, Spokesperso
 
 	@Override
 	public void load() {
-		int campaignId;
+		if (super.getRequest().hasData("campaignId", int.class)) {
+			int campaignId;
 
-		campaignId = super.getRequest().getData("campaignId", int.class);
-		this.campaign = this.repository.findPublishedCampaignById(campaignId);
-		this.spokesperson = this.campaign == null ? null : this.campaign.getSpokesperson();
+			campaignId = super.getRequest().getData("campaignId", int.class);
+			this.campaign = this.repository.findPublishedCampaignById(campaignId);
+			this.spokesperson = this.campaign == null ? null : this.campaign.getSpokesperson();
+		} else {
+			this.campaign = null;
+			this.spokesperson = null;
+		}
 	}
 
 	@Override

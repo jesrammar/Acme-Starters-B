@@ -1,9 +1,11 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
+# Published campaigns visible from `any`
 campaign-01,AB01-X0001,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/01/08 00:01,http://lorem.com/ipsum,false,spokesperson-01
 campaign-02,AC02-X0002,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/01/08 00:01,http://lorem.com/ipsum,false,spokesperson-02
 campaign-03,BM38-X0038,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 00:00,2025/01/09 00:01,http://lorem.com/ipsum,false,spokesperson-01
 campaign-04,BN39-X0039,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 00:00,2025/01/10 00:01,http://lorem.com/ipsum,false,spokesperson-02
 campaign-05,BO40-X0040,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,2025/04/08 00:00,http://lorem.com/ipsum,false,spokesperson-01
+# Draft campaigns used for spokesperson CRUD and validation cases
 campaign-06,AD03-X0003,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
 campaign-07,AE04-X0004,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
 campaign-08,AF05-X0005,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://lorem.com/ipsum,true,spokesperson-01
@@ -45,7 +47,9 @@ campaign-43,BS44-X0044,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adip
 campaign-44,BT45-X0045,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?,true,spokesperson-01
 campaign-45,BU46-X0046,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://example.org?a,true,spokesperson-01
 campaign-46,BV47-X0047,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:00,2000/01/01 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,true,spokesperson-01
+# Published campaign with milestones for public navigation checks
 campaign-47,BP41-X0041,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/11 00:00,2025/03/11 00:00,http://lorem.com/ipsum,false,spokesperson-01
+# Draft campaigns of spokesperson-02 used for hacking checks
 campaign-48,BW48-X0048,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/02 00:00,2000/01/02 00:09,http://example.org/sp2-draft-1,true,spokesperson-02
 campaign-49,BX49-X0049,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/03 00:00,2000/01/03 00:09,http://example.org/sp2-draft-2,true,spokesperson-02
 campaign-50,BY50-X0050,Lorem ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/04 00:00,2000/01/04 00:09,http://example.org/sp2-draft-3,true,spokesperson-02
