@@ -47,27 +47,31 @@ public class InventionPublishService extends AbstractService<Inventor, Invention
 
 	@Override
 	public void validate() {
-		this.invention.setDraftMode(false);
-
 		super.validateObject(this.invention);
 
-		boolean uniqueTicker = this.repository.findInventionByTicker(this.invention.getTicker()) == null;
-		super.state(uniqueTicker, "ticker", "acme.validation.invention.duplicated-ticker.message");
+		if (!super.getErrors().hasErrors("*")) {
+			Invention existingTicker = this.repository.findInventionByTicker(this.invention.getTicker());
+			boolean uniqueTicker = existingTicker == null || existingTicker.getId() == this.invention.getId();
+			super.state(uniqueTicker, "ticker", "acme.validation.invention.duplicated-ticker.message");
 
-		boolean hasParts = this.repository.countPartsByInventionId(this.invention.getId()) > 0;
-		super.state(hasParts, "*", "acme.validation.invention.parts.message");
+			boolean hasParts = this.repository.countPartsByInventionId(this.invention.getId()) > 0;
+			super.state(hasParts, "*", "acme.validation.invention.parts.message");
 
-		boolean startMomentIsFuture = MomentHelper.isFuture(this.invention.getStartMoment());
-		super.state(startMomentIsFuture, "startMoment", "acme.validation.invention.startMoment-NotFuture.message");
+			if (this.invention.getStartMoment() != null && this.invention.getEndMoment() != null) {
 
-		boolean endMomentIsFuture = MomentHelper.isFuture(this.invention.getEndMoment());
-		super.state(endMomentIsFuture, "endMoment", "acme.validation.invention.endMoment-NotFuture.message");
+				boolean startMomentIsFuture = MomentHelper.isFuture(this.invention.getStartMoment());
+				super.state(startMomentIsFuture, "startMoment", "acme.validation.invention.startMoment-NotFuture.message");
 
-		boolean validMomentInterval = MomentHelper.isBefore(this.invention.getStartMoment(), this.invention.getEndMoment());
-		super.state(validMomentInterval, "startMoment", "acme.validation.invention.invalidMomentInterval.message");
+				boolean endMomentIsFuture = MomentHelper.isFuture(this.invention.getEndMoment());
+				super.state(endMomentIsFuture, "endMoment", "acme.validation.invention.endMoment-NotFuture.message");
 
-		if (super.getErrors().hasErrors())
-			this.invention.setDraftMode(true);
+				boolean validMomentInterval = MomentHelper.isBefore(this.invention.getStartMoment(), this.invention.getEndMoment());
+				super.state(validMomentInterval, "startMoment", "acme.validation.invention.invalidMomentInterval.message");
+
+			}
+
+		}
+
 	}
 
 	@Override

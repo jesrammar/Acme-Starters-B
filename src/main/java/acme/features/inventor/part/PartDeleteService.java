@@ -24,9 +24,13 @@ public class PartDeleteService extends AbstractService<Inventor, Part> {
 	public void load() {
 		int partId;
 
-		partId = super.getRequest().getData("id", int.class);
+		try {
+			partId = super.getRequest().getData("id", int.class);
+			this.part = this.repository.findPartById(partId);
+		} catch (Throwable oops) {
+			this.part = null;
+		}
 
-		this.part = this.repository.findPartById(partId);
 	}
 
 	@Override

@@ -27,13 +27,18 @@ public class PartListService extends AbstractService<Inventor, Part> {
 
 	@Override
 	public void load() {
-		int inventionId, principalId;
+		int inventionId;
 
-		principalId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		inventionId = super.getRequest().getData("inventionId", int.class);
+		try {
+			inventionId = super.getRequest().getData("inventionId", int.class);
 
-		this.parts = this.repository.findPartsByInventionIdAndInventorId(inventionId, principalId);
-		this.invention = this.repository.findInventionById(inventionId);
+			this.parts = this.repository.findPartsByInventionId(inventionId);
+			this.invention = this.repository.findInventionById(inventionId);
+		} catch (final Throwable oops) {
+			this.invention = null;
+			this.parts = null;
+		}
+
 	}
 
 	@Override
