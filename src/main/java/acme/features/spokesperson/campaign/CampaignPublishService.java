@@ -22,9 +22,11 @@ public class CampaignPublishService extends AbstractService<Spokesperson, Campai
 	@Override
 	public void load() {
 		int id;
+		int userAccountId;
 
 		id = super.getRequest().getData("id", int.class);
-		this.campaign = this.repository.findCampaignById(id);
+		userAccountId = super.getRequest().getPrincipal().getAccountId();
+		this.campaign = this.repository.findCampaignByIdAndSpokespersonUserAccountId(id, userAccountId);
 	}
 
 	@Override
@@ -37,18 +39,17 @@ public class CampaignPublishService extends AbstractService<Spokesperson, Campai
 
 	@Override
 	public void bind() {
-		super.bindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		// Publishing must not be used to edit campaign data.
 	}
 
 	@Override
 	public void validate() {
+		this.campaign.setDraftMode(false);
 		super.validateObject(this.campaign);
 
-		if (!super.getErrors().hasErrors("draftMode")) {
-			final Long milestoneCount = this.repository.countMilestonesByCampaignId(this.campaign.getId());
-			final boolean hasMilestones = milestoneCount != null && milestoneCount > 0;
-			super.state(hasMilestones, "*", "acme.validation.campaign.must-have-milestone.message");
-		}
+		final Long milestoneCount = this.repository.countMilestonesByCampaignId(this.campaign.getId());
+		final boolean hasMilestones = milestoneCount != null && milestoneCount > 0;
+		super.state(hasMilestones, "*", "acme.validation.campaign.must-have-milestone.message");
 		
 		boolean uniqueTicker = !this.repository.existsCampaignWithTicker(this.campaign.getTicker(), this.campaign.getId());
 		super.state(uniqueTicker, "ticker", "acme.validation.campaign.duplicated-ticker.message");
@@ -71,6 +72,9 @@ public class CampaignPublishService extends AbstractService<Spokesperson, Campai
 			final boolean endInFuture = endMoment != null && MomentHelper.isFuture(endMoment);
 			super.state(endInFuture, "endMoment", "acme.validation.campaign.moments.end-must-be-future.message");
 		}
+
+		if (super.getErrors().hasErrors())
+			this.campaign.setDraftMode(true);
 	}
 
 	@Override
