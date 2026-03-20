@@ -4,7 +4,6 @@ package acme.features.any.fundraiser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.realms.Fundraiser;
@@ -31,6 +30,6 @@ public class AnyFundraiserShowService extends AbstractService<Any, Fundraiser> {
 
 	@Override
 	public void unbind() {
-		Tuple tuple = super.unbindObject(this.fundraiser, "bank", "statement", "agent");
+		super.unbindObject(this.fundraiser, "bank", "statement", "agent");
 	}
 }

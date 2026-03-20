@@ -1,3 +1,4 @@
+
 package acme.features.spokesperson.campaign;
 
 import java.util.Collection;
@@ -8,7 +9,6 @@ import org.springframework.stereotype.Service;
 import acme.client.services.AbstractService;
 import acme.entities.campaigns.Campaign;
 import acme.entities.campaigns.Milestone;
-import acme.features.spokesperson.campaign.CampaignRepository;
 import acme.realms.Spokesperson;
 
 @Service
@@ -18,6 +18,7 @@ public class CampaignDeleteService extends AbstractService<Spokesperson, Campaig
 	private CampaignRepository	repository;
 
 	private Campaign			campaign;
+
 
 	@Override
 	public void load() {
@@ -67,4 +68,3 @@ public class CampaignDeleteService extends AbstractService<Spokesperson, Campaig
 		// Navigation is decided before onSuccess() by the framework redirect handler.
 	}
 }
-

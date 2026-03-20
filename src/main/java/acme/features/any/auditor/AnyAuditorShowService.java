@@ -4,7 +4,6 @@ package acme.features.any.auditor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.realms.Auditor;
@@ -31,6 +30,6 @@ public class AnyAuditorShowService extends AbstractService<Any, Auditor> {
 
 	@Override
 	public void unbind() {
-		Tuple tuple = super.unbindObject(this.auditor, "firm", "highlights", "solicitor");
+		super.unbindObject(this.auditor, "firm", "highlights", "solicitor");
 	}
 }
