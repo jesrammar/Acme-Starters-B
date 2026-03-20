@@ -22,6 +22,11 @@ acme.validation.sponsorship.endMoment-NotFuture.message = La fecha de final debe
 acme.validation.sponsorship.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
 acme.validation.sponsorship.donations.message = El patrocinio debe contener al menos una donación para poder ser publicado
 
+# Mensajes de Donation
+
+acme.validation.donation.invalidDonation.message = La donación no es válida
+acme.validation.donation.eurCurrency.message = Solo se acepta EUR
+
 # Mensajes de AuditReport
 
 acme.validation.auditReport.invalidAuditReport.message = El audit report no es válido

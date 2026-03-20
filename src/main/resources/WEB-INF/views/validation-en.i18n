@@ -25,6 +25,10 @@ acme.validation.sponsorship.startMoment-NotFuture.message = The start moment mus
 acme.validation.sponsorship.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.sponsorship.startMoment-PostEndMoment.message = The start moment must be before the end moment
 
+# Donation messages
+
+acme.validation.donation.invalidDonation.message = The donation isn't a valid donation
+acme.validation.donation.eurCurrency.message = Only EUR is accepted
 
 # AuditReport messages
 
