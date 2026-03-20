@@ -38,9 +38,9 @@ public class CampaignListService extends AbstractService<Spokesperson, Campaign>
 			Tuple tuple;
 
 			tuple = super.unbindObject(campaign, "ticker", "name", "startMoment", "endMoment", "draftMode");
+			tuple.put("draftModeVisual", Boolean.TRUE.equals(campaign.getDraftMode()) ? "✔" : "✖");
 			tuple.put("monthsActive", campaign.getMonthsActive());
 			tuple.put("effort", campaign.getEffort());
-			tuple.put("draftModeVisual", campaign.getDraftMode() ? "✔" : "✖");
 		}
 	}
 }

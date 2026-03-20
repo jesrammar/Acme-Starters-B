@@ -33,7 +33,7 @@ public class CampaignCreateService extends AbstractService<Spokesperson, Campaig
 	public void authorise() {
 		boolean status;
 
-		status = super.getRequest().getPrincipal().hasRealmOfType(Spokesperson.class);
+		status = this.campaign != null && this.campaign.getSpokesperson() != null;
 		super.setAuthorised(status);
 	}
 

@@ -19,9 +19,11 @@ public class CampaignUpdateService extends AbstractService<Spokesperson, Campaig
 	@Override
 	public void load() {
 		int id;
+		int userAccountId;
 
 		id = super.getRequest().getData("id", int.class);
-		this.campaign = this.repository.findCampaignById(id);
+		userAccountId = super.getRequest().getPrincipal().getAccountId();
+		this.campaign = this.repository.findCampaignByIdAndSpokespersonUserAccountId(id, userAccountId);
 	}
 
 	@Override
