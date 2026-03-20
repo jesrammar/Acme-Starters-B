@@ -22,20 +22,28 @@ public class MilestoneCreateService extends AbstractService<Spokesperson, Milest
 
 	@Override
 	public void load() {
-		int campaignId;
+		if (super.getRequest().hasData("campaignId", int.class)) {
+			int campaignId;
+			int userAccountId;
 
-		campaignId = super.getRequest().getData("campaignId", int.class);
-		this.campaign = this.repository.findCampaignById(campaignId);
+			campaignId = super.getRequest().getData("campaignId", int.class);
+			userAccountId = super.getRequest().getPrincipal().getAccountId();
+			this.campaign = this.repository.findCampaignByIdAndSpokespersonUserAccountId(campaignId, userAccountId);
 
-		this.milestone = new Milestone();
-		this.milestone.setCampaign(this.campaign);
+			this.milestone = new Milestone();
+			this.milestone.setCampaign(this.campaign);
+		} else {
+			this.campaign = null;
+			this.milestone = null;
+		}
 	}
 
 	@Override
 	public void authorise() {
-		boolean status;
+		boolean status = false;
 
-		status = this.campaign != null && this.campaign.getSpokesperson().isPrincipal() && Boolean.TRUE.equals(this.campaign.getDraftMode());
+		if (super.getRequest().hasData("campaignId", int.class))
+			status = this.campaign != null && Boolean.TRUE.equals(this.campaign.getDraftMode());
 		super.setAuthorised(status);
 	}
 
@@ -59,7 +67,7 @@ public class MilestoneCreateService extends AbstractService<Spokesperson, Milest
 		Tuple tuple;
 		SelectChoices choices;
 
-		choices = SelectChoices.from(MilestoneKind.class, this.milestone.getKind());
+		choices = SelectChoices.from(MilestoneKind.class, this.milestone == null ? null : this.milestone.getKind());
 		tuple = super.unbindObject(this.milestone, "title", "achievements", "effort", "kind");
 		tuple.put("kinds", choices);
 		tuple.put("campaignId", this.campaign == null ? null : this.campaign.getId());

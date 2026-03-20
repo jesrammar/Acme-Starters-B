@@ -2,7 +2,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
-<jstl:set var="readonly" value="${_command == 'show' || _command == 'delete'}"/>
+<jstl:set var="readonly" value="${_command == 'show' || _command == 'delete' || _command == 'publish'}"/>
 
 <jstl:if test="${_command == 'create'}">
 	<script type="text/javascript">

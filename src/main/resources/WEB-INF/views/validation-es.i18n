@@ -7,11 +7,12 @@ acme.validation.ticker.message = La referencia solo puede contener letras, digit
 
 # Mensajes de Invention
 
+acme.validation.invention.invalidInvention.message = Invento no válido
 acme.validation.invention.duplicated-ticker.message = Ya existe un invento con el mismo ticker
 acme.validation.invention.parts.message = El invento debe contener al menos una parte para poder ser publicado
 acme.validation.invention.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.invention.endMoment-NotFuture.message = La fecha de final debe estar en futuro
-acme.validation.invention.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
+acme.validation.invention.invalidMomentInterval.message = La fecha de inicio debe ser anterior a la fecha de final
 
 # Mensajes de Sponsorship
 

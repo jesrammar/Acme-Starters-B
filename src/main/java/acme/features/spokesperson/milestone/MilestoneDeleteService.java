@@ -21,16 +21,18 @@ public class MilestoneDeleteService extends AbstractService<Spokesperson, Milest
 	@Override
 	public void load() {
 		int id;
+		int userAccountId;
 
 		id = super.getRequest().getData("id", int.class);
-		this.milestone = this.repository.findMilestoneById(id);
+		userAccountId = super.getRequest().getPrincipal().getAccountId();
+		this.milestone = this.repository.findMilestoneByIdAndSpokespersonUserAccountId(id, userAccountId);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.milestone != null && this.milestone.getCampaign().getSpokesperson().isPrincipal() && Boolean.TRUE.equals(this.milestone.getCampaign().getDraftMode());
+		status = this.milestone != null && Boolean.TRUE.equals(this.milestone.getCampaign().getDraftMode());
 		super.setAuthorised(status);
 	}
 

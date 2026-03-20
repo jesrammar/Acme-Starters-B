@@ -22,11 +22,16 @@ public class AnyMilestoneListService extends AbstractService<Any, Milestone> {
 
 	@Override
 	public void load() {
-		int campaignId;
+		if (super.getRequest().hasData("campaignId", int.class)) {
+			int campaignId;
 
-		campaignId = super.getRequest().getData("campaignId", int.class);
-		this.campaign = this.repository.findPublishedCampaignById(campaignId);
-		this.milestones = this.campaign == null ? java.util.List.of() : this.repository.findPublishedMilestonesByCampaignId(campaignId);
+			campaignId = super.getRequest().getData("campaignId", int.class);
+			this.campaign = this.repository.findPublishedCampaignById(campaignId);
+			this.milestones = this.campaign == null ? java.util.List.of() : this.repository.findPublishedMilestonesByCampaignId(campaignId);
+		} else {
+			this.campaign = null;
+			this.milestones = java.util.List.of();
+		}
 	}
 
 	@Override
