@@ -15,6 +15,11 @@ acme.validation.invention.startMoment-NotFuture.message = The start moment must 
 acme.validation.invention.endMoment-NotFuture.message = The end moment must be in the future
 acme.validation.invention.invalidMomentInterval.message = The start moment must be before the end moment
 
+# Part messages
+
+acme.validation.part.invalidPart.message = Invalid Part
+acme.validation.part.eurCurrency.message = Only EUR is accepted
+
 
 # Sponsorship messages
 

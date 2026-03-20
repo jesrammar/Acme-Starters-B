@@ -14,6 +14,11 @@ acme.validation.invention.startMoment-NotFuture.message = La fecha de inicio deb
 acme.validation.invention.endMoment-NotFuture.message = La fecha de final debe estar en futuro
 acme.validation.invention.invalidMomentInterval.message = La fecha de inicio debe ser anterior a la fecha de final
 
+# Mensajes de Part
+
+acme.validation.part.invalidPart.message = Parte no válida
+acme.validation.part.eurCurrency.message = Sólo se aceptan EUR
+
 # Mensajes de Sponsorship
 
 acme.validation.sponsorship.invalidSponsorship.message = El patrocinio no es válido
