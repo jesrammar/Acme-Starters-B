@@ -32,7 +32,7 @@ public class StrategyUpdateService extends AbstractService<Fundraiser, Strategy>
 
 	@Override
 	public void bind() {
-		super.bindObject(this.strategy, "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.bindObject(this.strategy, "name", "ticker", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
