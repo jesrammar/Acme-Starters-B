@@ -40,12 +40,18 @@ public class InventionUpdateService extends AbstractService<Inventor, Invention>
 
 	@Override
 	public void bind() {
-		super.bindObject(this.invention, "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.bindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 	}
 
 	@Override
 	public void validate() {
 		super.validateObject(this.invention);
+
+		Invention existing = this.repository.findInventionByTicker(this.invention.getTicker());
+
+		boolean isUnique = existing == null || existing.getId() == this.invention.getId();
+
+		super.state(isUnique, "ticker", "acme.validation.invention.duplicated-ticker.message");
 	}
 
 	@Override

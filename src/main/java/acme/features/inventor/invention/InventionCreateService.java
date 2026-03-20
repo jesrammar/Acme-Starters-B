@@ -42,6 +42,12 @@ public class InventionCreateService extends AbstractService<Inventor, Invention>
 	@Override
 	public void validate() {
 		super.validateObject(this.invention);
+
+		Invention existing = this.repository.findInventionByTicker(this.invention.getTicker());
+
+		boolean isUnique = existing == null;
+
+		super.state(isUnique, "ticker", "acme.validation.invention.duplicated-ticker.message");
 	}
 
 	@Override

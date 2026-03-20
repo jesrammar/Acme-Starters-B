@@ -37,7 +37,7 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 			Invention existingInvention;
 
 			existingInvention = this.repository.findInventionByTicker(invention.getTicker());
-			uniqueInvention = existingInvention == null || existingInvention.equals(invention);
+			uniqueInvention = existingInvention == null || existingInvention.getId() == invention.getId();
 
 			super.state(context, uniqueInvention, "ticker", "acme.validation.invention.duplicated-ticker.message");
 		}
