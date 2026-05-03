@@ -1,0 +1,80 @@
+﻿@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+package "Level C (existente)" {
+  class Spokesperson <<Role>> #pink {
+    +cv: String
+    +achievements: String
+    +licensed: Boolean
+  }
+
+  class Campaign <<Entity>> #green {
+    +ticker: String <<unique>>
+    +name: String
+    +description: String
+    +startMoment: DateTime
+    +endMoment: DateTime
+    +moreInfo: String <<optional>>
+    --
+    +/monthsActive: Double <<derived>>
+    +/effort: Double <<derived>>
+    --
+    +draftMode: Boolean
+  }
+
+  enum MilestoneKind {
+    TEASER
+    ENGAGING
+    CONVERSION
+  }
+
+  class Milestone <<Entity>> #green {
+    +title: String
+    +achievements: String
+    +effort: Double
+    +kind: MilestoneKind
+  }
+
+  Spokesperson "1" <-- "*" Campaign : managed by
+  Campaign "1" <-- "*" Milestone : composed of
+}
+
+package "Level B (nuevo / referencia)" {
+  class Manager <<Role>> #pink {
+    +position: String
+    +skills: String
+    +executive: Boolean
+  }
+
+  class Project <<Entity>> #lightblue {
+    +title: String
+    +keywords: String[*]
+    +description: String
+    +kickOffMoment: DateTime
+    +closeOutMoment: DateTime
+    +draftMode: Boolean
+  }
+
+  Manager "1" <-- "*" Project : managed by
+  Project "*" -- "*" Campaign : includes
+}
+
+note right of Campaign
+  Constraints (Level C)
+  - no publish w/o >=1 milestone
+  - startMoment < endMoment
+  - publish requires future interval (confirm)
+  - ticker unique
+end note
+
+note right of Project
+  Constraints (Level B)
+  - members can see draft components
+  - publish project => publish components
+  - publish requires >=1 invention (not shown)
+end note
+
+@enduml
+
+

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+
+  <!-- Header -->
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>2860</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Domain model (group) - Level B (built on Level C)
+--
+Goal: keep Level C changes minimal; add Level B entities/relations on top.
+Pattern in Level C components:
+- 1 Role -> * Main Entity
+- 1 Main Entity -> * Child Entity (composition)
+- Main Entity cannot be published without >= 1 Child Entity
+- startMoment/endMoment define a valid interval; when publishing, the interval must be in the future
+- /monthsActive is derived
+- Main Entity has a derived aggregate (cost/effort/expectedPercentage/totalMoney/hours)
+
+Mapping (Level C):
+- C01: Inventor -> Invention -> Part
+- C02: Spokesperson -> Campaign -> Milestone
+- C03: Fundraiser -> Strategy -> Tactic
+- C04: Sponsor -> Sponsorship -> Donation
+- C05: Auditor -> AuditReport -> AuditSection
+
+bg=#f3fdff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ===================== -->
+  <!-- C01 - Invention block -->
+  <!-- ===================== -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>290</x>
+      <y>110</y>
+      <w>360</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>C01 - Invention
+--
+Integrated from student model
+
+bg=#ffffff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>220</y>
+      <w>370</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Inventor
+--
++ bio: String {Mandatory, ValidText, Column}
++ keyWords: String {Mandatory, ValidText, Column}
++ licensed: Boolean {Mandatory, Valid, Column}
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>310</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Invented by ^
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>410</y>
+      <w>540</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Invention
+--
++ ticker: String {Mandatory, ValidTicker, Column(unique=true)}
++ name: String {Mandatory, ValidHeader, Column}
++ description: String {Mandatory, ValidText, Column}
++ startMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ endMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ moreInfo: String {Optional, ValidUrl, Column}
+--
++ /monthsActive: Double {Mandatory, Valid, Transient}
++ /cost: Money {Mandatory, ValidMoney(positive), Transient}
+--
++ draftMode: Boolean {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>620</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Composed of v
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>720</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Part
+--
++ name: String {Mandatory, ValidHeader, Column}
++ description: String {Mandatory, ValidText, Column}
++ cost: Money {Mandatory, ValidMoney(positive), Column}
++ kind: PartKind {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>740</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+PartKind
+--
++ CORE
++ MANDATORY
++ OPTIONAL
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>640</x>
+      <y>220</y>
+      <w>260</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+- Inventions cannot be published unless they have at least one part.
+- startMoment/endMoment must define a valid future interval when publishing.
+- monthsActive = months(startMoment, endMoment), rounded to 1 decimal.
+- cost = sum(part.cost). Only Euros accepted.
+
+bg=#ffcccc</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ==================== -->
+  <!-- C02 - Campaign block -->
+  <!-- ==================== -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1290</x>
+      <y>110</y>
+      <w>360</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>C02 - Campaign
+--
+Integrated from student model
+
+bg=#ffffff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1160</x>
+      <y>220</y>
+      <w>370</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Spokesperson
+--
++ cv: String {Mandatory, ValidText, Column}
++ achievements: String {Mandatory, ValidText, Column}
++ licensed: Boolean {Mandatory, Valid, Column}
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1330</x>
+      <y>310</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Managed by ^
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>410</y>
+      <w>540</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Campaign
+--
++ ticker: String {Mandatory, ValidTicker, Column(unique=true)}
++ name: String {Mandatory, ValidHeader, Column}
++ description: String {Mandatory, ValidText, Column}
++ startMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ endMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ moreInfo: String {Optional, ValidUrl, Column}
+--
++ /monthsActive: Double {Mandatory, Valid, Transient}
++ /effort: Double {Mandatory, ValidNumber(positive), Transient}
+--
++ draftMode: Boolean {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1330</x>
+      <y>620</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Composed of v
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>720</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Milestone
+--
++ title: String {Mandatory, ValidHeader, Column}
++ achievements: String {Mandatory, ValidText, Column}
++ effort: Double {Mandatory, ValidNumber(positive), Column}
++ kind: MilestoneKind {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1640</x>
+      <y>740</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+MilestoneKind
+--
++ TEASER
++ ENGAGING
++ CONVERSION
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1640</x>
+      <y>220</y>
+      <w>260</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+- Campaigns cannot be published unless they have at least one milestone.
+- startMoment/endMoment must define a valid future interval when publishing.
+- monthsActive = months(startMoment, endMoment), rounded to 1 decimal.
+- effort = sum(milestone.effort).
+
+bg=#ffcccc</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- =================== -->
+  <!-- C03 - Strategy block -->
+  <!-- =================== -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2290</x>
+      <y>110</y>
+      <w>360</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>C03 - Strategy
+--
+Integrated from student model
+
+bg=#ffffff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2160</x>
+      <y>220</y>
+      <w>370</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Fundraiser
+--
++ bank: String {Mandatory, ValidHeader, Column}
++ statement: String {Mandatory, ValidText, Column}
++ agent: Boolean {Mandatory, Valid, Column}
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2330</x>
+      <y>310</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Managed by ^
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2070</x>
+      <y>410</y>
+      <w>540</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Strategy
+--
++ ticker: String {Mandatory, ValidTicker, Column(unique=true)}
++ name: String {Mandatory, ValidHeader, Column}
++ description: String {Mandatory, ValidText, Column}
++ startMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ endMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ moreInfo: String {Optional, ValidUrl, Column}
+--
++ /monthsActive: Double {Mandatory, Valid, Transient}
++ /expectedPercentage: Double {Mandatory, ValidScore, Transient}
+--
++ draftMode: Boolean {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2330</x>
+      <y>620</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Composed of v
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2120</x>
+      <y>720</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Tactic
+--
++ name: String {Mandatory, ValidHeader, Column}
++ notes: String {Mandatory, ValidText, Column}
++ expectedPercentage: Double {Mandatory, ValidScore, Column}
++ kind: TacticKind {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2640</x>
+      <y>740</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+TacticKind
+--
++ SUBTLE
++ AGGRESSIVE
++ TENDER
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2640</x>
+      <y>220</y>
+      <w>260</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+- Strategies cannot be published unless they have at least one tactic.
+- startMoment/endMoment must define a valid future interval when publishing.
+- monthsActive = months(startMoment, endMoment), rounded to 1 decimal.
+- expectedPercentage = sum(tactic.expectedPercentage).
+
+bg=#ffcccc</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ===================== -->
+  <!-- C04 - Sponsorship block -->
+  <!-- ===================== -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>790</x>
+      <y>950</y>
+      <w>360</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>C04 - Sponsorship
+--
+Integrated from student model
+
+bg=#ffffff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>1080</y>
+      <w>370</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Sponsor
+--
++ address: String {Mandatory, ValidText, Column}
++ im: String {Mandatory, ValidHeader, Column}
++ gold: Boolean {Mandatory, Valid, Column}
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>1170</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Registered by ^
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>1270</y>
+      <w>540</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Sponsorship
+--
++ ticker: String {Mandatory, ValidTicker, Column(unique=true)}
++ name: String {Mandatory, ValidHeader, Column}
++ description: String {Mandatory, ValidText, Column}
++ startMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ endMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ moreInfo: String {Optional, ValidUrl, Column}
+--
++ /monthsActive: Double {Mandatory, Valid, Transient}
++ /totalMoney: Money {Mandatory, ValidMoney(positive), Transient}
+--
++ draftMode: Boolean {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>1480</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Composed of v
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>1580</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Donation
+--
++ name: String {Mandatory, ValidHeader, Column}
++ notes: String {Mandatory, ValidText, Column}
++ money: Money {Mandatory, ValidMoney(positive), Column}
++ kind: DonationKind {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>1600</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+DonationKind
+--
++ ALTRUIST
++ REWARDED
++ CELEBRATED
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1140</x>
+      <y>1080</y>
+      <w>260</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+- Sponsorships cannot be published unless they have at least one donation.
+- startMoment/endMoment must define a valid future interval when publishing.
+- monthsActive = months(startMoment, endMoment), rounded to 1 decimal.
+- totalMoney = sum(donation.money). Only Euros accepted.
+
+bg=#ffcccc</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- =================== -->
+  <!-- C05 - AuditReport block -->
+  <!-- =================== -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1790</x>
+      <y>950</y>
+      <w>360</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>C05 - AuditReport
+--
+Integrated from student model
+
+bg=#ffffff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1660</x>
+      <y>1080</y>
+      <w>370</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Auditor
+--
++ firm: String {Mandatory, ValidHeader, Column}
++ highlights: String {Mandatory, ValidHeader, Column}
++ solicitor: Boolean {Mandatory, Valid, Column}
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1830</x>
+      <y>1170</y>
+      <w>110</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Written by ^
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1570</x>
+      <y>1270</y>
+      <w>540</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+AuditReport
+--
++ ticker: String {Mandatory, ValidTicker, Column(unique=true)}
++ name: String {Mandatory, ValidHeader, Column}
++ description: String {Mandatory, ValidText, Column}
++ startMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ endMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ moreInfo: String {Optional, ValidUrl, Column}
+--
++ /monthsActive: Double {Mandatory, Valid, Transient}
++ /hours: Integer {Mandatory, ValidNumber(positive), Transient}
+--
++ draftMode: Boolean {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1830</x>
+      <y>1480</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Composed of v
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1620</x>
+      <y>1580</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+AuditSection
+--
++ name: String {Mandatory, ValidHeader, Column}
++ notes: String {Mandatory, ValidText, Column}
++ hours: Integer {Mandatory, ValidNumber(positive), Column}
++ kind: SectionKind {Mandatory, Valid, Column}
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2140</x>
+      <y>1600</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+SectionKind
+--
++ PRELIMINARY
++ EVALUATION
++ CONCLUSION
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2140</x>
+      <y>1080</y>
+      <w>260</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+- Audit reports cannot be published unless they have at least one audit section.
+- startMoment/endMoment must define a valid future interval when publishing.
+- monthsActive = months(startMoment, endMoment), rounded to 1 decimal.
+- hours = sum(auditSection.hours).
+
+bg=#ffcccc</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- ================= -->
+  <!-- Level B additions -->
+  <!-- ================= -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>20</x>
+      <y>1780</y>
+      <w>2860</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Level B additions (to be refined by owners)
+--
+Add: Manager, Project, Advertisement.
+Project includes components: Invention, Campaign, Strategy (M:N).
+Project members: Inventor, Spokesperson, Fundraiser (M:N, permissions depend on membership).
+
+bg=#d9edf7</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>1910</y>
+      <w>360</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Manager
+--
++ position: String {Mandatory, ValidHeader, Column}
++ skills: String {Mandatory, ValidText, Column}
++ executive: Boolean {Mandatory, Valid, Column}
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>2050</y>
+      <w>600</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Project
+--
++ title: String {Mandatory, ValidHeader, Column}
++ keywords: String {Mandatory, ValidText, Column}
++ description: String {Mandatory, ValidText, Column}
++ kickOffMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
++ closeOutMoment: Moment {Mandatory, ValidMoment, Temporal(TIMESTAMP)}
+--
++ draftMode: Boolean {Mandatory, Valid, Column}
+
+bg=#d9edf7</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>2010</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Managed by v
+lt=&lt;-x
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>60.0;10.0;60.0;50.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>2050</y>
+      <w>520</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Banner
+--
++ slogan: String {Mandatory, ValidHeader, Column}
++ targetUrl: String {Mandatory, ValidUrl, Column}
++ picture: String {Mandatory, ValidUrl, Column}
+
+bg=#d9edf7</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1220</x>
+      <y>2050</y>
+      <w>1660</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Project (Level B) — relationships (high level)
+--
+- managed by exactly one Manager
+- includes components (M:N): Invention, Campaign, Strategy
+- members (M:N): Inventor, Spokesperson, Fundraiser
+  * members can see components even in draft mode
+  * members can attach their components to projects they are involved in
+- publishing a Project publishes its components automatically
+- publishing a Project requires >= 1 invention
+
+bg=#fff3cd</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- References (keep Level C untouched): connect Project to "ref" boxes nearby -->
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>20</x>
+      <y>2320</y>
+      <w>1160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>References
+--
+The following small boxes are references to the Level C blocks above (C01/C02/C03).
+They are used to draw relations without modifying the Level C entities.
+
+bg=#f3fdff</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>2430</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Invention (ref)
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>2430</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Campaign (ref)
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>2430</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Strategy (ref)
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>2520</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Inventor (ref)
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>2520</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Spokesperson (ref)
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>2520</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Fundraiser (ref)
+
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <!-- Project includes components (M:N; implemented with join tables) -->
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>2290</y>
+      <w>80</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Includes v
+lt=&lt;-x
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;140.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>2290</y>
+      <w>80</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Includes v
+lt=&lt;-x
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;140.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>2290</y>
+      <w>80</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Includes v
+lt=&lt;-x
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;140.0</additional_attributes>
+  </element>
+
+  <!-- Project members (M:N; implemented with join tables / involvement) -->
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>2290</y>
+      <w>80</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Members v
+lt=&lt;-x
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;230.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>2290</y>
+      <w>80</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Members v
+lt=&lt;-x
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;230.0</additional_attributes>
+  </element>
+
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>2290</y>
+      <w>80</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Members v
+lt=&lt;-x
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;230.0</additional_attributes>
+  </element>
+
+</diagram>

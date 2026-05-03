@@ -1,0 +1,11 @@
+id,tarea,dependencias,estimacion_horas,entregable
+S2-PLAN-01,Reescritura requisitos (mi ámbito),,3,requirements-student2.md
+S2-PLAN-02,Análisis + preguntas a docentes,,2,analysis-student2.md
+S2-PLAN-03,UML (Campaign/Milestone/Spokesperson + Project link),Definir modelo de Project,2,uml/*
+S2-PLAN-04,Definir casos de prueba (tabla),,2,testing-student2.md
+S2-PLAN-05,Checklist de lint y criterio de aceptación,,1,lint-student2.md
+S2-PLAN-06,Implementar “attach campaign to project”,Entidad Project + membresías,5,código
+S2-PLAN-07,Implementar visibilidad de campañas del proyecto,Entidad Project + membresías,4,código
+S2-PLAN-08,Soportar publicación en cascada (campaigns),Servicio de publish Project,3,código
+S2-PLAN-09,Tests/informes (evidencias y capturas),Código estable,3,reports
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>30</x>
+      <y>30</y>
+      <w>600</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Constraints (Student 2)
+
+Level C (Campaign/Milestone)
+- Campaign cannot be published unless it has at least one milestone.
+- startMoment/endMoment must define a valid interval (start &lt; end).
+- When publishing, the interval must be in the future (confirm exact rule).
+- monthsActive = months between start/end, rounded to 1 decimal.
+- Campaign effort = sum of milestone.effort.
+
+Level B (Project integration)
+- Project members can view project components even in draft mode.
+- Publishing a project implies publishing its components automatically.
+
+bg=#fff3cd</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+</diagram>
