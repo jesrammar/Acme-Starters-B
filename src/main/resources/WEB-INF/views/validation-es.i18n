@@ -7,7 +7,7 @@ acme.validation.ticker.message = La referencia solo puede contener letras, digit
 
 # Mensajes de Invention
 
-acme.validation.invention.invalidInvention.message = Invento no válido
+acme.validation.invention.invalidInvention.message = Invento no valido
 acme.validation.invention.duplicated-ticker.message = Ya existe un invento con el mismo ticker
 acme.validation.invention.parts.message = El invento debe contener al menos una parte para poder ser publicado
 acme.validation.invention.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
@@ -16,45 +16,57 @@ acme.validation.invention.invalidMomentInterval.message = La fecha de inicio deb
 
 # Mensajes de Part
 
-acme.validation.part.invalidPart.message = Parte no válida
-acme.validation.part.eurCurrency.message = Sólo se aceptan EUR
+acme.validation.part.invalidPart.message = Parte no valida
+acme.validation.part.eurCurrency.message = Solo se aceptan EUR
 
 # Mensajes de Sponsorship
 
-acme.validation.sponsorship.invalidSponsorship.message = El patrocinio no es válido
-acme.validation.sponsorship.duplicated-ticker.message = Ya existe un patrocinio con el mismo código
+acme.validation.sponsorship.invalidSponsorship.message = El patrocinio no es valido
+acme.validation.sponsorship.duplicated-ticker.message = Ya existe un patrocinio con el mismo codigo
 acme.validation.sponsorship.startMoment-NotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.sponsorship.endMoment-NotFuture.message = La fecha de final debe estar en futuro
 acme.validation.sponsorship.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
-acme.validation.sponsorship.donations.message = El patrocinio debe contener al menos una donación para poder ser publicado
+acme.validation.sponsorship.donations.message = El patrocinio debe contener al menos una donacion para poder ser publicado
 
 # Mensajes de Donation
 
-acme.validation.donation.invalidDonation.message = La donación no es válida
+acme.validation.donation.invalidDonation.message = La donacion no es valida
 acme.validation.donation.eurCurrency.message = Solo se acepta EUR
 
 # Mensajes de AuditReport
 
-acme.validation.auditReport.invalidAuditReport.message = El audit report no es válido
-acme.validation.auditReport.duplicatedTicker.message = Ya existe un informe de auditoría con el mismo código
-acme.validation.auditReport.sections.message = El informe de auditoría debe tener al menos una sección para poder publicarse
+acme.validation.auditReport.invalidAuditReport.message = El audit report no es valido
+acme.validation.auditReport.duplicatedTicker.message = Ya existe un informe de auditoria con el mismo codigo
+acme.validation.auditReport.sections.message = El informe de auditoria debe tener al menos una seccion para poder publicarse
 acme.validation.auditReport.startMomentNotFuture.message = La fecha de inicio debe estar en futuro
 acme.validation.auditReport.endMomentNotFuture.message = La fecha de final debe estar en futuro
 acme.validation.auditReport.startMoment-PostEndMoment.message = La fecha de inicio debe ser anterior a la fecha de final
 
 # Mensajes de Strategy
 
-acme.validation.strategy.invalidStrategy.message = La estrategia no es válida
-acme.validation.strategy.duplicatedTicker.message= Ya existe una estrategia con el mismo código
-acme.validation.strategy.must-have-tactic.message= Las estrategias deben de tener al menos una táctica
+acme.validation.strategy.invalidStrategy.message = La estrategia no es valida
+acme.validation.strategy.duplicatedTicker.message = Ya existe una estrategia con el mismo codigo
+acme.validation.strategy.must-have-tactic.message = Las estrategias deben de tener al menos una tactica
 acme.validation.strategy.startMoment-PostEndMoment.message = La fecha de inicio no puede ser posterior a la de fin
-acme.validation.strategy.startMoment-notFuture.message = La fecha de inicio debe estar en el futuro 
+acme.validation.strategy.startMoment-notFuture.message = La fecha de inicio debe estar en el futuro
 acme.validation.strategy.endMoment-notFuture.message = La fecha de fin debe estar en el futuro
+
 # Mensajes de Campaign
 
-acme.validation.campaign.must-have-milestone.message = La campaña debe tener al menos un hito para publicarse
+acme.validation.campaign.must-have-milestone.message = La campana debe tener al menos un hito para publicarse
 acme.validation.campaign.moments.invalid-interval.message = El momento de inicio debe ser anterior al de fin
-acme.validation.campaign.moments.start-must-be-future.message = El momento debe ser futuro para publicar la campaña
-acme.validation.campaign.moments.end-must-be-future.message = El momento debe ser futuro para publicar la campaña
-acme.validation.campaign.duplicated-ticker.message= Ya existe una campaña con el mismo código
+acme.validation.campaign.moments.start-must-be-future.message = El momento debe ser futuro para publicar la campana
+acme.validation.campaign.moments.end-must-be-future.message = El momento debe ser futuro para publicar la campana
+acme.validation.campaign.duplicated-ticker.message = Ya existe una campana con el mismo codigo
 
+# Mensajes de Project
+
+acme.validation.project.member-unknown.message = Algunos usernames de miembros no existen
+acme.validation.project.member-invalid-role.message = Los miembros del proyecto deben tener un rol valido de proyecto
+acme.validation.project.invalid-interval.message = El momento de inicio debe ser anterior al de cierre
+acme.validation.project.kick-off-not-future.message = El momento de inicio debe estar en el futuro
+acme.validation.project.close-out-not-future.message = El momento de cierre debe estar en el futuro
+acme.validation.project.must-have-campaign.message = El proyecto debe incluir al menos una campana antes de publicarse
+acme.validation.project.campaign-not-publishable.message = Todas las campanas asociadas deben cumplir las restricciones de publicacion de campana
+acme.validation.project.campaign-not-found.message = Debes indicar el ticker de una de tus campanas
+acme.validation.project.campaign-already-linked.message = Esta campana ya esta asociada al proyecto

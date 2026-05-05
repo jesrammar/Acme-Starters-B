@@ -62,3 +62,15 @@ acme.validation.campaign.moments.start-must-be-future.message = The moment must 
 acme.validation.campaign.moments.end-must-be-future.message = The moment must be in the future to publish the campaign
 acme.validation.campaign.duplicated-ticker.message= Already exists a campaign with the same ticker
 
+# Project messages
+
+acme.validation.project.member-unknown.message = Some member usernames do not exist
+acme.validation.project.member-invalid-role.message = Project members must have a valid project role
+acme.validation.project.invalid-interval.message = The kick-off moment must be before the close-out moment
+acme.validation.project.kick-off-not-future.message = The kick-off moment must be in the future
+acme.validation.project.close-out-not-future.message = The close-out moment must be in the future
+acme.validation.project.must-have-campaign.message = The project must include at least one campaign before being published
+acme.validation.project.campaign-not-publishable.message = Every linked campaign must satisfy the campaign publishing constraints
+acme.validation.project.campaign-not-found.message = You must provide the ticker of one of your campaigns
+acme.validation.project.campaign-already-linked.message = This campaign is already linked to the project
+

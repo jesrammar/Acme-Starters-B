@@ -1,0 +1,11 @@
+authenticated.project-milestone.list.title = Project milestones
+authenticated.project-milestone.list.label.title = Title
+authenticated.project-milestone.list.label.achievements = Achievements
+authenticated.project-milestone.list.label.effort = Effort
+authenticated.project-milestone.list.label.kind = Kind
+
+authenticated.project-milestone.form.title = Milestone details
+authenticated.project-milestone.form.label.title = Title
+authenticated.project-milestone.form.label.achievements = Achievements
+authenticated.project-milestone.form.label.effort = Effort
+authenticated.project-milestone.form.label.kind = Kind

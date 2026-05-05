@@ -1,0 +1,21 @@
+authenticated.project-campaign.list.title = Project campaigns
+authenticated.project-campaign.list.label.ticker = Ticker
+authenticated.project-campaign.list.label.name = Name
+authenticated.project-campaign.list.label.startMoment = Start moment
+authenticated.project-campaign.list.label.endMoment = End moment
+authenticated.project-campaign.list.label.draftMode = Draft mode
+authenticated.project-campaign.list.label.monthsActive = Active months
+authenticated.project-campaign.list.label.effort = Effort
+
+authenticated.project-campaign.form.title = Campaign details
+authenticated.project-campaign.form.label.ticker = Ticker
+authenticated.project-campaign.form.label.name = Name
+authenticated.project-campaign.form.label.description = Description
+authenticated.project-campaign.form.label.startMoment = Start moment
+authenticated.project-campaign.form.label.endMoment = End moment
+authenticated.project-campaign.form.label.moreInfo = More info
+authenticated.project-campaign.form.label.draftMode = Draft mode
+authenticated.project-campaign.form.label.monthsActive = Active months
+authenticated.project-campaign.form.label.effort = Effort
+authenticated.project-campaign.form.button.milestones = View milestones
+authenticated.project-campaign.form.button.detach = Detach from project

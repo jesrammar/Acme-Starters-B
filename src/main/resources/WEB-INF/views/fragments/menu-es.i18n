@@ -22,16 +22,16 @@ master.menu.administrator.shut-system-down = Parar el sistema
 
 # master.menu.any.spokesperson ##########################################################
 
-master.menu.any.campaign-list = Campañas Publicadas
+master.menu.any.campaign-list = Campanas Publicadas
 
 # master.menu.any.auditor ##########################################################
 
-master.menu.any.audit-report-list = Informes de Auditoría Publicados
+master.menu.any.audit-report-list = Informes de Auditoria Publicados
 
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
-master.menu.auditor.audit-report-list = Mis informes de auditoría
+master.menu.auditor.audit-report-list = Mis informes de auditoria
 
 # master.menu.any.fundraiser ##########################################################
 
@@ -67,12 +67,15 @@ master.menu.user-account.general-profile = Perfil general
 
 master.menu.user-account.become-spokesperson = Adquirir rol de Portavoz
 master.menu.user-account.spokesperson-profile = Perfil de Portavoz
+master.menu.user-account.become-manager = Adquirir rol de Manager
+master.menu.user-account.manager-profile = Perfil de Manager
+master.menu.user-account.member-projects = Proyectos donde participo
 
 master.menu.user-account.become-auditor = Adquirir rol de Auditor
 master.menu.user-account.auditor-profile = Perfil de Auditor
 
 master.menu.user-account.become-fundraiser = Adquirir rol de Recaudador de fondos
-master.menu.user-account.fundraiser-profile= Perfil de Recaudador de fondos
+master.menu.user-account.fundraiser-profile = Perfil de Recaudador de fondos
 
 master.menu.user-account.become-inventor = Adquirir rol de Inventor
 master.menu.user-account.inventor-profile = Perfil de Inventor
@@ -83,4 +86,9 @@ master.menu.user-account.sponsor-profile = Perfil de Patrocinador
 # master.menu.spokesperson ####################################################
 
 master.menu.spokesperson = Portavoz
-master.menu.spokesperson.campaign-list = Campañas
+master.menu.spokesperson.campaign-list = Campanas
+
+# master.menu.manager ####################################################
+
+master.menu.manager = Manager
+master.menu.manager.project-list = Proyectos

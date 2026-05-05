@@ -1,0 +1,17 @@
+authenticated.project.list.title = My member projects
+authenticated.project.list.label.title = Title
+authenticated.project.list.label.kickOffMoment = Kick-off
+authenticated.project.list.label.closeOutMoment = Close-out
+authenticated.project.list.label.draftMode = Draft mode
+
+authenticated.project.form.title = Project details
+authenticated.project.form.label.title = Title
+authenticated.project.form.label.keywords = Keywords
+authenticated.project.form.label.description = Description
+authenticated.project.form.label.kickOffMoment = Kick-off moment
+authenticated.project.form.label.closeOutMoment = Close-out moment
+authenticated.project.form.label.draftMode = Draft mode
+authenticated.project.form.label.memberUsernames = Members
+authenticated.project.form.label.campaignsCount = Campaigns
+authenticated.project.form.button.campaigns = View campaigns
+authenticated.project.form.button.attach-campaign = Attach my campaign

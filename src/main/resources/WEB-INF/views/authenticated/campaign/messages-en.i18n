@@ -1,0 +1,20 @@
+authenticated.campaign.list.title = Project campaigns
+authenticated.campaign.list.label.ticker = Ticker
+authenticated.campaign.list.label.name = Name
+authenticated.campaign.list.label.startMoment = Start moment
+authenticated.campaign.list.label.endMoment = End moment
+authenticated.campaign.list.label.draftMode = Draft mode
+authenticated.campaign.list.label.monthsActive = Active months
+authenticated.campaign.list.label.effort = Effort
+
+authenticated.campaign.form.title = Campaign details
+authenticated.campaign.form.label.ticker = Ticker
+authenticated.campaign.form.label.name = Name
+authenticated.campaign.form.label.description = Description
+authenticated.campaign.form.label.startMoment = Start moment
+authenticated.campaign.form.label.endMoment = End moment
+authenticated.campaign.form.label.moreInfo = More info
+authenticated.campaign.form.label.draftMode = Draft mode
+authenticated.campaign.form.label.monthsActive = Active months
+authenticated.campaign.form.label.effort = Effort
+authenticated.campaign.form.button.milestones = View milestones

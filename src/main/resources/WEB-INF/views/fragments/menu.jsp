@@ -39,6 +39,10 @@
 			<acme:menu-suboption code="master.menu.spokesperson.campaign-list" action="/spokesperson/campaign/list"/>
 		</acme:menu-option>
 
+		<acme:menu-option code="master.menu.manager" access="hasRealm('Manager')">
+			<acme:menu-suboption code="master.menu.manager.project-list" action="/manager/project/list"/>
+		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
 		    <acme:menu-suboption code="master.menu.auditor.audit-report-list" action="/auditor/audit-report/list"/>
 		</acme:menu-option>
@@ -62,6 +66,9 @@
 
 			<acme:menu-suboption code="master.menu.user-account.become-spokesperson" action="/authenticated/spokesperson/create" access="!hasRealm('Spokesperson')"/>
 			<acme:menu-suboption code="master.menu.user-account.spokesperson-profile" action="/authenticated/spokesperson/update" access="hasRealm('Spokesperson')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-manager" action="/authenticated/manager/create" access="!hasRealm('Manager')"/>
+			<acme:menu-suboption code="master.menu.user-account.manager-profile" action="/authenticated/manager/update" access="hasRealm('Manager')"/>
+			<acme:menu-suboption code="master.menu.user-account.member-projects" action="/authenticated/project/list"/>
 	        
 	    <acme:menu-suboption code="master.menu.user-account.become-auditor" action="/authenticated/auditor/create" access="!hasRealm('Auditor')"/>
 	    <acme:menu-suboption code="master.menu.user-account.auditor-profile" action="/authenticated/auditor/update" access="hasRealm('Auditor')"/>
