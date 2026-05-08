@@ -33,7 +33,7 @@ public class AuthenticatedProjectListService extends AbstractService<Authenticat
 	public void unbind() {
 		for (final Project project : this.projects) {
 			final Tuple tuple = super.unbindObject(project, "title", "kickOffMoment", "closeOutMoment", "draftMode");
-			tuple.put("draftModeVisual", Boolean.TRUE.equals(project.getDraftMode()) ? "✔" : "✖");
+			tuple.put("draftModeVisual", Boolean.TRUE.equals(project.getDraftMode()) ? "\u2714" : "\u2718");
 		}
 	}
 

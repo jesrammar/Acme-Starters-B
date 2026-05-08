@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
@@ -73,12 +74,14 @@ public class Project extends AbstractEntity {
 	@JoinTable(name = "project_membership", joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "user_account_id"))
 	private Set<UserAccount> members = new LinkedHashSet<>();
 
-	@ManyToMany
-	@JoinTable(name = "project_campaign", joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "campaign_id"))
+	@OneToMany(mappedBy = "project")
 	private Set<Campaign> campaigns = new LinkedHashSet<>();
 
 	@Transient
 	private String memberUsernames;
+
+	@Transient
+	private String memberUsername;
 
 	@Transient
 	private String campaignTicker;

@@ -43,14 +43,15 @@ public class SpokespersonProjectCampaignAttachService extends AbstractService<Sp
 
 		this.campaign = this.repository.findOwnCampaignByTicker(this.project.getCampaignTicker(), userAccountId);
 		super.state(this.campaign != null, "campaignTicker", "acme.validation.project.campaign-not-found.message");
+
 		if (this.campaign != null)
-			super.state(!this.project.getCampaigns().contains(this.campaign), "campaignTicker", "acme.validation.project.campaign-already-linked.message");
+			super.state(this.campaign.getProject() == null, "campaignTicker", "acme.validation.project.campaign-already-linked.message");
 	}
 
 	@Override
 	public void execute() {
-		this.project.getCampaigns().add(this.campaign);
-		this.repository.save(this.project);
+		this.campaign.setProject(this.project);
+		this.repository.save(this.campaign);
 	}
 
 	@Override

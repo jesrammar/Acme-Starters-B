@@ -10,12 +10,12 @@
 	<acme:form-textarea code="manager.project.form.label.description" path="description"/>
 	<acme:form-moment code="manager.project.form.label.kickOffMoment" path="kickOffMoment"/>
 	<acme:form-moment code="manager.project.form.label.closeOutMoment" path="closeOutMoment"/>
-	<acme:form-textarea code="manager.project.form.label.memberUsernames" path="memberUsernames"/>
 
 	<jstl:if test="${_command == 'show'}">
 		<acme:form-checkbox code="manager.project.form.label.draftMode" path="draftMode"/>
 		<acme:form-textbox code="manager.project.form.label.membersCount" path="membersCount" readonly="true"/>
 		<acme:form-textbox code="manager.project.form.label.campaignsCount" path="campaignsCount" readonly="true"/>
+		<acme:button code="manager.project.form.button.members" action="/manager/user-account/list?projectId=${id}"/>
 		<acme:button code="manager.project.form.button.campaigns" action="/authenticated/campaign/list?projectId=${id}"/>
 	</jstl:if>
 

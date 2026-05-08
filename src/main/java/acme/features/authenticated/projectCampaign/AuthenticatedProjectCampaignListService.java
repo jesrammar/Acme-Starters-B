@@ -36,10 +36,9 @@ public class AuthenticatedProjectCampaignListService extends AbstractService<Aut
 
 	@Override
 	public void unbind() {
-		//super.unbindObjects(campaigns, null)
 		for (final Campaign campaign : this.campaigns) {
 			final Tuple tuple = super.unbindObject(campaign, "ticker", "name", "startMoment", "endMoment", "draftMode");
-			tuple.put("draftModeVisual", Boolean.TRUE.equals(campaign.getDraftMode()) ? "✔" : "✖");
+			tuple.put("draftModeVisual", Boolean.TRUE.equals(campaign.getDraftMode()) ? "\u2714" : "\u2718");
 			tuple.put("monthsActive", campaign.getMonthsActive());
 			tuple.put("effort", campaign.getEffort());
 			tuple.put("projectId", this.project.getId());

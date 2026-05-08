@@ -45,8 +45,8 @@ public class SpokespersonProjectCampaignDetachService extends AbstractService<Sp
 
 	@Override
 	public void execute() {
-		this.project.getCampaigns().remove(this.campaign);
-		this.repository.save(this.project);
+		this.campaign.setProject(null);
+		this.repository.save(this.campaign);
 	}
 
 	@Override

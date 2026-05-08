@@ -61,8 +61,10 @@ public class ManagerProjectPublishService extends AbstractService<Manager, Proje
 	@Override
 	public void execute() {
 		this.project.setDraftMode(false);
-		for (final Campaign campaign : this.project.getCampaigns())
+		for (final Campaign campaign : this.project.getCampaigns()) {
 			campaign.setDraftMode(false);
+			this.repository.save(campaign);
+		}
 		this.repository.save(this.project);
 	}
 

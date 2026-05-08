@@ -1,11 +1,11 @@
 authenticated.milestone.list.title = Hitos del proyecto
-authenticated.milestone.list.label.title = Titulo
+authenticated.milestone.list.label.title = T\u00edtulo
 authenticated.milestone.list.label.achievements = Logros
 authenticated.milestone.list.label.effort = Esfuerzo
 authenticated.milestone.list.label.kind = Tipo
 
 authenticated.milestone.form.title = Detalles del hito
-authenticated.milestone.form.label.title = Titulo
+authenticated.milestone.form.label.title = T\u00edtulo
 authenticated.milestone.form.label.achievements = Logros
 authenticated.milestone.form.label.effort = Esfuerzo
 authenticated.milestone.form.label.kind = Tipo

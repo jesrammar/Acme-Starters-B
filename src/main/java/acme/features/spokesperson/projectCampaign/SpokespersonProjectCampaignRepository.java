@@ -16,7 +16,7 @@ public interface SpokespersonProjectCampaignRepository extends AbstractRepositor
 	@Query("select c from Campaign c where c.ticker = :ticker and c.spokesperson.userAccount.id = :userAccountId")
 	Campaign findOwnCampaignByTicker(String ticker, int userAccountId);
 
-	@Query("select c from Project p join p.campaigns c where p.id = :projectId and c.id = :campaignId and c.spokesperson.userAccount.id = :userAccountId")
+	@Query("select c from Campaign c where c.project.id = :projectId and c.id = :campaignId and c.spokesperson.userAccount.id = :userAccountId")
 	Campaign findOwnCampaignInProject(int projectId, int campaignId, int userAccountId);
 
 }
