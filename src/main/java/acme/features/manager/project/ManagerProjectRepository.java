@@ -14,7 +14,7 @@ import acme.realms.Manager;
 @Repository
 public interface ManagerProjectRepository extends AbstractRepository {
 
-	@Query("select m from Manager m where m.userAccount.id = :userAccountId")
+	@Query("select m from Manager m where m.userAccount.id = :userAccountId and m.id = (select min(m2.id) from Manager m2 where m2.userAccount.id = :userAccountId)")
 	Manager findManagerByUserAccountId(int userAccountId);
 
 	@Query("select p from Project p where p.manager.userAccount.id = :userAccountId")
@@ -41,7 +41,7 @@ public interface ManagerProjectRepository extends AbstractRepository {
 	@Query("select count(m) from Milestone m where m.campaign.id = :campaignId")
 	Long countMilestonesByCampaignId(int campaignId);
 
-	@Query("select c from Project p join p.campaigns c where p.id = :projectId")
+	@Query("select c from Campaign c where c.project.id = :projectId")
 	Collection<Campaign> findCampaignsByProjectId(int projectId);
 
 }

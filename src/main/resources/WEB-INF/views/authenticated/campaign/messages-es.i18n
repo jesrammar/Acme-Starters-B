@@ -1,4 +1,4 @@
-authenticated.campaign.list.title = Campanas del proyecto
+authenticated.campaign.list.title = Campa\u00f1as del proyecto
 authenticated.campaign.list.label.ticker = Ticker
 authenticated.campaign.list.label.name = Nombre
 authenticated.campaign.list.label.startMoment = Inicio
@@ -7,13 +7,13 @@ authenticated.campaign.list.label.draftMode = Borrador
 authenticated.campaign.list.label.monthsActive = Meses activos
 authenticated.campaign.list.label.effort = Esfuerzo
 
-authenticated.campaign.form.title = Detalles de la campana
+authenticated.campaign.form.title = Detalles de la campa\u00f1a
 authenticated.campaign.form.label.ticker = Ticker
 authenticated.campaign.form.label.name = Nombre
-authenticated.campaign.form.label.description = Descripcion
+authenticated.campaign.form.label.description = Descripci\u00f3n
 authenticated.campaign.form.label.startMoment = Inicio
 authenticated.campaign.form.label.endMoment = Fin
-authenticated.campaign.form.label.moreInfo = Mas informacion
+authenticated.campaign.form.label.moreInfo = M\u00e1s informaci\u00f3n
 authenticated.campaign.form.label.draftMode = Borrador
 authenticated.campaign.form.label.monthsActive = Meses activos
 authenticated.campaign.form.label.effort = Esfuerzo

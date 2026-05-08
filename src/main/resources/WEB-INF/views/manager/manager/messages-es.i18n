@@ -1,0 +1,7 @@
+manager.manager.form.title = Panel del gestor
+manager.dashboard.form.label.totalProjects = Total de proyectos
+manager.dashboard.form.label.projectsDeviation = Desviaci\u00f3n respecto a otros gestores
+manager.dashboard.form.label.effortMinimum = Esfuerzo m\u00ednimo
+manager.dashboard.form.label.effortMaximum = Esfuerzo m\u00e1ximo
+manager.dashboard.form.label.effortAverage = Esfuerzo medio
+manager.dashboard.form.label.effortDeviation = Desviaci\u00f3n del esfuerzo

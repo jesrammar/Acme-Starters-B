@@ -1,4 +1,4 @@
-authenticated.manager.form.title = Formulario de manager
+authenticated.manager.form.title = Formulario de gestor
 authenticated.manager.form.label.position = Puesto
 authenticated.manager.form.label.skills = Habilidades
 authenticated.manager.form.label.executive = Ejecutivo

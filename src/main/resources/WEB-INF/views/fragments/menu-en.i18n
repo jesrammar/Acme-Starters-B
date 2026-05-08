@@ -42,6 +42,7 @@ master.menu.spokesperson.campaign-list = Campaigns
 
 master.menu.manager = Manager
 master.menu.manager.project-list = Projects
+master.menu.manager.dashboard = Dashboard
 
 # master.menu.sponsor ##########################################################
 
@@ -79,7 +80,6 @@ master.menu.user-account.become-spokesperson = Acquire Spokesperson Role
 master.menu.user-account.spokesperson-profile = Spokesperson Profile
 master.menu.user-account.become-manager = Acquire Manager Role
 master.menu.user-account.manager-profile = Manager Profile
-master.menu.user-account.member-projects = Member projects
 
 master.menu.user-account.become-auditor = Acquire Auditor Role
 master.menu.user-account.auditor-profile = Auditor Profile

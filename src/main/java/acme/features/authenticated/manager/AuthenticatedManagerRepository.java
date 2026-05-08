@@ -13,7 +13,7 @@ public interface AuthenticatedManagerRepository extends AbstractRepository {
 	@Query("select ua from UserAccount ua where ua.id = :id")
 	UserAccount findUserAccountById(int id);
 
-	@Query("select m from Manager m where m.userAccount.id = :id")
+	@Query("select m from Manager m where m.userAccount.id = :id and m.id = (select min(m2.id) from Manager m2 where m2.userAccount.id = :id)")
 	Manager findManagerByUserAccountId(int id);
 
 }

@@ -1,0 +1,16 @@
+manager.project-member.list.title = Project members
+manager.project-member.list.label.username = Username
+manager.project-member.list.label.name = Name
+manager.project-member.list.label.surname = Surname
+manager.project-member.list.label.email = Email
+manager.project-member.list.button.add = Add member
+
+manager.project-member.form.title = Project member
+manager.project-member.form.label.username = Username
+manager.project-member.form.label.name = Name
+manager.project-member.form.label.surname = Surname
+manager.project-member.form.label.email = Email
+manager.project-member.form.label.memberUsername = Member username
+manager.project-member.form.button.add-confirm = Confirm add
+manager.project-member.form.button.remove = Remove from project
+manager.project-member.form.button.remove-confirm = Confirm remove
