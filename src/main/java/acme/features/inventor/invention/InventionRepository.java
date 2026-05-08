@@ -27,4 +27,7 @@ public interface InventionRepository extends AbstractRepository {
 	@Query("select count(p) from Part p where p.invention.id = :id")
 	Long countPartsByInventionId(int id);
 
+	@Query("select count(i) from Invention i where i.project.id = ?1")
+	Long countByProjectId(int projectId);
+
 }

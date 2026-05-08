@@ -11,6 +11,7 @@
 # master.menu.any #######################################################
 
 master.menu.any = Any
+master.menu.project.list = Projects
 
 # master.menu.any.spokesperson #######################################################
 
@@ -92,3 +93,17 @@ master.menu.user-account.inventor-profile = Inventor Profile
 
 master.menu.user-account.become-sponsor = Acquire Sponsor Role
 master.menu.user-account.sponsor-profile = Sponsor Profile
+
+# master.menu.manager ####################################################
+
+master.menu.manager= Manager
+master.menu.manager.project.list= My projects
+
+# master.menu.member ######################################
+master.menu.member = Member
+master.menu.member.project.list = Projects
+
+master.menu.administrator.list-banners = List banners
+
+master.menu.user-account.become-manager= Become a manager
+master.menu.user-account.manager-profile =Manager profile

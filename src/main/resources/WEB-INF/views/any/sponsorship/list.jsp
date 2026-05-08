@@ -14,3 +14,7 @@
 	<acme:list-column code="any.sponsorship.list.label.description" path="description"/>
 	<acme:list-column code="any.sponsorship.list.label.moreInfo" path="moreInfo"/>
 </acme:list>
+
+<jstl:if test="${isSponsor}">
+     <acme:button code="any.project.button.sponsor.create" action="/sponsor/sponsorship-project/create?projectId=${projectId}"/>
+</jstl:if>

@@ -1,0 +1,45 @@
+#Project List #######################################################
+manager.project.list.title = My projects
+
+manager.project.list.label.title= Title
+manager.project.list.label.keywords = Keywords
+manager.project.list.label.kickOffMoment= Kick-Off
+manager.project.list.label.closeOutMoment= Closeout
+
+manager.project.list.button.create= Create
+
+
+
+#Project Form #######################################################
+
+manager.project.form.title = Project Form
+
+manager.project.form.label.title = Title
+manager.project.form.label.keywords= Keywords
+manager.project.form.label.description= Description
+manager.project.form.label.kickOffMoment = Kick-Off
+manager.project..form.label.closeOutMoment = Closeout
+inventor.invention.form.label.effort = Effort
+
+manager.project.form.button.inventions = Inventions
+manager.project.form.button.campaigns = Campaigns
+manager.project.form.button.strategies = Strategies
+
+manager.project.form.button.update = Update
+manager.project.form.button.delete = Delete
+manager.project.form.button.publish = Publish
+manager.project.form.button.create= Create
+
+acme.validation.project.timeInterval.message = The Closeout date must be after the Kick-Off date
+acme.validation.project.draftMode.message = The project must have at least one invention to be 
+
+project.publish.validation.hasAtLeastOneInvention = The project must have at least 1 invention to be published
+
+manager.inventor.form.button.list = Inventors
+manager.fundraiser.form.button.list = Fundraisers
+manager.spokesperson.form.button.list  = Spokespersons    
+
+any.project.form.button.auditReport = Audit Reports
+any.project.form.button.sponsorship = Sponsorships
+
+

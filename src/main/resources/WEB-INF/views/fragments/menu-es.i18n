@@ -11,6 +11,7 @@
 # master.menu.any #######################################################
 
 master.menu.any = Cualquiera
+master.menu.project.list = Projects
 
 # master.menu.administrator ###################################################
 
@@ -85,10 +86,18 @@ master.menu.user-account.sponsor-profile = Perfil de patrocinador
 # master.menu.spokesperson ####################################################
 
 master.menu.spokesperson = Portavoz
-master.menu.spokesperson.campaign-list = Campa\u00f1as
+master.menu.spokesperson.campaign-list = Campañas
 
 # master.menu.manager ####################################################
 
-master.menu.manager = Gestor
-master.menu.manager.project-list = Proyectos
-master.menu.manager.dashboard = Panel
+master.menu.manager= Manager
+master.menu.manager.project.list= Mis proyectos
+
+# master.menu.member ######################################
+master.menu.member = Miembro
+master.menu.member.project.list = Proyectos
+
+master.menu.administrator.list-banners = Ver banners
+
+master.menu.user-account.become-manager = Hazte Manager
+master.menu.user-account.manager-profile = Perfil de Manager
